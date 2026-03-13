@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public TMP_Text countText;
+    [SerializeField] TMP_Text countText;
     [SerializeField] TMP_Text incomeText;
     [SerializeField] StoreUpgrade[] storeUpgrades;
     [SerializeField] int updatesPerSecond = 5;
 
 
-    float count = 0;
+    [HideInInspector] public float count = 0;
     float nextIdleTime = 1;
     float lastIncomeValue = 0;
 
@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         foreach (var storeUpgrade in storeUpgrades)
         {
             sum += storeUpgrade.CalculateMoneyPerSecond();
+            storeUpgrade.UpdateUI();
         }
         lastIncomeValue = sum;
         count += sum / updatesPerSecond;
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     public void ClickAction()
     {
         count++;
+        count += lastIncomeValue * 0.02f;
         UpdateUI();
     }
 
