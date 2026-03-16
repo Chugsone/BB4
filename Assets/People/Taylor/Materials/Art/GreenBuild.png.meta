@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreenBuild_0: 1460401821626830210
+      GreenBuild_1: -5835808378440288623
+      GreenBuild_2: -1841476793613072369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

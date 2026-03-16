@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,23 +14,37 @@ public class StoreUpgrade : MonoBehaviour
     [Header("Upgrade Info")]
     public string upgradeName;
     public int startPrice;
-    public float upgradePriceMultiplier;
+    public float upgradePriceMultiplier = 1f;
     public float moneyPerUpgrade;
-
 
     [Header("Managers")]
     public GameManager gameManager;
-
+    
     int level = 0;
 
     private void Start()
     {
+        if (gameManager == null)
+        {
+            gameManager = GameManager.instance;
+        }
+
         UpdateUI();
     }
 
     public void ClickAction()
     {
         int price = CalculatePrice();
+
+        if (gameManager == null)
+        {
+            Debug.LogWarning("StoreUpgrade: GameManager is not assigned.");
+            return;
+        }
+
+        if (upgradeButton != null && !upgradeButton.interactable)
+            return;
+
         bool purchaseSuccessful = gameManager.PurchaseAction(price);
         if (purchaseSuccessful)
         {
@@ -42,20 +55,34 @@ public class StoreUpgrade : MonoBehaviour
 
     public void UpdateUI()
     {
-        priceText.text = CalculatePrice().ToString();
-        incomeInfoText.text = level.ToString() + " x " + moneyPerUpgrade + "/s";
-        bool canPurchase = gameManager.count >= CalculatePrice();
-        upgradeButton.interactable = canPurchase;
+        int price = CalculatePrice();
 
-        bool ispurchased = level > 0;
-        upgradeImage.color = ispurchased ? Color.white : Color.gray;
-        upgradeNameText.text = ispurchased ? upgradeName : "???";
+        if (priceText != null)
+            priceText.text = price.ToString();
+
+        if (incomeInfoText != null)
+            incomeInfoText.text = $"{level} x {moneyPerUpgrade}/s";
+
+        bool canPurchase = false;
+        if (gameManager != null)
+            canPurchase = gameManager.count >= price;
+
+        if (upgradeButton != null)
+            upgradeButton.interactable = canPurchase;
+
+        bool isPurchased = level > 0;
+        if (upgradeImage != null)
+            upgradeImage.color = isPurchased ? Color.white : Color.gray;
+        if (upgradeNameText != null)
+            upgradeNameText.text = isPurchased ? upgradeName : "???";
     }
 
     int CalculatePrice()
     {
-        int price = Mathf.RoundToInt(startPrice * Mathf.Pow(upgradePriceMultiplier, level));
-        return price;
+        float multiplier = (upgradePriceMultiplier <= 0f) ? 1f : upgradePriceMultiplier;
+        int basePrice = Mathf.Max(0, startPrice);
+        int price = Mathf.RoundToInt(basePrice * Mathf.Pow(multiplier, level));
+        return Mathf.Max(0, price);
     }
 
     public float CalculateMoneyPerSecond()
