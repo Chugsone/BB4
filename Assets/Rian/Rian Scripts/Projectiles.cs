@@ -15,6 +15,7 @@ public class Projectiles : MonoBehaviour
     public float knockbackTime;
     [HideInInspector] public int Damage = 1;
     [HideInInspector] public int pierceCount = 1;
+    private Vector2 direction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,9 @@ public class Projectiles : MonoBehaviour
         col = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifetime);
+        float angle = transform.eulerAngles.z * Mathf.Deg2Rad;
+        direction = new (Mathf.Cos(angle), Mathf.Sin(angle));
+       
     }
 
     // Update is called once per frame
@@ -32,7 +36,7 @@ public class Projectiles : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = transform.right * speed;
+        rb.linearVelocity = direction * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

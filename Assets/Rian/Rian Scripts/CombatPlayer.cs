@@ -13,14 +13,18 @@ public class CombatPlayer : MonoBehaviour
    
   //  [SerializeField] private Animator animator;
  //   [SerializeField] private Animator gunAnimator;
-    [SerializeField] private GameObject spawn;
+    
     [SerializeField] private float ReloadTime;
- 
-
-  
 
 
     
+    public enum WeaponType
+    {
+        Revolver,
+        Fist,
+    }
+
+    private WeaponType currentWeapon;
     private Vector2 movementInput;
     public Vector2 boxsize;
     private Vector2 input;
@@ -38,7 +42,7 @@ public class CombatPlayer : MonoBehaviour
     public Camera mainCamera;
     public int health = 0;
     public float direction;
-
+    private Vector2 shootDirection;
 
 
     public AudioClip ShootFX;
@@ -119,8 +123,9 @@ public class CombatPlayer : MonoBehaviour
 
     private void AimMouse(InputAction.CallbackContext context)
     {
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>());
-        gun.transform.right = mousepos - (Vector2)gun.transform.position;
+        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);//context.ReadValue<Vector2>());
+        shootDirection = mousepos - (Vector2)transform.position;
+        //gun.transform.right = mousepos - (Vector2)gun.transform.position;
     }
 
  
@@ -128,24 +133,63 @@ public class CombatPlayer : MonoBehaviour
     {
         if (context.ReadValue<Vector2>() != Vector2.zero)
         {
-            gun.transform.right = context.ReadValue<Vector2>();
+            shootDirection = context.ReadValue<Vector2>();
         }
 
     }
 
-   
+    public void SwapWeapon(InputAction.CallbackContext context)
+    {
+        if (currentWeapon == WeaponType.Fist)
+        {
+            currentWeapon = WeaponType.Revolver;
+        }
+        else
+        {
+            currentWeapon = WeaponType.Fist;
+        }
+    }
+
+    public void Attack(InputAction.CallbackContext context)
+    {
+       if (currentWeapon == WeaponType.Fist)
+        {
+            Slap();
+        }
+       
+       if (currentWeapon == WeaponType.Revolver)
+        {
+            Shoot(context);
+        }
+    }
+
+
+    private void Slap()
+    {
+        Debug.Log("Slap swing");
+        if (Physics2D.OverlapBox(transform.position + offset + Vector3.down * castDistance, boxsize, 0f))
+        {
+            Debug.Log("Slap Hit");
+        }
+    }
+    
+        
+    
 
     public void Shoot(InputAction.CallbackContext context)
     {
        
         if (context.performed &&  bullets > 0)
         {
-            AudioSource.PlayClipAtPoint(ShootFX, transform.position);
-            GameObject proj = Instantiate(projectilePrefab, spawn.transform.position, Quaternion.identity);
-            
+
+            //GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
+            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+            Debug.Log($"Shoot Direction: {shootDirection}");
+            GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.Euler(0f, 0f, angle));
+
+
             Projectiles projScript = proj.GetComponent<Projectiles>();
            
-            proj.transform.right = gun.transform.right;
            
             StartCoroutine(GunCooldown());
             bullets -= 1;
