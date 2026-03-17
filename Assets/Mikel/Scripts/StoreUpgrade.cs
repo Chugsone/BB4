@@ -14,7 +14,7 @@ public class StoreUpgrade : MonoBehaviour
     [Header("Upgrade Info")]
     public string upgradeName;
     public int startPrice;
-    public float upgradePriceMultiplier = 1f;
+    public float upgradePriceMultiplier;
     public float moneyPerUpgrade;
 
     [Header("Managers")]
@@ -24,11 +24,6 @@ public class StoreUpgrade : MonoBehaviour
 
     private void Start()
     {
-        if (gameManager == null)
-        {
-            gameManager = GameManager.instance;
-        }
-
         UpdateUI();
     }
 

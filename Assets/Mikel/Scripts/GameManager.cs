@@ -9,33 +9,13 @@ public class GameManager : MonoBehaviour
 {
     public TMP_Text countText;
     public TMP_Text incomeText;
-    public Button manualClick;
     [SerializeField] StoreUpgrade[] storeUpgrades;
     [SerializeField] int updatesPerSecond = 5;
-
-    const string SaveKey = "GM_Count";
 
     [HideInInspector] public float count = 0;
     float nextIdleTime = 1;
     float lastIncomeValue = 0;
 
-    public static GameManager instance;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            Load();
-            SceneManager.sceneLoaded += OnSceneLoaded;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-    }
 
     private void Start()
     {
@@ -62,8 +42,6 @@ public class GameManager : MonoBehaviour
         lastIncomeValue = sum;
         count += sum / updatesPerSecond;
         UpdateUI();
-
-        Save();
     }
 
     public void ClickAction()
@@ -71,7 +49,6 @@ public class GameManager : MonoBehaviour
         count++;
         count += lastIncomeValue * 0.02f;
         UpdateUI();
-        Save();
     }
 
     public bool PurchaseAction(int cost)
@@ -80,7 +57,6 @@ public class GameManager : MonoBehaviour
         {
             count -= cost;
             UpdateUI();
-            Save();
             return true;
         }
         return false;
@@ -92,46 +68,11 @@ public class GameManager : MonoBehaviour
         if (incomeText != null) incomeText.text = lastIncomeValue.ToString();
     }
 
-    void Save()
-    {
-        PlayerPrefs.SetFloat(SaveKey, count);
-        PlayerPrefs.Save();
-    }
-
-    void Load()
-    {
-        count = PlayerPrefs.GetFloat(SaveKey, 0f);
-    }
-
-    void OnApplicationQuit()
-    {
-        Save();
-    }
-
-    void OnApplicationPause(bool paused)
-    {
-        if (paused) Save();
-    }
 
     void OnDestroy()
     {
-        if (instance == this)
-            SceneManager.sceneLoaded -= OnSceneLoaded;
+       
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (countText == null)
-        {
-            var ctGO = GameObject.Find("CountText");
-            if (ctGO != null) countText = ctGO.GetComponent<TMP_Text>();
-        }
-
-        if (incomeText == null)
-        {
-            var itGO = GameObject.Find("IncomeText");
-            if (itGO != null) incomeText = itGO.GetComponent<TMP_Text>();
-        }
-        UpdateUI();
-    }
+ 
 }
