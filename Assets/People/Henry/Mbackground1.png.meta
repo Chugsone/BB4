@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 109301405ea47bd42a67bdf24236c5fe
+guid: 181d714ded64d5c47862f5b58bdf26bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7913648878844451858
-    second: BobbingArrow_0
+      213: 8440008130781508519
+    second: Mbackground1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobbingArrow_0
+      name: Mbackground1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21c11bc1abde2dd60800000000000000
-      internalID: 7913648878844451858
+      spriteID: 7a3f3a88daee02570800000000000000
+      internalID: 8440008130781508519
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BobbingArrow_0: 7913648878844451858
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

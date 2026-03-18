@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 109301405ea47bd42a67bdf24236c5fe
+guid: a4416c136fbb23444a6054efa34eb182
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7913648878844451858
-    second: BobbingArrow_0
+      213: -198938125430884413
+    second: Menu_0
+  - first:
+      213: -1909268238846872576
+    second: Menu_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobbingArrow_0
+      name: Menu_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
+        width: 587
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21c11bc1abde2dd60800000000000000
-      internalID: 7913648878844451858
+      spriteID: 3c7f86534da3d3df0800000000000000
+      internalID: -198938125430884413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_1
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 7
+        width: 477
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004b89a07aae085e0800000000000000
+      internalID: -1909268238846872576
       vertices: []
       indices: 
       edges: []
@@ -160,8 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BobbingArrow_0: 7913648878844451858
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
