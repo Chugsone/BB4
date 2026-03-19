@@ -210,10 +210,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      RedBrickBuild_0: 4151704413367394927
-      RedBrickBuild_1: 3335157289634519296
-      RedBrickBuild_2: -5303454252066802065
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

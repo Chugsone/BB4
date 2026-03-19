@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3776225612988610687}
   - component: {fileID: 4796264384765389629}
   m_Layer: 0
-  m_Name: New Tile Palette
+  m_Name: New Tile Palette 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

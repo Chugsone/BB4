@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -385,17 +385,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      RedYelWhBuild_0: -3590741662226613635
-      RedYelWhBuild_1: 9071197590518446007
-      RedYelWhBuild_2: 9088726264226331549
-      RedYelWhBuild_3: -5831394428202314007
-      RedYelWhBuild_4: -7579090862365197845
-      RedYelWhBuild_5: -6673484811541923610
-      RedYelWhBuild_6: -7048707692530213306
-      RedYelWhBuild_7: 1072206638122658897
-      RedYelWhBuild_8: -337323714710958624
-      RedYelWhBuild_9: 3128025857920768356
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
