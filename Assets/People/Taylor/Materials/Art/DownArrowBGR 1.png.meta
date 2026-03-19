@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 4036ee66dade332468f5b47213e6b924
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -395835695196301009
+    second: DownArrowBGR 1_0
+  - first:
+      213: -630570342084049755
+    second: DownArrowBGR 1_1
+  - first:
+      213: 236590859688924846
+    second: DownArrowBGR 1_2
+  - first:
+      213: 5815893012157813884
+    second: DownArrowBGR 1_3
+  - first:
+      213: -245765646050564960
+    second: DownArrowBGR 1_4
+  - first:
+      213: -4172023560385686123
+    second: DownArrowBGR 1_5
+  - first:
+      213: 5241014493403168418
+    second: DownArrowBGR 1_6
+  - first:
+      213: -6068760631581987831
+    second: DownArrowBGR 1_7
+  - first:
+      213: 6730599354975979257
+    second: DownArrowBGR 1_8
+  - first:
+      213: 7532584931387940762
+    second: DownArrowBGR 1_9
+  - first:
+      213: -5649709635615540656
+    second: DownArrowBGR 1_10
+  - first:
+      213: -2896019718899921516
+    second: DownArrowBGR 1_11
+  - first:
+      213: -7362074651302937838
+    second: DownArrowBGR 1_12
+  - first:
+      213: -1242051310423016993
+    second: DownArrowBGR 1_13
+  - first:
+      213: -497733896925151354
+    second: DownArrowBGR 1_14
+  - first:
+      213: -6004237917861955725
+    second: DownArrowBGR 1_15
+  - first:
+      213: 957014620059271210
+    second: DownArrowBGR 1_16
+  - first:
+      213: -6212859040125575056
+    second: DownArrowBGR 1_17
+  - first:
+      213: 2276157977368246433
+    second: DownArrowBGR 1_18
+  - first:
+      213: -7888010164707530079
+    second: DownArrowBGR 1_19
+  - first:
+      213: -1959060704702723371
+    second: DownArrowBGR 1_20
+  - first:
+      213: -6355893425521759304
+    second: DownArrowBGR 1_21
+  - first:
+      213: 6906130853391950310
+    second: DownArrowBGR 1_22
+  - first:
+      213: -5564755836850594955
+    second: DownArrowBGR 1_23
+  - first:
+      213: 6629253568415637767
+    second: DownArrowBGR 1_24
+  - first:
+      213: -1002231992975668736
+    second: DownArrowBGR 1_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DownArrowBGR 1_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 384
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29976e4885b18af0800000000000000
+      internalID: -395835695196301009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 384
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a40f226d93cf37f0800000000000000
+      internalID: -630570342084049755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 384
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6dcd4222a884300800000000000000
+      internalID: 236590859688924846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_3
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 384
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74d75171e336b050800000000000000
+      internalID: 5815893012157813884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 384
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a46921727dd69cf0800000000000000
+      internalID: -245765646050564960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 316
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59596a81daef916c0800000000000000
+      internalID: -4172023560385686123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 316
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae38f5e9e2dbb840800000000000000
+      internalID: 5241014493403168418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 317
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c2ea7fb5e67cba0800000000000000
+      internalID: -6068760631581987831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 316
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f601def374e76d50800000000000000
+      internalID: 6730599354975979257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_9
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 316
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f96d3f51e198860800000000000000
+      internalID: 7532584931387940762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 245
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ab80515033891b0800000000000000
+      internalID: -5649709635615540656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 245
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d8170d8654fc7d0800000000000000
+      internalID: -2896019718899921516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 244
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b3e2f4c18a4d990800000000000000
+      internalID: -7362074651302937838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_13
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 244
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd97d61f9e853cee0800000000000000
+      internalID: -1242051310423016993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_14
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 246
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ffa1968a1b719f0800000000000000
+      internalID: -497733896925151354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 175
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37738eeec69acaca0800000000000000
+      internalID: -6004237917861955725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 175
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a200d79f9bff74d00800000000000000
+      internalID: 957014620059271210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 177
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070adb1ce9d77c9a0800000000000000
+      internalID: -6212859040125575056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_18
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 175
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8b4bdee99869f10800000000000000
+      internalID: 2276157977368246433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_19
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 180
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaefe33c88288290800000000000000
+      internalID: -7888010164707530079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 111
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da84ca2ba400d4e0800000000000000
+      internalID: -1959060704702723371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_21
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 108
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbe88dba945bc7a0800000000000000
+      internalID: -6355893425521759304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_22
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 113
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1eac0cb6187df50800000000000000
+      internalID: 6906130853391950310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_23
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 111
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b1dbabc0406c2b0800000000000000
+      internalID: -5564755836850594955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_24
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 116
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701a7674ff6dffb50800000000000000
+      internalID: 6629253568415637767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownArrowBGR 1_25
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 44
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a472cff4b5712f0800000000000000
+      internalID: -1002231992975668736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DownArrowBGR 1_0: -395835695196301009
+      DownArrowBGR 1_1: -630570342084049755
+      DownArrowBGR 1_10: -5649709635615540656
+      DownArrowBGR 1_11: -2896019718899921516
+      DownArrowBGR 1_12: -7362074651302937838
+      DownArrowBGR 1_13: -1242051310423016993
+      DownArrowBGR 1_14: -497733896925151354
+      DownArrowBGR 1_15: -6004237917861955725
+      DownArrowBGR 1_16: 957014620059271210
+      DownArrowBGR 1_17: -6212859040125575056
+      DownArrowBGR 1_18: 2276157977368246433
+      DownArrowBGR 1_19: -7888010164707530079
+      DownArrowBGR 1_2: 236590859688924846
+      DownArrowBGR 1_20: -1959060704702723371
+      DownArrowBGR 1_21: -6355893425521759304
+      DownArrowBGR 1_22: 6906130853391950310
+      DownArrowBGR 1_23: -5564755836850594955
+      DownArrowBGR 1_24: 6629253568415637767
+      DownArrowBGR 1_25: -1002231992975668736
+      DownArrowBGR 1_3: 5815893012157813884
+      DownArrowBGR 1_4: -245765646050564960
+      DownArrowBGR 1_5: -4172023560385686123
+      DownArrowBGR 1_6: 5241014493403168418
+      DownArrowBGR 1_7: -6068760631581987831
+      DownArrowBGR 1_8: 6730599354975979257
+      DownArrowBGR 1_9: 7532584931387940762
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
