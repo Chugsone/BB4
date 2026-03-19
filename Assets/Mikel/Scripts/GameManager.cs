@@ -40,22 +40,22 @@ public class GameManager : MonoBehaviour
             storeUpgrade.UpdateUI();
         }
         lastIncomeValue = sum;
-        count += sum / updatesPerSecond;
+        SaveDataController.Instance.current.Currency += (int)(sum / updatesPerSecond);
         UpdateUI();
     }
 
     public void ClickAction()
     {
-        count++;
-        count += lastIncomeValue * 0.02f;
+        SaveDataController.Instance.current.Currency++;
+        SaveDataController.Instance.current.Currency += (int)(lastIncomeValue * 0.02f);
         UpdateUI();
     }
 
     public bool PurchaseAction(int cost)
     {
-        if (count >= cost)
+        if (SaveDataController.Instance.current.Currency >= cost)
         {
-            count -= cost;
+            SaveDataController.Instance.current.Currency -= cost;
             UpdateUI();
             return true;
         }
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
 
     void UpdateUI()
     {
-        if (countText != null) countText.text = Mathf.RoundToInt(count).ToString();
+        if (countText != null) countText.text = Mathf.RoundToInt(SaveDataController.Instance.current.Currency).ToString();
         if (incomeText != null) incomeText.text = lastIncomeValue.ToString();
     }
 

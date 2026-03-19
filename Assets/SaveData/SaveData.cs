@@ -13,4 +13,5 @@ public struct SaveData
 public class SkinList
 {
     public List<string> Skins; //To access this use SaveDataController.Instance.current.UnlockedSkins.Skins    
+
 }
