@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 181d714ded64d5c47862f5b58bdf26bf
+guid: 1e622989a1f6c804f95853f11602a24e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8440008130781508519
-    second: Mbackground1_0
+      213: 6935449927010160594
+    second: MenuArt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mbackground1_0
+      name: MenuArt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -139,10 +139,98 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7a3f3a88daee02570800000000000000
-      internalID: 8440008130781508519
+      spriteID: e66b4bab739aa354fbc33c4d51a7eaee
+      internalID: -1464092673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuArt_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300af7b092a6cef49bff979a69135c71
+      internalID: -1161128107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuArt_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37172a53089ec0241a398d5098e3b76e
+      internalID: -1566597173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuArt_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cec2759ebea3c4bb93ba45fe1b8f05
+      internalID: -513162506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuArt_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba871c837d96e245bdd1546245428df
+      internalID: 95821678
       vertices: []
       indices: 
       edges: []
@@ -151,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c3197ba0e4d1adc4fbba0676cddf3638
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +249,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mbackground1_0: 8440008130781508519
+      MenuArt_0: -1464092673
+      MenuArt_1: -1161128107
+      MenuArt_2: -1566597173
+      MenuArt_3: -513162506
+      MenuArt_4: 95821678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

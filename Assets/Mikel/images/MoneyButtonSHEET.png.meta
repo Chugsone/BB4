@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 9216093349126b047be6add039aef579
+guid: bf591eeba7abf084b93dad622743d858
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7968586648643872996
-    second: Mbackground2_0
+      213: -665929922944151501
+    second: MoneyButtonSHEET_0
+  - first:
+      213: 4615917593357645215
+    second: MoneyButtonSHEET_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mbackground2_0
+      name: MoneyButtonSHEET_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 611
+        y: 251
+        width: 729
+        height: 492
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1759a599a4e96190800000000000000
-      internalID: -7968586648643872996
+      spriteID: 3305c99634422c6f0800000000000000
+      internalID: -665929922944151501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoneyButtonSHEET_1
+      rect:
+        serializedVersion: 2
+        x: 2531
+        y: 251
+        width: 729
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95fe8058980f0040800000000000000
+      internalID: 4615917593357645215
       vertices: []
       indices: 
       edges: []
@@ -160,8 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Mbackground2_0: -7968586648643872996
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
