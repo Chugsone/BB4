@@ -31,7 +31,23 @@ public class Startmenu : MonoBehaviour
         foreach(Sprite spr in backgrounds)
         {
             currentImage.sprite = spr;
+            for (int i = 0; i < 20; i++)
+            {
+                currentImage.color = new Color(1f, 1f, 1f, 0f + (i / 20f));
+                yield return new WaitForSeconds(.05f);
+
+            }
+            currentImage.color = new Color(1f, 1f, 1f, 1f);
             yield return new WaitForSeconds(swapTime);
+            for (int i = 0; i < 20; i++)
+            {
+                currentImage.color = new Color(1f, 1f, 1f, 1f - (i / 20f));
+                yield return new WaitForSeconds(.05f);
+                
+            }
+            yield return new WaitForSeconds(.1f);
+
+
         }
         StartCoroutine(Scroll());
     }
