@@ -129,9 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1c599fe5d9a85428861125f78dc64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1
   offset: {x: 0, y: 0, z: 0}
-  detectionRange: 6.55
+  enemyHealth: 3
+  detectionRange: 7
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
