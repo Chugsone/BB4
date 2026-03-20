@@ -9,13 +9,14 @@ public class Projectiles : MonoBehaviour
     private Collider2D col;
     private Rigidbody2D rb;
 
-    public float knockback;
+  
     public float speed;
     public float lifetime;
-    public float knockbackTime;
-    [HideInInspector] public int Damage = 1;
+   
+   public int Damage = 1;
     [HideInInspector] public int pierceCount = 1;
     private Vector2 direction;
+    public EnemyAI enemyAI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,6 +46,9 @@ public class Projectiles : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             Debug.Log("Hit Enemy");
+            enemyAI = collision.GetComponent<EnemyAI>();
+            enemyAI.enemyHealth -= Damage;
+            Destroy(gameObject);
         }
     }
 }

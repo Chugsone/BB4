@@ -14,7 +14,7 @@ public class CombatPlayer : MonoBehaviour
   //  [SerializeField] private Animator animator;
  //   [SerializeField] private Animator gunAnimator;
     
-    [SerializeField] private float ReloadTime;
+    
 
 
     
@@ -33,10 +33,9 @@ public class CombatPlayer : MonoBehaviour
     public float speed = 1f;
     public float topSpeed = 10f;   
     public float castDistance;
-    
-    public float KBForce;
-    public float KBCounter;
-    public float KBTotalTime;
+
+    private float timeBtwAttack;
+    public float startTimeBtwAttack;
 
     public GameObject projectilePrefab;
     public Camera mainCamera;
@@ -52,6 +51,7 @@ public class CombatPlayer : MonoBehaviour
    
     public int mag;
     public int bullets;
+    
 
     
 
@@ -77,7 +77,16 @@ public class CombatPlayer : MonoBehaviour
 
     private void Update()
     {
-       
+
+        if (timeBtwAttack <= 0)
+        {
+            timeBtwAttack = startTimeBtwAttack;
+
+        }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
+        }
 
         if (GodMode)
         {
@@ -152,9 +161,15 @@ public class CombatPlayer : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext context)
     {
+
+        if (!context.performed)
+        {
+            return;
+        }
+
        if (currentWeapon == WeaponType.Fist)
         {
-            Slap();
+            Slap(context);
         }
        
        if (currentWeapon == WeaponType.Revolver)
@@ -164,12 +179,24 @@ public class CombatPlayer : MonoBehaviour
     }
 
 
-    private void Slap()
+    private void Slap(InputAction.CallbackContext context)
     {
-        Debug.Log("Slap swing");
-        if (Physics2D.OverlapBox(transform.position + offset + Vector3.down * castDistance, boxsize, 0f))
+
+        if (!context.performed)
         {
-            Debug.Log("Slap Hit");
+            return;
+        }
+
+        Debug.Log("Slap swing");
+       Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(transform.position + offset + Vector3.down * castDistance, boxsize, 0f);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                Debug.Log("Hit Enemy");
+                EnemyAI enemyAI = enemy.GetComponent<EnemyAI>();
+                enemyAI.enemyHealth -= 1;
+            }
         }
     }
     

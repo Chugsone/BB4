@@ -62,7 +62,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3006570885462716473}
@@ -139,14 +139,12 @@ MonoBehaviour:
   rb: {fileID: 4054192274716585022}
   gun: {fileID: 1855466895847293658}
   ReloadTime: 0
-  boxsize: {x: 0, y: 0}
+  boxsize: {x: 4.75, y: 3.73}
   offset: {x: 0, y: 0, z: 0}
   speed: 25
   topSpeed: 50
   castDistance: 0
-  KBForce: 0
-  KBCounter: 0
-  KBTotalTime: 0
+  startTimeBtwAttack: 0
   projectilePrefab: {fileID: 21813456229864849, guid: acf5f3fbde1b8144c82b3a849db7e231, type: 3}
   mainCamera: {fileID: 0}
   health: 0

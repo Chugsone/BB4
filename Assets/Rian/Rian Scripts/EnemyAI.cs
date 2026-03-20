@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class NewMittensAI : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     public float moveSpeed = 2f;
     Rigidbody2D rb;
@@ -17,7 +17,7 @@ public class NewMittensAI : MonoBehaviour
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
 
-   
+   public float enemyHealth = 3f;
 
     private bool playerDetector = false;
     public float detectionRange = 10f;
@@ -40,7 +40,10 @@ public class NewMittensAI : MonoBehaviour
 
     private void Update()
     {
-
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
