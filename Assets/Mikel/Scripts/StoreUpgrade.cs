@@ -60,7 +60,7 @@ public class StoreUpgrade : MonoBehaviour
 
         bool canPurchase = false;
         if (gameManager != null)
-            canPurchase = gameManager.count >= price;
+            canPurchase = SaveDataController.Instance.current.Currency >= price;
 
         if (upgradeButton != null)
             upgradeButton.interactable = canPurchase;

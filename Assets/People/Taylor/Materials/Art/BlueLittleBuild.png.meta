@@ -132,21 +132,17 @@ TextureImporter:
       name: BlueLittleBuild_0
       rect:
         serializedVersion: 2
-        x: 456
-        y: 17
-        width: 973
-        height: 1003
+        x: 265
+        y: 0
+        width: 1502
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline:
-      - - {x: -744, y: -22}
-        - {x: -651, y: -22}
-        - {x: -651, y: -22}
-        - {x: -744, y: -22}
+      outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
       spriteID: d7cb835c7589fe840800000000000000
       internalID: 5255586792903064701
@@ -163,12 +159,12 @@ TextureImporter:
         width: 30
         height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
       spriteID: af8538654e374f890800000000000000
       internalID: -7425182461085918982
@@ -180,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e536441c06e873741a90b9dec489af53
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

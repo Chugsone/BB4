@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 360
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,10 +159,10 @@ TextureImporter:
       name: RoadTiles_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 829
-        width: 362
-        height: 191
+        x: 47
+        y: 828
+        width: 365
+        height: 192
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
         serializedVersion: 2
         x: 397
         y: 671
-        width: 367
-        height: 193
-      alignment: 9
-      pivot: {x: 0.49457994, y: 0.45127118}
+        width: 368
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: RoadTiles_2
       rect:
         serializedVersion: 2
-        x: 779
-        y: 802
-        width: 361
-        height: 215
+        x: 777
+        y: 805
+        width: 365
+        height: 213
       alignment: 9
-      pivot: {x: 0.49861497, y: 0.5023256}
+      pivot: {x: 0.5000002, y: 0.4654515}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: RoadTiles_3
       rect:
         serializedVersion: 2
-        x: 1503
+        x: 1506
         y: 810
-        width: 367
-        height: 217
-      alignment: 9
-      pivot: {x: 0.54675114, y: 0.44362274}
+        width: 364
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: RoadTiles_5
       rect:
         serializedVersion: 2
-        x: 774
-        y: 489
-        width: 362
-        height: 211
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 772
+        y: 429
+        width: 365
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5035897, y: 0.5433545}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: RoadTiles_6
       rect:
         serializedVersion: 2
-        x: 1467
-        y: 556
-        width: 364
-        height: 220
-      alignment: 9
-      pivot: {x: 0.4406507, y: 0.4263533}
+        x: 1468
+        y: 554
+        width: 365
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: RoadTiles_7
       rect:
         serializedVersion: 2
-        x: 124
-        y: 148
+        x: 127
+        y: 147
         width: 367
-        height: 194
-      alignment: 9
-      pivot: {x: 0.4414169, y: 0.5103093}
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -335,10 +335,10 @@ TextureImporter:
       name: RoadTiles_8
       rect:
         serializedVersion: 2
-        x: 582
-        y: 235
-        width: 362
-        height: 190
+        x: 580
+        y: 234
+        width: 366
+        height: 192
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,12 +357,12 @@ TextureImporter:
       name: RoadTiles_9
       rect:
         serializedVersion: 2
-        x: 939
-        y: 19
-        width: 374
-        height: 224
-      alignment: 9
-      pivot: {x: 0.4903734, y: 0.41963062}
+        x: 941
+        y: 24
+        width: 367
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,7 +382,7 @@ TextureImporter:
         x: 1488
         y: 141
         width: 369
-        height: 236
+        height: 196
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,7 +401,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dd19f95e9646b7d4b9c99748a5b27fa9
+    spriteID: 4d5bd54a9a8f0d549b3951db63d743d1
     internalID: 0
     vertices: []
     indices: 
