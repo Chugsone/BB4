@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: bf591eeba7abf084b93dad622743d858
+guid: 6ddfc77cd8141f441883bea1f9ecd549
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -665929922944151501
-    second: MoneyButtonSHEET_0
-  - first:
-      213: 4615917593357645215
-    second: MoneyButtonSHEET_1
+      213: 6453282845555693049
+    second: NavyWhiteGrayC_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MoneyButtonSHEET_0
+      name: NavyWhiteGrayC_0
       rect:
         serializedVersion: 2
-        x: 611
-        y: 251
-        width: 729
-        height: 492
+        x: 541
+        y: 496
+        width: 817
+        height: 965
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3305c99634422c6f0800000000000000
-      internalID: -665929922944151501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoneyButtonSHEET_1
-      rect:
-        serializedVersion: 2
-        x: 2531
-        y: 251
-        width: 729
-        height: 492
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f95fe8058980f0040800000000000000
-      internalID: 4615917593357645215
+      spriteID: 9f5187c9e8aae8950800000000000000
+      internalID: 6453282845555693049
       vertices: []
       indices: 
       edges: []
@@ -185,9 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MoneyButtonSHEET_0: -665929922944151501
-      MoneyButtonSHEET_1: 4615917593357645215
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
