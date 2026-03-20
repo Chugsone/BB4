@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TerracottaColorGraryBaseBrickBuild_0: 5558639559646737458
+      TerracottaColorGraryBaseBrickBuild_1: -1903870295308534224
+      TerracottaColorGraryBaseBrickBuild_2: 5096754581627486095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

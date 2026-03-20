@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MoneyButtonSHEET_0: -665929922944151501
+      MoneyButtonSHEET_1: 4615917593357645215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
