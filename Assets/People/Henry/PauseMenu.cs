@@ -11,7 +11,7 @@ public class Pausemenu : MonoBehaviour
     {
             
         isPaused = true;
-        Pausemenu.SetActive(true);
+        pauseMenu.SetActive(true);
 
         Time.timeScale = 0;
     }
@@ -23,8 +23,16 @@ public class Pausemenu : MonoBehaviour
 
     public void Resume(InputAction.CallbackContext ctx)
     {
-        isPaused = false; 
-        Pausemenu.SetActive(false);
+        isPaused = false;
+        pauseMenu.SetActive(false);
+
+        Time.timeScale = 1;
+    }
+
+    public void ResumeButt()
+    {
+        isPaused = false;
+        pauseMenu.SetActive(false);
 
         Time.timeScale = 1;
     }
@@ -32,7 +40,7 @@ public class Pausemenu : MonoBehaviour
     public void Toggle(InputAction.CallbackContext ctx)
     {
         isPaused = !isPaused;
-        Pausemenu.SetActive(isPaused);
+        pauseMenu.SetActive(isPaused);
 
         Time.timeScale = isPaused ? 0 : 1;
     }
