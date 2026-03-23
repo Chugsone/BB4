@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
@@ -18,6 +17,7 @@ public class EnemyAI : MonoBehaviour
     public Vector3 offset = new(1, 0);
 
    public float enemyHealth = 3f;
+    [SerializeField] private float speed = 1f;
 
     private bool playerDetector = false;
     public float detectionRange = 10f;
@@ -51,12 +51,26 @@ public class EnemyAI : MonoBehaviour
         Debug.Log("Mittens has detected a collision.");
         if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Enemy"))
         {
-
+            if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
+            {
+                ally.allyHealth -= 1f;
+            }
+            else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
+            {
+                combatPlayer.health -= 1;
+            }
+            else
+            {
+                Debug.LogWarning("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            }
         }
     }
 
     private void FixedUpdate()
     {
+        rb.AddForce(moveDirection * speed);
+
+
         detectTimer -= Time.fixedDeltaTime;
 
         if (detectTimer <= 0f)
@@ -84,7 +98,7 @@ public class EnemyAI : MonoBehaviour
         {
             Vector3 direction = (target.position - (Vector3)transform.position + offset).normalized;
             moveDirection = direction;
-            rb.linearVelocity = new Vector2(moveDirection.x, moveDirection.y) * moveSpeed; 
+            
         }
         else
         {

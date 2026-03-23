@@ -15,8 +15,17 @@ public class AllyAI : MonoBehaviour
     Transform target;
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
+    private Vector2 movementInput;
+
+    public float allyHealth = 3f;
 
 
+
+    public Vector2 boxsize;
+    private float castDistance;
+
+    [SerializeField] private float speed = 1f;
+    [SerializeField] private float topSpeed = 10f;
 
     private bool playerDetector = false;
     public float detectionRange = 10f;
@@ -42,17 +51,26 @@ public class AllyAI : MonoBehaviour
 
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Mittens has detected a collision.");
-        if (collision.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Player"))
         {
-
+           collision.gameObject.GetComponent<EnemyAI>().enemyHealth -= 1;
+            Vector3 direction = collision.gameObject.transform.position - transform.position;
+            Debug.Log("Direction of knockback: " + direction.normalized);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 500f);
         }
+
     }
 
     private void FixedUpdate()
     {
+        
+        rb.AddForce(moveDirection * speed);
+
+
+
         detectTimer -= Time.fixedDeltaTime;
 
         if (detectTimer <= 0f)
@@ -80,7 +98,7 @@ public class AllyAI : MonoBehaviour
         {
             Vector3 direction = (target.position - (Vector3)transform.position + offset).normalized;
             moveDirection = direction;
-            rb.linearVelocity = new Vector2(moveDirection.x, moveDirection.y) * moveSpeed;
+           
         }
         else
         {
@@ -91,7 +109,9 @@ public class AllyAI : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+        Gizmos.DrawWireCube(transform.position + offset + Vector3.down * castDistance, boxsize);
     }
+   
 
 }
 

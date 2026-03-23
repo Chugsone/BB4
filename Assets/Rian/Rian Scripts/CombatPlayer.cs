@@ -39,7 +39,7 @@ public class CombatPlayer : MonoBehaviour
 
     public GameObject projectilePrefab;
     public Camera mainCamera;
-    public int health = 0;
+    public float health = 0;
     public float direction;
     private Vector2 shootDirection;
 

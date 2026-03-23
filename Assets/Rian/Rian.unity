@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2246139171792011890, guid: 6e31886919fb7ad4690ff752b2677ecd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4104979920575101556, guid: 6e31886919fb7ad4690ff752b2677ecd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -460,11 +464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5443611435686480441, guid: c564077fd48ef7b4787aa37675862ba3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.76
+      value: -1.58
       objectReference: {fileID: 0}
     - target: {fileID: 5443611435686480441, guid: c564077fd48ef7b4787aa37675862ba3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5443611435686480441, guid: c564077fd48ef7b4787aa37675862ba3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -553,6 +557,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5417220445474389047, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215055935911521946, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
+      propertyPath: offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215055935911521946, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
+      propertyPath: boxsize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215055935911521946, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
+      propertyPath: boxsize.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215055935911521946, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215055935911521946, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
+      propertyPath: castDistance
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

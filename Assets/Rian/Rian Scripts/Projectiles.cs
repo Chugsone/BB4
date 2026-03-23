@@ -16,7 +16,7 @@ public class Projectiles : MonoBehaviour
    public int Damage = 1;
     [HideInInspector] public int pierceCount = 1;
     private Vector2 direction;
-    public EnemyAI enemyAI;
+    private EnemyAI enemyAI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
