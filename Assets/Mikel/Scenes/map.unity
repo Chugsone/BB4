@@ -772,8 +772,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _saveDataAsset: {fileID: 11400000, guid: d67848674bb556c41836a2b7a15c8d74, type: 2}
   current:
-    UnlockedSkins:
-      Skins: []
+    Upgrades:
+      Levels: 
+      Income: 
     Currency: 0
   _directory: SaveData
   _fileName: SaveData.json
@@ -952,6 +953,7 @@ MonoBehaviour:
   incomeText: {fileID: 1262523451}
   storeUpgrades: []
   updatesPerSecond: 5
+  managerID: -1
   count: 0
 --- !u!1 &1262523449
 GameObject:

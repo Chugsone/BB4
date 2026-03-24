@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class StoreUpgrade : MonoBehaviour
 {
@@ -19,11 +20,21 @@ public class StoreUpgrade : MonoBehaviour
 
     [Header("Managers")]
     public GameManager gameManager;
-    
+
+    [SerializeField] private int upgradeID; // Unique ID for this upgrade, used for saving/loading
+
     int level = 0;
 
     private void Start()
     {
+        List<int> levels = SaveDataController.Instance.current.Upgrades.Levels;
+        if (levels != null && levels.Count > 0)
+        {
+            Debug.Log("TEst");
+            // SaveDataController.Instance.current.Upgrades.Levels = new List<int>() {0, 0, 0,0 ,0 ,0 ,0 ,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+            level = SaveDataController.Instance.current.Upgrades.Levels[upgradeID];
+        }
+
         UpdateUI();
     }
 
@@ -44,6 +55,9 @@ public class StoreUpgrade : MonoBehaviour
         if (purchaseSuccessful)
         {
             level++;
+            SaveDataController.Instance.current.Upgrades.Levels[upgradeID] = level;
+
+
             UpdateUI();
         }
     }
