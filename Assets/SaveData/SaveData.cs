@@ -1,17 +1,19 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using Unity.Mathematics;
 
 [Serializable]
 public struct SaveData
 {
-    public SkinList UnlockedSkins;
+    public UpgradeList Upgrades; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
     public int Currency; //To access this use SaveDataController.Instance.current.Currency
 }
 
 [Serializable]
-public class SkinList
+public class UpgradeList
 {
-    public List<string> Skins; //To access this use SaveDataController.Instance.current.UnlockedSkins.Skins    
+    public List<int> Levels; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
+    public List<int> Income; //To access this use SaveDataController.Instance.current.UpgradeList.Income 
 
 }

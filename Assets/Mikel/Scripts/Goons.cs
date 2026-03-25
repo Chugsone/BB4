@@ -1,0 +1,17 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Goons", menuName = "Scriptable Objects/Goons")]
+public class Goons : ScriptableObject
+{
+    public int Wage;
+    public int Strength;
+    public int Sales;
+    public int Health;
+
+
+
+    [TextArea]public string Description;
+
+
+
+}
