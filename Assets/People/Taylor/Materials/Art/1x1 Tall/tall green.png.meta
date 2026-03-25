@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 73ce0581cf1a7fc4ba55b61884f9cfcc
+guid: 7c2de128ce8b91e478bbbfce31eff49b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7373529626052519293
-    second: telephone1_0
-  - first:
-      213: 7461812229945175916
-    second: telephone1_1
-  - first:
-      213: 5118264627656469425
-    second: telephone1_2
+      213: -589823028785932351
+    second: tall green_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,67 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: telephone1_0
+      name: tall green_0
       rect:
         serializedVersion: 2
-        x: 1081
-        y: 1906
-        width: 9
-        height: 9
+        x: 724
+        y: 72
+        width: 407
+        height: 787
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d75eda5d02a045660800000000000000
-      internalID: 7373529626052519293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: telephone1_1
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 1091
-        width: 64
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6f2c8250bead8760800000000000000
-      internalID: 7461812229945175916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: telephone1_2
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 577
-        width: 1645
-        height: 1271
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bb29e5af8ab70740800000000000000
-      internalID: 5118264627656469425
+      spriteID: 1c79ed0941780d7f0800000000000000
+      internalID: -589823028785932351
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4c4ac8f5a20c31c4ab79faaa81cc24d6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      telephone1_0: 7373529626052519293
-      telephone1_1: 7461812229945175916
-      telephone1_2: 5118264627656469425
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
