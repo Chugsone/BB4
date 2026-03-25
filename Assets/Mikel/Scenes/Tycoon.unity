@@ -1470,7 +1470,7 @@ MonoBehaviour:
   - {fileID: 491744120}
   - {fileID: 2058905015}
   - {fileID: 346881031}
-  updatesPerSecond: 5
+  updatesPerSecond: 99999999
   managerID: 0
   count: 0
 --- !u!1 &1154371271
