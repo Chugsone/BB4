@@ -11,7 +11,8 @@ public class Goons : ScriptableObject
 
 
     [TextArea]public string Description;
-
+    public Sprite icon;
+    public GameObject prefab;
 
 
 }
