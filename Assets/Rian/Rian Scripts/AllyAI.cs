@@ -48,7 +48,10 @@ public class AllyAI : MonoBehaviour
 
     private void Update()
     {
-
+        if (allyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -59,7 +62,7 @@ public class AllyAI : MonoBehaviour
            collision.gameObject.GetComponent<EnemyAI>().enemyHealth -= 1;
             Vector3 direction = collision.gameObject.transform.position - transform.position;
             Debug.Log("Direction of knockback: " + direction.normalized);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 500f);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 10f);
         }
 
     }
