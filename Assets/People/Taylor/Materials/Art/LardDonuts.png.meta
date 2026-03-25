@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LardDonuts_0: -6729166586524548949
+      LardDonuts_1: -3495604788704211171
+      LardDonuts_2: 3360197007817031341
+      LardDonuts_3: 970149058524404297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
