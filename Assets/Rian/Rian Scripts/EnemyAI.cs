@@ -18,6 +18,7 @@ public class EnemyAI : MonoBehaviour
 
    public float enemyHealth = 3f;
     [SerializeField] private float speed = 1f;
+    [SerializeField] private float topSpeed = 10f;
 
     private bool playerDetector = false;
     public float detectionRange = 10f;
@@ -46,24 +47,31 @@ public class EnemyAI : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+
         Debug.Log("Mittens has detected a collision.");
-        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Mittens has detected a collision with the player.");
             if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
             {
-                ally.allyHealth -= 1f;
+
+                Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= 1f;
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 500f);
             }
             else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
             {
+                Vector3 direction = collision.gameObject.transform.position - transform.position;
                 combatPlayer.health -= 1;
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 1000f);
             }
             else
             {
                 Debug.LogWarning("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             }
         }
+
     }
 
     private void FixedUpdate()

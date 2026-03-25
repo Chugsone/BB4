@@ -39,7 +39,7 @@ public class CombatPlayer : MonoBehaviour
 
     public GameObject projectilePrefab;
     public Camera mainCamera;
-    public float health = 0;
+    public float health = 10;
     public float direction;
     private Vector2 shootDirection;
 
@@ -51,13 +51,16 @@ public class CombatPlayer : MonoBehaviour
    
     public int mag;
     public int bullets;
-    
 
-    
+    [SerializeField] private Transform spriteTransform;
 
-   
-   
-   
+
+
+
+
+
+
+
     private void Awake()
     {
     
@@ -106,46 +109,30 @@ public class CombatPlayer : MonoBehaviour
 
         rb.AddForce(movementInput * speed);
 
-
+        if (health <= 0)
+        {
+            Debug.Log("Player has died.");
+            Destroy(gameObject);
+        }
     }
 
     
 
     public void Aim(InputAction.CallbackContext context)
     {
-        if (context.control.device is Mouse)
-            AimMouse(context);
-        else if (context.control.device is Gamepad)
-            AimGamepad(context);
-
-        //makes the gun flip upside down when aiming left
-        if (gun.transform.right.x < 0)
-        {
-            gun.transform.localScale = new Vector3(1, -1, 1);
-        }
-        else
-        {
-            gun.transform.localScale = new Vector3(1, 1, 1);
-        }
-    }
-
-
-    private void AimMouse(InputAction.CallbackContext context)
-    {
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);//context.ReadValue<Vector2>());
         shootDirection = mousepos - (Vector2)transform.position;
-        //gun.transform.right = mousepos - (Vector2)gun.transform.position;
+
+        spriteTransform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg - 90f);
+
+
     }
+
+
+   
 
  
-    private void AimGamepad(InputAction.CallbackContext context)
-    {
-        if (context.ReadValue<Vector2>() != Vector2.zero)
-        {
-            shootDirection = context.ReadValue<Vector2>();
-        }
-
-    }
+   
 
     public void SwapWeapon(InputAction.CallbackContext context)
     {
