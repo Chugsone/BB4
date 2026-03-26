@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec56627b474d7594cbec1d8b5920bfcd, type: 3}
-  m_Name: ButterBall
+  m_Name: Gustavo Fringe
   m_EditorClassIdentifier: 
   Wage: 0
   Strength: 0
   Sales: 0
   Health: 0
-  Description: "hates miku \nmassive teto fan"
-  icon: {fileID: -4885298761302449938, guid: 49248cf893c2b39449dcdbd03cd51b05, type: 3}
-  prefab: {fileID: 1153694413962919161, guid: a9f504ad404adcd4dbff22f5b6bba3ba, type: 3}
+  Description: 
+  icon: {fileID: -8855690875876968426, guid: 8b4cc0561cbe296488b61045b814b0eb, type: 3}
+  prefab: {fileID: 0}
