@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8789742475490743708}
   - component: {fileID: 678746120297086486}
   - component: {fileID: 3648978923273228290}
-  - component: {fileID: 8179527980048980000}
+  - component: {fileID: 4550056576398678160}
   m_Layer: 6
   m_Name: enemy
   m_TagString: Enemy
@@ -129,18 +129,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1c599fe5d9a85428861125f78dc64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 25
   offset: {x: 0, y: 0, z: 0}
-  enemyHealth: 3
-  speed: 1
+  enemyHealth: 999
+  speed: 5
   topSpeed: 10
   detectionRange: 7
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
   detectCooldown: 0.25
---- !u!61 &8179527980048980000
-BoxCollider2D:
+--- !u!68 &4550056576398678160
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -174,14 +174,25 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.32, y: 2.96}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.6619737, y: -0.7129915}
+  - {x: 1.4786581, y: -0.9079931}
+  - {x: 1.2237865, y: -1.1067197}
+  - {x: 1.2237865, y: -1.1067197}
+  - {x: 0.73813903, y: -1.2882109}
+  - {x: -0.16402113, y: -1.3772881}
+  - {x: -1.3028934, y: -1.0773656}
+  - {x: -1.7751908, y: -0.5578232}
+  - {x: -1.9452355, y: 0.119149685}
+  - {x: -1.6038325, y: 0.8954222}
+  - {x: -1.0427428, y: 1.3966467}
+  - {x: 0.8563368, y: 1.4257126}
+  - {x: 1.2466514, y: 1.334604}
+  - {x: 1.5426595, y: 1.060724}
+  - {x: 2.0347123, y: -0.17576146}
+  - {x: 1.5349874, y: -0.91998863}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

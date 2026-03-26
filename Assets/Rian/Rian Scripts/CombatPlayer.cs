@@ -28,7 +28,9 @@ public class CombatPlayer : MonoBehaviour
     private Vector2 movementInput;
     public Vector2 boxsize;
     private Vector2 input;
-    public Vector3 offset;
+    
+
+    [SerializeField] float attackRadius = 1.5f;
 
     public float speed = 1f;
     public float topSpeed = 10f;   
@@ -41,7 +43,10 @@ public class CombatPlayer : MonoBehaviour
     public Camera mainCamera;
     public float health = 10;
     public float direction;
+    public float knockback;
     private Vector2 shootDirection;
+
+    public LayerMask enemyLayer;
 
 
     public AudioClip ShootFX;
@@ -75,7 +80,7 @@ public class CombatPlayer : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position + offset + Vector3.down * castDistance, boxsize);
+        Gizmos.DrawWireSphere(transform.position, attackRadius);
     }
 
     private void Update()
@@ -168,22 +173,23 @@ public class CombatPlayer : MonoBehaviour
 
     private void Slap(InputAction.CallbackContext context)
     {
-
-        if (!context.performed)
-        {
-            return;
-        }
-
         Debug.Log("Slap swing");
-       Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(transform.position + offset + Vector3.down * castDistance, boxsize, 0f);
-        foreach (Collider2D enemy in hitEnemies)
+
+        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = mousepos - (Vector2)transform.position;
+        Vector3 offset = direction.normalized * castDistance;
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + offset, attackRadius, enemyLayer);
+
+        foreach (Collider2D hit in hitEnemies)
         {
-            if (enemy.CompareTag("Enemy"))
-            {
-                Debug.Log("Hit Enemy");
-                EnemyAI enemyAI = enemy.GetComponent<EnemyAI>();
-                enemyAI.enemyHealth -= 1;
-            }
+            Debug.Log("Hit Enemy");
+            EnemyAI enemyAI = hit.GetComponent<EnemyAI>();
+
+            Vector3 knockbackDirection = (hit.transform.position - transform.position).normalized * knockback;
+            enemyAI.enemyHealth -= 1f;
+
+            hit.gameObject.GetComponent<Rigidbody2D>().AddForce(knockbackDirection);
         }
     }
     
