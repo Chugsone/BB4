@@ -79,8 +79,11 @@ public class CombatPlayer : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = mousepos - (Vector2)transform.position;
+        Vector3 offset = direction.normalized * castDistance;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRadius);
+        Gizmos.DrawWireSphere(transform.position + offset, attackRadius);
     }
 
     private void Update()

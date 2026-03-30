@@ -51,6 +51,7 @@ public class AllyAI : MonoBehaviour
         if (allyHealth <= 0)
         {
             Destroy(gameObject);
+            transform.up = moveDirection;
         }
 
     }
