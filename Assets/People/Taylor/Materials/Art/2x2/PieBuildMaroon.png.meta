@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a5e658e0359659449aded6f0bcbad107
+guid: fcb8554e8e7df204eba98210f2de45d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1238047362414023677
-    second: YellowBrownTall_0
+      213: -7374130632707137337
+    second: PieBuildMaroon_0
+  - first:
+      213: -8916896523096687204
+    second: PieBuildMaroon_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: YellowBrownTall_0
+      name: PieBuildMaroon_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 14
-        width: 1045
-        height: 1715
-      alignment: 9
-      pivot: {x: 0.5036068, y: 0.15495336}
+        x: 474
+        y: 96
+        width: 960
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30ce33cbb7291dee0800000000000000
-      internalID: -1238047362414023677
+      spriteID: 7c02a266243d9a990800000000000000
+      internalID: -7374130632707137337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PieBuildMaroon_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1049
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9df7e12bd1d04480800000000000000
+      internalID: -8916896523096687204
       vertices: []
       indices: 
       edges: []
@@ -151,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2a7474dd4338f1d45ba731dff226ba92
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      YellowBrownTall_0: -1238047362414023677
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
