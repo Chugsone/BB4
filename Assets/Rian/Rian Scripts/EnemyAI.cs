@@ -16,7 +16,10 @@ public class EnemyAI : MonoBehaviour
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
 
-   public float enemyHealth = 3f;
+
+  
+
+    public float enemyHealth = 3f;
     [SerializeField] private float speed = 1f;
     [SerializeField] private float topSpeed = 10f;
 
@@ -45,6 +48,8 @@ public class EnemyAI : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        transform.up = moveDirection;
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
