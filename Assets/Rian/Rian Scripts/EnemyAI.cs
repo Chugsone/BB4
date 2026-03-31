@@ -16,12 +16,16 @@ public class EnemyAI : MonoBehaviour
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
 
+    int critChance = (int)Random.Range(0.0f, 10.0f);
 
-  
+
 
     public float enemyHealth = 3f;
     [SerializeField] private float speed = 1f;
     [SerializeField] private float topSpeed = 10f;
+
+    float knockbackForce = 100f;
+    float damageAmount = 1f;
 
     private bool playerDetector = false;
     public float detectionRange = 10f;
@@ -55,21 +59,41 @@ public class EnemyAI : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
+        critChance = (int)Random.Range(0.0f, 20.0f);
+        if (critChance <= 1)
+        {
+            knockbackForce = 800f;
+            damageAmount = 10f;
+        }
+        else if (critChance > 1 && critChance <= 16)
+        {
+            knockbackForce = 400f;
+            damageAmount = 5f;
+        }
+        else if (critChance > 16)
+        {
+            knockbackForce = 100f;
+            damageAmount = 3f;
+        }
+
+
         Debug.Log("Mittens has detected a collision.");
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Mittens has detected a collision with the player.");
             if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
             {
+               
 
-                Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= 1f;
-                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 500f);
+
+                Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= damageAmount;
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
             }
             else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
             {
                 Vector3 direction = collision.gameObject.transform.position - transform.position;
-                combatPlayer.health -= 1;
-                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 1000f);
+                combatPlayer.health -= damageAmount;
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
             }
             else
             {
@@ -124,6 +148,7 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
+   
 }
 
 

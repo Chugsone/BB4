@@ -19,10 +19,14 @@ public class AllyAI : MonoBehaviour
 
     public float allyHealth = 3f;
 
-
+    int critChance = (int)Random.Range(0.0f, 10.0f);
 
     public Vector2 boxsize;
     private float castDistance;
+
+    float knockbackForce = 100f;
+    float damageAmount = 1f;
+
 
     [SerializeField] private float speed = 1f;
     [SerializeField] private float topSpeed = 10f;
@@ -51,19 +55,37 @@ public class AllyAI : MonoBehaviour
         if (allyHealth <= 0)
         {
             Destroy(gameObject);
-            transform.up = moveDirection;
         }
+        transform.up = moveDirection;
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        critChance = (int)Random.Range(0.0f, 20.0f);
+        if (critChance <= 1)
+        {
+            knockbackForce = 200f;
+            damageAmount = 10f;
+        }
+        else if (critChance > 1 && critChance <= 16)
+        {
+            knockbackForce = 150f;
+            damageAmount = 5f;
+        }
+        else if (critChance > 16)
+        {
+            knockbackForce = 100f;
+            damageAmount = 3f;
+        }
+
+
         Debug.Log("Mittens has detected a collision.");
         if (collision.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Player"))
         {
-           collision.gameObject.GetComponent<EnemyAI>().enemyHealth -= 1;
+           collision.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageAmount;
             Vector3 direction = collision.gameObject.transform.position - transform.position;
             Debug.Log("Direction of knockback: " + direction.normalized);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 10f);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
         }
 
     }

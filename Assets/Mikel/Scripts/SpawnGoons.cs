@@ -1,18 +1,19 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
+using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Collections;
 
-public class SpawnItems : MonoBehaviour
+public class SpawnGoons : MonoBehaviour
 {
     public GameObject ButtonPrefab;
     public List<Goons> goons;
 
     public void Spawn()
     {
+        Debug.Log("Spawning Goons");
         foreach (var item in FindObjectsByType<Cursor>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             item.gameObject.SetActive(true);
@@ -56,5 +57,4 @@ public class SpawnItems : MonoBehaviour
             //   gameObject.SetActive(false);
         }
     }
-
 }
