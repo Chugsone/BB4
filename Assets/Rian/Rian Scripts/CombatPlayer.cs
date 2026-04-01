@@ -43,8 +43,14 @@ public class CombatPlayer : MonoBehaviour
     public Camera mainCamera;
     public float health = 10;
     public float direction;
-    public float knockback;
+    public float knockbackForce;
     private Vector2 shootDirection;
+
+    float damageAmount;
+    int critChance = (int)Random.Range(0.0f, 10.0f);
+    bool canSlap = true;
+
+   public float slapCooldown = 0.5f;
 
     public LayerMask enemyLayer;
 
@@ -68,7 +74,7 @@ public class CombatPlayer : MonoBehaviour
 
     private void Awake()
     {
-    
+        canSlap = true;
     }
 
     void Start()
@@ -162,7 +168,7 @@ public class CombatPlayer : MonoBehaviour
             return;
         }
 
-       if (currentWeapon == WeaponType.Fist)
+       if (currentWeapon == WeaponType.Fist && canSlap)
         {
             Slap(context);
         }
@@ -177,22 +183,44 @@ public class CombatPlayer : MonoBehaviour
     private void Slap(InputAction.CallbackContext context)
     {
         Debug.Log("Slap swing");
-
+        canSlap = false;
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
+        StartCoroutine(slapWait());
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + offset, attackRadius, enemyLayer);
 
         foreach (Collider2D hit in hitEnemies)
         {
-            Debug.Log("Hit Enemy");
-            EnemyAI enemyAI = hit.GetComponent<EnemyAI>();
+            
+         
+                
+                Debug.Log("Hit Enemy");
+                EnemyAI enemyAI = hit.GetComponent<EnemyAI>();
 
-            Vector3 knockbackDirection = (hit.transform.position - transform.position).normalized * knockback;
-            enemyAI.enemyHealth -= 1f;
+                critChance = (int)Random.Range(0.0f, 20.0f);
+                if (critChance <= 1)
+                {
+                    knockbackForce = 1000f;
+                    damageAmount = 15f;
+                }
+                else if (critChance > 1 && critChance <= 16)
+                {
+                    knockbackForce = 1000f;
+                    damageAmount = 10f;
+                }
+                else if (critChance > 16)
+                {
+                    knockbackForce = 1000f;
+                    damageAmount = 5f;
+                }
 
-            hit.gameObject.GetComponent<Rigidbody2D>().AddForce(knockbackDirection);
+                Vector3 knockbackDirection = (hit.transform.position - transform.position).normalized * knockbackForce;
+                enemyAI.enemyHealth -= 30;
+
+                hit.gameObject.GetComponent<Rigidbody2D>().AddForce(knockbackDirection);
+
         }
     }
     
@@ -223,9 +251,13 @@ public class CombatPlayer : MonoBehaviour
     }
 
     
-    
+    IEnumerator slapWait()
+    {
+        yield return new WaitForSeconds(slapCooldown);
+        canSlap = true;
+    }
 
-   
+
 
     public void Move(InputAction.CallbackContext context)
     {
