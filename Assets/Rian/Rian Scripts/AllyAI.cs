@@ -64,12 +64,12 @@ public class AllyAI : MonoBehaviour
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
-            knockbackForce = 200f;
+            knockbackForce = 800f;
             damageAmount = 10f;
         }
         else if (critChance > 1 && critChance <= 16)
         {
-            knockbackForce = 150f;
+            knockbackForce = 400f;
             damageAmount = 5f;
         }
         else if (critChance > 16)
@@ -86,6 +86,7 @@ public class AllyAI : MonoBehaviour
             Vector3 direction = collision.gameObject.transform.position - transform.position;
             Debug.Log("Direction of knockback: " + direction.normalized);
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+
         }
 
     }

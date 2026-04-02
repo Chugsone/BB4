@@ -5,12 +5,12 @@ public class Tooltips : MonoBehaviour
 {
     [SerializeField] private GameObject tooltipObject;
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter()
     {
         tooltipObject.SetActive(true);
     }
 
-    public void PointerExit(PointerEventData eventData)
+    public void PointerExit()
     {
         tooltipObject.SetActive(false);
 
