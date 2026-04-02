@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mikel/Scenes/map.unity
     guid: 5309f91fcc12b8243b12c2ae7e445ee1
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/2D Test.unity
+    guid: 076d07f838149424e93392066c9e8a09
+  - enabled: 1
+    path: Assets/People/Taylor/Scenes/TycoonTest.unity
+    guid: 766cf196462b4234890116ba10a312a7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
