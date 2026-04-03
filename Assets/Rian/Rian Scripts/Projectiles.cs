@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using NUnit.Framework.Internal.Filters;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,7 +10,8 @@ public class Projectiles : MonoBehaviour
     private Collider2D col;
     private Rigidbody2D rb;
 
-  
+    //[SerializeField] ParticleSystem Blood;
+
     public float speed;
     public float lifetime;
    
@@ -32,22 +34,27 @@ public class Projectiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void FixedUpdate()
     {
+       
         rb.linearVelocity = direction * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
+        
 
         if (collision.CompareTag("Enemy"))
         {
+            gameObject.GetComponent<SpriteRenderer>().enabled = false; //
             Debug.Log("Hit Enemy");
             enemyAI = collision.GetComponent<EnemyAI>();
             enemyAI.enemyHealth -= Damage;
+            enemyAI.PlayBlood();
             Destroy(gameObject);
         }
     }
