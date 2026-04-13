@@ -57,8 +57,8 @@ public class AllyAI : MonoBehaviour
             Destroy(gameObject);
         }
         transform.up = moveDirection;
-
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         critChance = (int)Random.Range(0.0f, 20.0f);
@@ -87,6 +87,11 @@ public class AllyAI : MonoBehaviour
             Debug.Log("Direction of knockback: " + direction.normalized);
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
 
+            //makes the player play a punching animation when attacking an enemy
+                if (gameObject.CompareTag("Player"))
+                {
+                    gameObject.GetComponent<Animator>().SetTrigger("Punch");
+            }
         }
 
     }
