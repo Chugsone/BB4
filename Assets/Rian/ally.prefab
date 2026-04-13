@@ -129,13 +129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98fbea07c14ab214ab1085437861a76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 45
   offset: {x: 0, y: 0, z: 0}
-  allyHealth: 50
+  allyHealth: 100
   boxsize: {x: 1.5, y: 1.5}
-  speed: 5
-  topSpeed: 10
-  detectionRange: 7
+  speed: 20
+  topSpeed: 50
+  detectionRange: 100
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64

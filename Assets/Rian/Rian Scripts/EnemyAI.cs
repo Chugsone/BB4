@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -52,6 +53,7 @@ public class EnemyAI : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);
+            FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
         }
 
         transform.up = moveDirection;
