@@ -29,6 +29,7 @@ public class CombatPlayer : MonoBehaviour
     public Vector2 boxsize;
     private Vector2 input;
     
+    
 
     [SerializeField] float attackRadius = 1.5f;
 
@@ -198,6 +199,7 @@ public class CombatPlayer : MonoBehaviour
                 
                 Debug.Log("Hit Enemy");
                 EnemyAI enemyAI = hit.GetComponent<EnemyAI>();
+            enemyAI.PlayBlood();
 
                 critChance = (int)Random.Range(0.0f, 20.0f);
                 if (critChance <= 1)

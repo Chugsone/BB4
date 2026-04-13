@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     int critChance = (int)Random.Range(0.0f, 10.0f);
 
 
+    [SerializeField] ParticleSystem Blood;
 
     public float enemyHealth = 3f;
     [SerializeField] private float speed = 1f;
@@ -101,6 +102,11 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
+    }
+
+    public void PlayBlood()
+    {
+        Blood.Play();
     }
 
     private void FixedUpdate()
