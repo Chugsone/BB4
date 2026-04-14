@@ -6,6 +6,8 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using Unity.Cinemachine;
+//asfg
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class AllyAI : MonoBehaviour
@@ -31,8 +33,10 @@ public class AllyAI : MonoBehaviour
     [SerializeField] private float speed = 1f;
     [SerializeField] private float topSpeed = 10f;
 
+    private bool punchingAnim;
     private bool playerDetector = false;
     public float detectionRange = 10f;
+    private float punchCooldown = 0f;
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float detectCooldown = .25f;
     private float detectTimer = 0f;
@@ -59,7 +63,7 @@ public class AllyAI : MonoBehaviour
         transform.up = moveDirection;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void HandlePunch()
     {
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
@@ -78,14 +82,13 @@ public class AllyAI : MonoBehaviour
             damageAmount = 3f;
         }
 
-
         Debug.Log("Mittens has detected a collision.");
-        if (collision.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Player"))
+        if (target.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Player"))
         {
-           collision.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageAmount;
-            Vector3 direction = collision.gameObject.transform.position - transform.position;
+            target.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageAmount;
+            Vector3 direction = target.gameObject.transform.position - transform.position;
             Debug.Log("Direction of knockback: " + direction.normalized);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+            target.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
 
             //makes the player play a punching animation when attacking an enemy
                 if (gameObject.CompareTag("Player"))
@@ -93,6 +96,7 @@ public class AllyAI : MonoBehaviour
                     gameObject.GetComponent<Animator>().SetTrigger("Punch");
             }
         }
+        punchCooldown = .5f;
 
     }
 
@@ -100,7 +104,7 @@ public class AllyAI : MonoBehaviour
     {
         
         rb.AddForce(moveDirection * speed);
-
+        punchCooldown -= Time.fixedDeltaTime;
 
 
         detectTimer -= Time.fixedDeltaTime;
@@ -130,7 +134,12 @@ public class AllyAI : MonoBehaviour
         {
             Vector3 direction = (target.position - (Vector3)transform.position + offset).normalized;
             moveDirection = direction;
-           
+
+            if (Vector2.Distance(target.position, transform.position) <= 5 && punchCooldown <= 0)
+            {
+                Debug.Log("sgopjgsjpjspgjspjgpsjgp");
+                HandlePunch();
+            }
         }
         else
         {
@@ -141,6 +150,7 @@ public class AllyAI : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+        Gizmos.DrawWireSphere(transform.position, 5f);
         Gizmos.DrawWireCube(transform.position + offset + Vector3.down * castDistance, boxsize);
     }
    
