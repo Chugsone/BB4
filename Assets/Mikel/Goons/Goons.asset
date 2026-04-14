@@ -18,4 +18,4 @@ MonoBehaviour:
   Health: 74
   Description: 
   icon: {fileID: -8855690875876968426, guid: 8b4cc0561cbe296488b61045b814b0eb, type: 3}
-  prefab: {fileID: 1153694413962919161, guid: a9f504ad404adcd4dbff22f5b6bba3ba, type: 3}
+  prefab: {fileID: 1415994438096455254, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
