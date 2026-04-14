@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -26,19 +27,22 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float speed = 1f;
     [SerializeField] private float topSpeed = 10f;
 
+    private bool punchingAnim;
     float knockbackForce = 100f;
     float damageAmount = 1f;
+    private float punchCooldown = 0f;
 
-    private bool playerDetector = false;
     public float detectionRange = 10f;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float detectCooldown = .25f;
     private float detectTimer = 0f;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -59,9 +63,63 @@ public class EnemyAI : MonoBehaviour
         transform.up = moveDirection;
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
 
+    //    critChance = (int)Random.Range(0.0f, 20.0f);
+    //    if (critChance <= 1)
+    //    {
+    //        knockbackForce = 800f;
+    //        damageAmount = 10f;
+    //    }
+    //    else if (critChance > 1 && critChance <= 16)
+    //    {
+    //        knockbackForce = 400f;
+    //        damageAmount = 5f;
+    //    }
+    //    else if (critChance > 16)
+    //    {
+    //        knockbackForce = 100f;
+    //        damageAmount = 3f;
+    //    }
+
+
+    //    Debug.Log("Mittens has detected a collision.");
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        //makes the enemy play a punching animation when in range with the player
+    //        if (CompareTag("Enemy"))
+    //        {
+    //            animator.SetTrigger("Punch");
+
+    //        }
+
+    //        Debug.Log("Mittens has detected a collision with the player.");
+    //        if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
+    //        {
+               
+
+
+    //            Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= damageAmount;
+    //            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+    //        }
+    //        else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
+    //        {
+    //            Vector3 direction = collision.gameObject.transform.position - transform.position;
+    //            combatPlayer.health -= damageAmount;
+    //            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+    //        }
+    //        else
+    //        {
+    //            Debug.LogWarning("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+    //        }
+    //    }
+
+    //}
+
+    private void HandlePunch()
+    {
+        
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
@@ -81,36 +139,39 @@ public class EnemyAI : MonoBehaviour
 
 
         Debug.Log("Mittens has detected a collision.");
-        if (collision.gameObject.CompareTag("Player"))
+        if (target.gameObject.CompareTag("Player"))
         {
             //makes the enemy play a punching animation when in range with the player
             if (CompareTag("Enemy"))
             {
-                GetComponent<Animator>().SetTrigger("Punch");
+                animator.SetTrigger("Punch");
+
             }
 
             Debug.Log("Mittens has detected a collision with the player.");
-            if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
+            if (target.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
             {
-               
 
 
-                Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= damageAmount;
-                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+
+                Vector3 direction = target.gameObject.transform.position - transform.position; ally.allyHealth -= damageAmount;
+                target.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
             }
-            else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
+            else if (target.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
             {
-                Vector3 direction = collision.gameObject.transform.position - transform.position;
+                Vector3 direction = target.gameObject.transform.position - transform.position;
                 combatPlayer.health -= damageAmount;
-                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+                target.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
             }
             else
             {
                 Debug.LogWarning("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             }
         }
-
+        punchCooldown = .5f;
     }
+
+   
 
     public void PlayBlood()
     {
@@ -120,6 +181,7 @@ public class EnemyAI : MonoBehaviour
     private void FixedUpdate()
     {
         rb.AddForce(moveDirection * speed);
+        punchCooldown -= Time.fixedDeltaTime;
 
 
         detectTimer -= Time.fixedDeltaTime;
@@ -149,7 +211,12 @@ public class EnemyAI : MonoBehaviour
         {
             Vector3 direction = (target.position - (Vector3)transform.position + offset).normalized;
             moveDirection = direction;
-            
+
+            if (Vector2.Distance(target.position, transform.position) <= 5 && punchCooldown <= 0)
+            {
+                Debug.Log("sgopjgsjpjspgjspjgpsjgp");
+                HandlePunch();
+            }
         }
         else
         {
@@ -160,6 +227,7 @@ public class EnemyAI : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+        Gizmos.DrawWireSphere(transform.position, 5f);
     }
 
    
