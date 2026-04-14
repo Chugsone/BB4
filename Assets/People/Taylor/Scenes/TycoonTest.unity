@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a2dfd03cd180b4baa9a1108a2a0497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipObject: {fileID: 1143257520}
+  tooltipObject: {fileID: 2001629316}
 --- !u!1001 &20898415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 210311033}
   - component: {fileID: 210311032}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Cinema
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -791,7 +791,7 @@ RectTransform:
   m_GameObject: {fileID: 210311028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1678067587}
@@ -821,7 +821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1403531275442530013, guid: 28f4cabaaaa83c14ba6c1802d3d9c713, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 382791864}
   - component: {fileID: 382791863}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Bank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,7 +1174,7 @@ RectTransform:
   m_GameObject: {fileID: 382791861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1678067587}
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 6714369015438526544, guid: 1162b7bb476683d469c3c8ad9e2f8940, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1772,7 +1772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 372943486628948829, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
       propertyPath: m_Name
-      value: 4
+      value: St. Patricks
       objectReference: {fileID: 0}
     - target: {fileID: 372943486628948829, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
       propertyPath: m_IsActive
@@ -1780,7 +1780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1451918422369005821, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
       propertyPath: m_text
-      value: 4
+      value: '???
+
+
+        Bells ring and preaching to the Holy Lord can be heard.
+        A warm light exits from the door.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2413,6 +2417,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luigi's Pizza
       objectReference: {fileID: 0}
+    - target: {fileID: 1451918422369005821, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
+      propertyPath: m_text
+      value: '????
+
+
+        Something smells very Italian here...'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2540,8 +2551,8 @@ RectTransform:
   - {fileID: 1142041640}
   - {fileID: 14985721}
   - {fileID: 527572401}
-  - {fileID: 1711875117}
   - {fileID: 210311029}
+  - {fileID: 1711875117}
   - {fileID: 382791862}
   - {fileID: 1015630288}
   - {fileID: 435107648}
@@ -2631,7 +2642,7 @@ GameObject:
   - component: {fileID: 1711875121}
   - component: {fileID: 1711875120}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Joe's Toilets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3079,6 +3090,17 @@ PrefabInstance:
     - target: {fileID: 372943486628948829, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
       propertyPath: m_Name
       value: Lard Donuts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451918422369005821, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
+      propertyPath: m_text
+      value: '???
+
+
+        The sound of frying and chewing can be heard from inside.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451918422369005821, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3763,6 +3785,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995802284}
   m_CullTransparentMesh: 1
+--- !u!1 &2001629316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 372943486628948829, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
+  m_PrefabInstance: {fileID: 1530212676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1487067971916214356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3943,7 +3970,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2298327893208747072, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
       propertyPath: m_Name
-      value: Business Image
+      value: St. Patricks
       objectReference: {fileID: 0}
     - target: {fileID: 3366878622741427277, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
       propertyPath: tooltipObject
@@ -4036,6 +4063,22 @@ PrefabInstance:
     - target: {fileID: 4529413944256642000, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PointerExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860947926291541521, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4248371655446102355, guid: 98dac5ee2e61e194ba88da390565ca5c, type: 3}
+    - target: {fileID: 6860947926291541521, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860947926291541521, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860947926291541521, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
