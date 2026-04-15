@@ -15,5 +15,5 @@ public class UpgradeList
 {
     public List<int> Levels; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
     public List<int> Income; //To access this use SaveDataController.Instance.current.UpgradeList.Income 
-
+    public List<int> playerPoints; //To access this use SaveDataController.Instance.current.UpgradeList.playerPoints
 }
