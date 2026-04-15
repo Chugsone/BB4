@@ -14,9 +14,16 @@ public class ShopScore : MonoBehaviour
     public SaveData saveData;
     [Range(0, 3)] public int currentScore = 0;
 
+    private void Start()
+    {
+        SaveDataController.Instance.current.Upgrades
+    }
+
     private void Update()
     {
         playerbar.fillAmount = currentScore / (float)winningPoints;
         playerbar.fillAmount = playerPoints / (float)winningPoints;
     }
+
+
 }
