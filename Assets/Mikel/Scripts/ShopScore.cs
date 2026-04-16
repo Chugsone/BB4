@@ -16,7 +16,6 @@ public class ShopScore : MonoBehaviour
 
     private void Start()
     {
-        SaveDataController.Instance.current.Upgrades
     }
 
     private void Update()
