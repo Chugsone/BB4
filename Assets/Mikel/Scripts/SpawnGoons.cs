@@ -5,12 +5,12 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using NUnit.Framework.Constraints;
 
 public class SpawnGoons : MonoBehaviour
 {
     public GameObject ButtonPrefab;
     public List<Goons> goons;
-
     private void Awake()
     {
         Spawn();
@@ -31,4 +31,7 @@ public class SpawnGoons : MonoBehaviour
         GameObject goonInstance = Instantiate(goon.prefab, Vector3.zero, Quaternion.identity);
         goonInstance.GetComponent<PlaceAbleObjects>().isGrabbed = true;
     }
+
+
+
 }

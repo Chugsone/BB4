@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Goons", menuName = "Scriptable Objects/Goons")]
@@ -14,5 +15,8 @@ public class Goons : ScriptableObject
     public Sprite icon;
     public GameObject prefab;
 
-
+    internal void SetActive(bool v)
+    {
+        throw new NotImplementedException();
+    }
 }
