@@ -56,7 +56,7 @@ public class StoreUpgrade : MonoBehaviour
         {
             level++;
             SaveDataController.Instance.current.Upgrades.Levels[upgradeID] = level;
-
+            
 
             UpdateUI();
         }
