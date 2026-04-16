@@ -272,6 +272,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 512163678}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1001 &20898415
 PrefabInstance:
@@ -1085,6 +1091,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 1563365301}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1 &211159686
 GameObject:
@@ -1487,6 +1499,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 158588728}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1 &429471058
 GameObject:
@@ -2883,6 +2901,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 1304623587}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1 &1143257520 stripped
 GameObject:
@@ -3869,6 +3893,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 1514224347}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1001 &1713621884
 PrefabInstance:
@@ -4417,6 +4447,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 1048462098}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1001 &1833031887
 PrefabInstance:
@@ -4805,7 +4841,7 @@ RectTransform:
   m_GameObject: {fileID: 1995802284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
+  m_LocalScale: {x: 0.8, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1678067587}
@@ -4893,7 +4929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5885854197027925481, guid: a1217d3d4b3dab54d90d16f7aa6e862c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4937,6 +4973,12 @@ MonoBehaviour:
   playerPoints: 0
   winningPoints: 3
   playerbar: {fileID: 161155878}
+  saveData:
+    Upgrades:
+      Levels: 
+      Income: 
+      playerPoints: 
+    Currency: 0
   currentScore: 0
 --- !u!1001 &1487067971916214356
 PrefabInstance:
