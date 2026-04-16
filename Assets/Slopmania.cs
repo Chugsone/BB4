@@ -13,4 +13,8 @@ public class Slopmania : MonoBehaviour
     {
         SaveDataController.Instance.current.Currency -= price;
     }
+
+    public void Update()
+    {
+    }
 }
