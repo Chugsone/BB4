@@ -14,6 +14,7 @@ public class Goons : ScriptableObject
     [TextArea]public string Description;
     public Sprite icon;
     public GameObject prefab;
+    public Allies.AllieNames name;
 
     internal void SetActive(bool v)
     {

@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class StoreUpgrade : MonoBehaviour
 {
@@ -56,9 +57,27 @@ public class StoreUpgrade : MonoBehaviour
         {
             level++;
             SaveDataController.Instance.current.Upgrades.Levels[upgradeID] = level;
-            
 
             UpdateUI();
+        }
+
+        //makes the animator play a apurchase animation if the purchase was successful
+        if (purchaseSuccessful != null)
+        {
+            Animator animator = GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.SetTrigger("Purchase");
+            }
+        }
+        //plays last frame when next upgrade is clicked and the purchase is successful
+         if (purchaseSuccessful != null)
+        {
+            Animator animator = GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.Play("Purchase", -1, 1f);
+            }
         }
     }
 
