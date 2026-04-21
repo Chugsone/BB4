@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d192f5b47b0acbd46b8ba1944fc1ae2c
+guid: bc3a466ea7aef584f88464764765c10d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4002832735249537045
-    second: empiyah_0
+      213: 1492651328811647325
+    second: butterball file_0
+  - first:
+      213: 4188753973412301707
+    second: butterball file_1
+  - first:
+      213: 8680448392693937631
+    second: butterball file_2
+  - first:
+      213: -5863509269776555631
+    second: butterball file_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: empiyah_0
+      name: butterball file_0
       rect:
         serializedVersion: 2
-        x: 402
-        y: 776
-        width: 1226
-        height: 3222
+        x: 421
+        y: 139
+        width: 1050
+        height: 899
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be76520d5d41378c0800000000000000
-      internalID: -4002832735249537045
+      spriteID: d514553a976f6b410800000000000000
+      internalID: 1492651328811647325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterball file_1
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 527
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b0fbcbb81712a30800000000000000
+      internalID: 4188753973412301707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterball file_2
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 539
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5f1a972d5277870800000000000000
+      internalID: 8680448392693937631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterball file_3
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 365
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19122c5a261a0aea0800000000000000
+      internalID: -5863509269776555631
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      empiyah_0: -4002832735249537045
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

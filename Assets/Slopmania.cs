@@ -9,6 +9,12 @@ public class Slopmania : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (SaveDataController.Instance.current.allies == null)
+        {
+            SaveDataController.Instance.current.allies = new Allies();
+        }
+
+
         if (SaveDataController.Instance.current.allies.Stats.ContainsKey(slopmania))
         {
             price = (int)startPrice * SaveDataController.Instance.current.allies.Stats[slopmania].Deaths + 1;
