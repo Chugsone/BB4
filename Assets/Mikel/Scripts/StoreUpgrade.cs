@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using System.Diagnostics.CodeAnalysis;
 
 public class StoreUpgrade : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class StoreUpgrade : MonoBehaviour
             }
         }
         //plays last frame when next upgrade is clicked and the purchase is successful
-         if (purchaseSuccessful != null)
+        if (purchaseSuccessful != null)
         {
             Animator animator = GetComponent<Animator>();
             if (animator != null)

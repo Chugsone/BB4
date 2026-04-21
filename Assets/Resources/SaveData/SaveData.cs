@@ -16,7 +16,8 @@ public class UpgradeList
 {
     public List<int> Levels; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
     public List<int> Income; //To access this use SaveDataController.Instance.current.UpgradeList.Income 
-    public List<int> playerPoints; //To access this use SaveDataController.Instance.current.UpgradeList.playerPoints
+    public List<int> playerPoints; //To access this use SaveDataController.Instance.current.UpgradeList.playerPoints 
+    public List<int> ShopUpgrades; //To access this use SaveDataController.Instance.current.UpgradeList.ShopUpgrades
 }
 
 
@@ -34,7 +35,6 @@ public class Allies
     };
 
     public Dictionary<AllieNames, AllieData> Stats; //foreach(var key in SaveDataController.Instance.current.allies.Stats.Keys) {if ( SaveDataController.Instance.current.allies.Stats[key].CurrentlyHired)}
-
 }
 
 [Serializable]
@@ -68,5 +68,6 @@ public struct AllieData
     public float Level;
 
     public bool CurrentlyHired;
+
 
 }
