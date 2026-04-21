@@ -11,13 +11,19 @@ public class CombatPlayer : MonoBehaviour
     [SerializeField] public Rigidbody2D rb; 
     [SerializeField] private GameObject gun;
    
-  //  [SerializeField] private Animator animator;
- //   [SerializeField] private Animator gunAnimator;
-    
+    [SerializeField] private Animator animator;
+    [SerializeField] private Animator gunAnimator;
+ 
+    //============\\
+   //  _      _    \\
+  //   o      o     \\
+  //       v        \\
+  //   \________/   \\
+  //===============//
+
+  //Rian this is you ^
     
 
-
-    
     public enum WeaponType
     {
         Revolver,
@@ -238,6 +244,7 @@ public class CombatPlayer : MonoBehaviour
             //GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
             float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
             Debug.Log($"Shoot Direction: {shootDirection}");
+            animator.SetTrigger("Shoot");
             GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.Euler(0f, 0f, angle));
 
 
@@ -246,9 +253,11 @@ public class CombatPlayer : MonoBehaviour
            
             StartCoroutine(GunCooldown());
             bullets -= 1;
-           
 
-        //    gunAnimator.SetTrigger("Shoot");
+
+            //sets a trigger for the shoot animation, which is used to play the shoot animation in the animator controller
+            
+
         }
     }
 
