@@ -33,7 +33,7 @@ public class Allies
         Slopmania = 4,
     };
 
-    public Dictionary<AllieNames, AllieData> Stats; //foreach(var key in SaveDataController.Instance.current.allies.Stats.Keys) {if ( SaveDataController.Instance.current.allies.Stats[key].CurrentlyHired)}
+    public Dictionary<AllieNames, AllieData> Stats = new(); //foreach(var key in SaveDataController.Instance.current.allies.Stats.Keys) {if ( SaveDataController.Instance.current.allies.Stats[key].CurrentlyHired)}
 
 }
 
@@ -41,12 +41,13 @@ public class Allies
 
 public struct AllieData
 {
+    private int deaths;
     public int Deaths 
     {
-        get { return Deaths; }
+        get { return deaths; }
         set 
-        { 
-            Deaths = value;
+        {
+            deaths = value;
             CurrentlyHired = false;
         }
     }
