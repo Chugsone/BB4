@@ -34,12 +34,6 @@ public class Allies
         Slopmania = 4,
     };
 
-<<<<<<< HEAD
-    public Dictionary<AllieNames, AllieData> Stats; //foreach(var key in SaveDataController.Instance.current.allies.Stats.Keys) {if ( SaveDataController.Instance.current.allies.Stats[key].CurrentlyHired)}
-=======
-    public Dictionary<AllieNames, AllieData> Stats = new(); //foreach(var key in SaveDataController.Instance.current.allies.Stats.Keys) {if ( SaveDataController.Instance.current.allies.Stats[key].CurrentlyHired)}
-
->>>>>>> bd0d046f305b6720d3540a4546395a9978f8b49d
 }
 
 [Serializable]
