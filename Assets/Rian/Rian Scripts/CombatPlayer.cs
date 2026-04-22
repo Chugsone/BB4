@@ -82,6 +82,7 @@ public class CombatPlayer : MonoBehaviour
     private void Awake()
     {
         canSlap = true;
+        critChance = (int)Random.Range(0.0f, 20.0f);
     }
 
     void Start()
