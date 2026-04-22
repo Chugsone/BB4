@@ -100,10 +100,31 @@ public class AllyAI : MonoBehaviour
 
     }
 
+
+
     private void FixedUpdate()
     {
-        
-        rb.AddForce(moveDirection * speed);
+
+        if (target)
+
+        {
+            Vector3 direction = (target.position - (Vector3)transform.position + offset).normalized;
+            moveDirection = direction;
+
+            if (Vector2.Distance(target.position, transform.position) <= 5 && punchCooldown <= 0)
+            {
+                Debug.Log("sgopjgsjpjspgjspjgpsjgp");
+                HandlePunch();
+            }
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+    
+
+
+    rb.AddForce(moveDirection * speed);
         punchCooldown -= Time.fixedDeltaTime;
 
 
