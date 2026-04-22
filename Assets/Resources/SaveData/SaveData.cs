@@ -34,6 +34,9 @@ public class Allies
         Slopmania = 4,
     };
 
+    public Dictionary<AllieNames, AllieData> Stats = new();
+
+
 }
 
 [Serializable]
