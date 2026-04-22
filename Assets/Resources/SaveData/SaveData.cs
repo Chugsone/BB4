@@ -22,7 +22,7 @@ public class UpgradeList
 
 
 
-[Serializable]
+[Serializable]//{Stats: {}}
 public class Allies
 {
     public enum AllieNames
@@ -34,14 +34,14 @@ public class Allies
         Slopmania = 4,
     };
 
-    public Dictionary<AllieNames, AllieData> Stats = new();
-
+    public Dictionary<AllieNames, int> Stats = new();
+    public List<AllieData> Data = new ();
 
 }
 
 [Serializable]
 
-public struct AllieData
+public class AllieData
 {
     private int deaths;
     public int Deaths 
@@ -68,7 +68,7 @@ public struct AllieData
 
     private float exp;
 
-    public float Level;
+    public float Level = 1;
 
     public bool CurrentlyHired;
 
