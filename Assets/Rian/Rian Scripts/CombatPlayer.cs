@@ -54,7 +54,7 @@ public class CombatPlayer : MonoBehaviour
     private Vector2 shootDirection;
 
     float damageAmount;
-    int critChance = (int)Random.Range(0.0f, 10.0f);
+    int critChance;
     bool canSlap = true;
 
    public float slapCooldown = 0.5f;

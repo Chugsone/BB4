@@ -21,7 +21,7 @@ public class AllyAI : MonoBehaviour
 
     public float allyHealth = 3f;
 
-    int critChance = (int)Random.Range(0.0f, 10.0f);
+    int critChance;
 
     public Vector2 boxsize;
     private float castDistance;

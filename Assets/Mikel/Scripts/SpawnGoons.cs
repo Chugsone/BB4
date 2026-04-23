@@ -11,7 +11,8 @@ public class SpawnGoons : MonoBehaviour
 {
     public GameObject ButtonPrefab;
     public List<Goons> goons;
-    private void Awake()
+    public List<Button> goonButtons;
+    public void Awake()
     {
         Spawn();
     }
@@ -22,14 +23,23 @@ public class SpawnGoons : MonoBehaviour
         {
             GameObject button = Instantiate(ButtonPrefab, transform);
             button.GetComponent<Image>().sprite = goon.icon;
-            button.GetComponent<Button>().onClick.AddListener(() => SpawmGameObject(goon));
+            button.GetComponent<Button>().onClick.AddListener(() => SpawnGameObject(goon));
         }
     }
 
-    public void SpawmGameObject(Goons goon)
+    public void SpawnGameObject(Goons goon)
     {
         GameObject goonInstance = Instantiate(goon.prefab, Vector3.zero, Quaternion.identity);
         goonInstance.GetComponent<PlaceAbleObjects>().isGrabbed = true;
+    }
+
+    public void ShowButtons() 
+    {
+        
+        foreach (var goon in goonButtons)
+        {
+            goon.gameObject.SetActive(true);
+        }
     }
 
 

@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
 
-    private int critChance = (int)Random.Range(0.0f, 10.0f);
+    private int critChance;
 
 
     [SerializeField] ParticleSystem Blood;

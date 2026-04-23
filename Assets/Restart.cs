@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.ParticleSystemJobs;
+using UnityEngine.UI;
 
 public class Restart : MonoBehaviour
 {
@@ -10,18 +12,25 @@ public class Restart : MonoBehaviour
 
     public void RestartGame()
     {
-        //delete all existing goons
-        List<GameObject> goons = new List<GameObject>(GameObject.FindGameObjectsWithTag("Goons"));
-        foreach (var goon in goons)
+        // Destroy all with the ally tag
+        GameObject[] allies = GameObject.FindGameObjectsWithTag("Ally");
+        foreach (GameObject ally in allies)
         {
-            Destroy(goon);
+            Destroy(ally);
         }
         
-        //un hide the goon clones
-        List<GameObject> goonClones = new List<GameObject>(GameObject.FindGameObjectsWithTag("GoonsClone"));
-        foreach (var goonClone in goonClones)
+    }
+
+    public void ResetGame()
+    {
+        
+        spawnGoons.goons.Contains(spawnGoons.goons[0]);
+        foreach (var goon in spawnGoons.goonButtons)
         {
-            goonClone.SetActive(true);
+            GameObject.FindWithTag("GoonButton").GetComponent<Button>().interactable = true;
+            goon.gameObject.SetActive(true);
         }
     }
+
 }
+
