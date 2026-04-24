@@ -15,10 +15,10 @@ public class CombatPlayer : MonoBehaviour
     [SerializeField] private Animator gunAnimator;
  
     //============\\
-   //  _      _    \\
+   //  ^     _    \\
   //   o      o     \\
-  //       v        \\
-  //   \________/   \\
+  //               \\
+  //   \________   \\
   //===============//
 
   //Rian this is you ^
@@ -53,6 +53,7 @@ public class CombatPlayer : MonoBehaviour
     public float knockbackForce;
     private Vector2 shootDirection;
 
+    Vector2 mousepos;
     float damageAmount;
     int critChance;
     bool canSlap = true;
@@ -93,9 +94,10 @@ public class CombatPlayer : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+       
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position + offset, attackRadius);
     }
@@ -120,7 +122,12 @@ public class CombatPlayer : MonoBehaviour
             
         }
 
-      
+        Aim();
+
+        shootDirection = mousepos - (Vector2)transform.position;
+
+        spriteTransform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg - 90f);
+
     }
 
     void FixedUpdate()
@@ -140,12 +147,16 @@ public class CombatPlayer : MonoBehaviour
 
     
 
-    public void Aim(InputAction.CallbackContext context)
+    public void Aim()
     {
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);//context.ReadValue<Vector2>());
-        shootDirection = mousepos - (Vector2)transform.position;
+         mousepos = Input.mousePosition;//Camera.main.WorldToScreenPoint(Input.mousePosition); //context.ReadValue<Vector2>();
+         mousepos -= (Vector2)Camera.main.WorldToScreenPoint(transform.position);
+         direction = Mathf.Atan2(mousepos.y, mousepos.x) * Mathf.Rad2Deg;
+         shootDirection = mousepos - (Vector2)transform.position;
+         shootDirection.Normalize();
+        //added random code that does something cool
 
-        spriteTransform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg - 90f);
+
 
 
     }
@@ -192,21 +203,23 @@ public class CombatPlayer : MonoBehaviour
     {
         Debug.Log("Slap swing");
         canSlap = false;
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
         StartCoroutine(slapWait());
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + offset, attackRadius, enemyLayer);
-
-        foreach (Collider2D hit in hitEnemies)
+        if (canSlap)
         {
-            
-         
-                
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + offset, attackRadius, enemyLayer);
+
+            foreach (Collider2D hit in hitEnemies)
+            {
+
+
+
                 Debug.Log("Hit Enemy");
                 EnemyAI enemyAI = hit.GetComponent<EnemyAI>();
-            enemyAI.PlayBlood();
+                enemyAI.PlayBlood();
 
                 critChance = (int)Random.Range(0.0f, 20.0f);
                 if (critChance <= 1)
@@ -226,10 +239,11 @@ public class CombatPlayer : MonoBehaviour
                 }
 
                 Vector3 knockbackDirection = (hit.transform.position - transform.position).normalized * knockbackForce;
-                enemyAI.enemyHealth -= 30;
+                enemyAI.enemyHealth -= damageAmount;
 
                 hit.gameObject.GetComponent<Rigidbody2D>().AddForce(knockbackDirection);
 
+            }
         }
     }
     
