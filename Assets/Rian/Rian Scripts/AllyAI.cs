@@ -26,7 +26,7 @@ public class AllyAI : MonoBehaviour
     public Vector2 boxsize;
     private float castDistance;
 
-    float knockbackForce = 100f;
+    float knockbackForce = 100000f;
     float damageAmount = 1f;
 
 
@@ -68,22 +68,22 @@ public class AllyAI : MonoBehaviour
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
-            knockbackForce = 800f;
+            knockbackForce = 1200f;
             damageAmount = 10f;
         }
         else if (critChance > 1 && critChance <= 16)
         {
-            knockbackForce = 400f;
+            knockbackForce = 500f;
             damageAmount = 5f;
         }
         else if (critChance > 16)
         {
-            knockbackForce = 100f;
+            knockbackForce = 300f;
             damageAmount = 3f;
         }
 
         Debug.Log("Mittens has detected a collision.");
-        if (target.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Player"))
+        if (target.gameObject.CompareTag("Enemy"))
         {
             target.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageAmount;
             Vector3 direction = target.gameObject.transform.position - transform.position;
@@ -91,7 +91,7 @@ public class AllyAI : MonoBehaviour
             target.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
 
             //makes the player play a punching animation when attacking an enemy
-                if (gameObject.CompareTag("Player"))
+                if (target.gameObject.CompareTag("Enemy"))
                 {
                     gameObject.GetComponent<Animator>().SetTrigger("Punch");
             }
