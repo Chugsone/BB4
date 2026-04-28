@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class CombatPlayer : MonoBehaviour
 {
-    [SerializeField] public float recoil = 0.5f; 
+    [SerializeField] public float recoilTime = 0.5f; 
     [SerializeField] public Rigidbody2D rb; 
     [SerializeField] private GameObject gun;
    
@@ -35,7 +35,7 @@ public class CombatPlayer : MonoBehaviour
     public Vector2 boxsize;
     private Vector2 input;
     
-    
+    bool recoiled = true;
 
     [SerializeField] float attackRadius = 1.5f;
 
@@ -117,7 +117,7 @@ public class CombatPlayer : MonoBehaviour
 
         if (GodMode)
         {
-            recoil = 0;
+            recoilTime = 0;
             mag = 100;
             
         }
@@ -194,7 +194,13 @@ public class CombatPlayer : MonoBehaviour
        
        if (currentWeapon == WeaponType.Revolver)
         {
-            Shoot(context);
+            if (bullets > 0 && recoiled) 
+            { 
+                StartCoroutine(tungtungtung(context));
+            animator.SetTrigger("Shoot"); 
+            
+            }
+              
         }
     }
 
@@ -246,16 +252,16 @@ public class CombatPlayer : MonoBehaviour
             }
         }
     }
-    
-        
-    
+
+
+    /*
 
     public void Shoot(InputAction.CallbackContext context)
     {
-       
-        if (context.performed &&  bullets > 0)
-        {
 
+        if (context.performed && bullets > 0 && recoiled)
+        {
+            recoiled = false;
             //GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
             float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
             Debug.Log($"Shoot Direction: {shootDirection}");
@@ -264,26 +270,46 @@ public class CombatPlayer : MonoBehaviour
 
 
             Projectiles projScript = proj.GetComponent<Projectiles>();
-           
-           
+
+
             StartCoroutine(GunCooldown());
             bullets -= 1;
 
 
             //sets a trigger for the shoot animation, which is used to play the shoot animation in the animator controller
-            
+
 
         }
-    }
+    }*/
 
     
+
     IEnumerator slapWait()
     {
         yield return new WaitForSeconds(slapCooldown);
         canSlap = true;
     }
 
+    IEnumerator tungtungtung(InputAction.CallbackContext context)
+    {
+        yield return new WaitForSeconds(0.25f);
+        if (bullets > 0 && recoiled)
+        {
+            recoiled = false;
+            //GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
+            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+            Debug.Log($"Shoot Direction: {shootDirection}");
+            
+            GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.Euler(0f, 0f, angle));
 
+
+            Projectiles projScript = proj.GetComponent<Projectiles>();
+
+
+            StartCoroutine(GunCooldown());
+            bullets -= 1;
+        }
+    }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -294,9 +320,8 @@ public class CombatPlayer : MonoBehaviour
 
     IEnumerator GunCooldown()
     {
-        yield return new WaitForSeconds(recoil);
-        
-       
+        yield return new WaitForSeconds(recoilTime);
+        recoiled = true;
     }
     
 
