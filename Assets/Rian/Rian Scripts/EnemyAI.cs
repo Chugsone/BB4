@@ -190,7 +190,7 @@ public class EnemyAI : MonoBehaviour
             detectTimer = detectCooldown;
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
             List<Transform> paul = new();
-           
+
 
             for (int i = 0; i < colliders.Length; i++)
             {

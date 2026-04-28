@@ -14,9 +14,9 @@ public class Projectiles : MonoBehaviour
 
     public float speed;
     public float lifetime;
-   
-   public int Damage = 1;
-    [HideInInspector] public int pierceCount = 1;
+    float knockbackForce = 2000;
+    public int Damage = 1;
+  
     private Vector2 direction;
     private EnemyAI enemyAI;
 
@@ -52,7 +52,12 @@ public class Projectiles : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false; //
             Debug.Log("Hit Enemy");
+
             enemyAI = collision.GetComponent<EnemyAI>();
+            Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized * knockbackForce;
+            collision.GetComponent<Rigidbody2D>().AddForce(knockbackDirection);
+            Debug.Log((collision.transform.position - transform.position).normalized * knockbackForce);
+
             enemyAI.enemyHealth -= Damage;
             enemyAI.PlayBlood();
             Destroy(gameObject);
