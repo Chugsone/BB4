@@ -699,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeID
-      value: 6
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
@@ -1107,7 +1107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeID
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
@@ -1310,7 +1310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.026995, y: -50.004}
+  m_AnchoredPosition: {x: 42, y: -50}
   m_SizeDelta: {x: 220.68, y: 500.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922406533
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1925751583}
   m_HandleRect: {fileID: 1925751582}
   m_Direction: 3
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1905,7 +1905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -141, y: 157}
+  m_AnchoredPosition: {x: 388, y: 269}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286650962
@@ -2035,7 +2035,7 @@ RectTransform:
   m_Father: {fileID: 402810726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.9659, y: -5.000122}
   m_SizeDelta: {x: 23.9316, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2705,7 +2705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeID
-      value: 4
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice

@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 4a6dd1068647a2e4cb39d605acffdb88
   - enabled: 1
-    path: Assets/Mikel/Scenes/Tycoon.unity
+    path: Assets/Mikel/Scenes/GoldmanWieners.unity
     guid: 1a91ec18a5244614dab2c2a71559003c
   - enabled: 1
-    path: Assets/Mikel/Scenes/Map.unity
+    path: Assets/Mikel/Scenes/map.unity
     guid: 5309f91fcc12b8243b12c2ae7e445ee1
   - enabled: 1
     path: Assets/People/Taylor/Scenes/2D Test.unity

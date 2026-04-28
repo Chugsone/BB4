@@ -21,12 +21,12 @@ public class AllyAI : MonoBehaviour
 
     public float allyHealth = 3f;
 
-    int critChance = (int)Random.Range(0.0f, 10.0f);
+    int critChance;
 
     public Vector2 boxsize;
     private float castDistance;
 
-    float knockbackForce = 100f;
+    float knockbackForce = 100000f;
     float damageAmount = 1f;
 
 
@@ -68,22 +68,22 @@ public class AllyAI : MonoBehaviour
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
-            knockbackForce = 800f;
+            knockbackForce = 1200f;
             damageAmount = 10f;
         }
         else if (critChance > 1 && critChance <= 16)
         {
-            knockbackForce = 400f;
+            knockbackForce = 500f;
             damageAmount = 5f;
         }
         else if (critChance > 16)
         {
-            knockbackForce = 100f;
+            knockbackForce = 300f;
             damageAmount = 3f;
         }
 
         Debug.Log("Mittens has detected a collision.");
-        if (target.gameObject.CompareTag("Enemy") && gameObject.CompareTag("Player"))
+        if (target.gameObject.CompareTag("Enemy"))
         {
             target.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageAmount;
             Vector3 direction = target.gameObject.transform.position - transform.position;
@@ -91,7 +91,7 @@ public class AllyAI : MonoBehaviour
             target.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
 
             //makes the player play a punching animation when attacking an enemy
-                if (gameObject.CompareTag("Player"))
+                if (target.gameObject.CompareTag("Enemy"))
                 {
                     gameObject.GetComponent<Animator>().SetTrigger("Punch");
             }
@@ -100,10 +100,31 @@ public class AllyAI : MonoBehaviour
 
     }
 
+
+
     private void FixedUpdate()
     {
-        
-        rb.AddForce(moveDirection * speed);
+
+        if (target)
+
+        {
+            Vector3 direction = (target.position - (Vector3)transform.position + offset).normalized;
+            moveDirection = direction;
+
+            if (Vector2.Distance(target.position, transform.position) <= 5 && punchCooldown <= 0)
+            {
+                Debug.Log("sgopjgsjpjspgjspjgpsjgp");
+                HandlePunch();
+            }
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+    
+
+
+    rb.AddForce(moveDirection * speed);
         punchCooldown -= Time.fixedDeltaTime;
 
 

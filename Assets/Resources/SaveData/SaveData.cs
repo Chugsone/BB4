@@ -16,12 +16,13 @@ public class UpgradeList
 {
     public List<int> Levels; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
     public List<int> Income; //To access this use SaveDataController.Instance.current.UpgradeList.Income 
-    public List<int> playerPoints; //To access this use SaveDataController.Instance.current.UpgradeList.playerPoints
+    public List<int> playerPoints; //To access this use SaveDataController.Instance.current.UpgradeList.playerPoints 
+    public List<int> ShopUpgrades; //To access this use SaveDataController.Instance.current.UpgradeList.ShopUpgrades
 }
 
 
 
-[Serializable]
+[Serializable]//{Stats: {}}
 public class Allies
 {
     public enum AllieNames
@@ -33,13 +34,14 @@ public class Allies
         Slopmania = 4,
     };
 
-    public Dictionary<AllieNames, AllieData> Stats = new(); //foreach(var key in SaveDataController.Instance.current.allies.Stats.Keys) {if ( SaveDataController.Instance.current.allies.Stats[key].CurrentlyHired)}
+    public Dictionary<AllieNames, int> Stats = new();
+    public List<AllieData> Data = new ();
 
 }
 
 [Serializable]
 
-public struct AllieData
+public class AllieData
 {
     private int deaths;
     public int Deaths 
@@ -66,8 +68,9 @@ public struct AllieData
 
     private float exp;
 
-    public float Level;
+    public float Level = 1;
 
     public bool CurrentlyHired;
+
 
 }

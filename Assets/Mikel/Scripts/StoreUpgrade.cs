@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using System.Diagnostics.CodeAnalysis;
 
 public class StoreUpgrade : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public class StoreUpgrade : MonoBehaviour
     public GameManager gameManager;
 
     [SerializeField] private int upgradeID; // Unique ID for this upgrade, used for saving/loading
-
     int level = 0;
 
     private void Start()
@@ -57,7 +57,6 @@ public class StoreUpgrade : MonoBehaviour
         {
             level++;
             SaveDataController.Instance.current.Upgrades.Levels[upgradeID] = level;
-
             UpdateUI();
         }
 
@@ -69,9 +68,10 @@ public class StoreUpgrade : MonoBehaviour
             {
                 animator.SetTrigger("Purchase");
             }
+            
         }
         //plays last frame when next upgrade is clicked and the purchase is successful
-         if (purchaseSuccessful != null)
+        if (purchaseSuccessful != null)
         {
             Animator animator = GetComponent<Animator>();
             if (animator != null)

@@ -7,17 +7,23 @@ using UnityEngine.InputSystem;
 
 public class CombatPlayer : MonoBehaviour
 {
-    [SerializeField] public float recoil = 0.5f; 
+    [SerializeField] public float recoilTime = 0.5f; 
     [SerializeField] public Rigidbody2D rb; 
     [SerializeField] private GameObject gun;
    
-  //  [SerializeField] private Animator animator;
- //   [SerializeField] private Animator gunAnimator;
-    
+    [SerializeField] private Animator animator;
+    [SerializeField] private Animator gunAnimator;
+ 
+    //============\\
+   //  ^     _    \\
+  //   o      o     \\
+  //               \\
+  //   \________   \\
+  //===============//
+
+  //Rian this is you ^
     
 
-
-    
     public enum WeaponType
     {
         Revolver,
@@ -29,7 +35,7 @@ public class CombatPlayer : MonoBehaviour
     public Vector2 boxsize;
     private Vector2 input;
     
-    
+    bool recoiled = true;
 
     [SerializeField] float attackRadius = 1.5f;
 
@@ -47,8 +53,9 @@ public class CombatPlayer : MonoBehaviour
     public float knockbackForce;
     private Vector2 shootDirection;
 
+    Vector2 mousepos;
     float damageAmount;
-    int critChance = (int)Random.Range(0.0f, 10.0f);
+    int critChance;
     bool canSlap = true;
 
    public float slapCooldown = 0.5f;
@@ -76,6 +83,7 @@ public class CombatPlayer : MonoBehaviour
     private void Awake()
     {
         canSlap = true;
+        critChance = (int)Random.Range(0.0f, 20.0f);
     }
 
     void Start()
@@ -86,9 +94,10 @@ public class CombatPlayer : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+       
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position + offset, attackRadius);
     }
@@ -108,12 +117,17 @@ public class CombatPlayer : MonoBehaviour
 
         if (GodMode)
         {
-            recoil = 0;
+            recoilTime = 0;
             mag = 100;
             
         }
 
-      
+        Aim();
+
+        shootDirection = mousepos - (Vector2)transform.position;
+
+        spriteTransform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg - 90f);
+
     }
 
     void FixedUpdate()
@@ -133,12 +147,16 @@ public class CombatPlayer : MonoBehaviour
 
     
 
-    public void Aim(InputAction.CallbackContext context)
+    public void Aim()
     {
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);//context.ReadValue<Vector2>());
-        shootDirection = mousepos - (Vector2)transform.position;
+         mousepos = Input.mousePosition;//Camera.main.WorldToScreenPoint(Input.mousePosition); //context.ReadValue<Vector2>();
+         mousepos -= (Vector2)Camera.main.WorldToScreenPoint(transform.position);
+         direction = Mathf.Atan2(mousepos.y, mousepos.x) * Mathf.Rad2Deg;
+         shootDirection = mousepos - (Vector2)transform.position;
+         shootDirection.Normalize();
+        //added random code that does something cool
 
-        spriteTransform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg - 90f);
+
 
 
     }
@@ -176,7 +194,13 @@ public class CombatPlayer : MonoBehaviour
        
        if (currentWeapon == WeaponType.Revolver)
         {
-            Shoot(context);
+            if (bullets > 0 && recoiled) 
+            { 
+                StartCoroutine(tungtungtung(context));
+            animator.SetTrigger("Shoot"); 
+            
+            }
+              
         }
     }
 
@@ -185,21 +209,23 @@ public class CombatPlayer : MonoBehaviour
     {
         Debug.Log("Slap swing");
         canSlap = false;
-        Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
         StartCoroutine(slapWait());
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + offset, attackRadius, enemyLayer);
-
-        foreach (Collider2D hit in hitEnemies)
+        if (canSlap)
         {
-            
-         
-                
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + offset, attackRadius, enemyLayer);
+
+            foreach (Collider2D hit in hitEnemies)
+            {
+
+
+
                 Debug.Log("Hit Enemy");
                 EnemyAI enemyAI = hit.GetComponent<EnemyAI>();
-            enemyAI.PlayBlood();
+                enemyAI.PlayBlood();
 
                 critChance = (int)Random.Range(0.0f, 20.0f);
                 if (critChance <= 1)
@@ -219,47 +245,71 @@ public class CombatPlayer : MonoBehaviour
                 }
 
                 Vector3 knockbackDirection = (hit.transform.position - transform.position).normalized * knockbackForce;
-                enemyAI.enemyHealth -= 30;
+                enemyAI.enemyHealth -= damageAmount;
 
                 hit.gameObject.GetComponent<Rigidbody2D>().AddForce(knockbackDirection);
 
+            }
         }
     }
-    
-        
-    
+
+
+    /*
 
     public void Shoot(InputAction.CallbackContext context)
     {
-       
-        if (context.performed &&  bullets > 0)
-        {
 
+        if (context.performed && bullets > 0 && recoiled)
+        {
+            recoiled = false;
             //GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
             float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
             Debug.Log($"Shoot Direction: {shootDirection}");
+            animator.SetTrigger("Shoot");
             GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.Euler(0f, 0f, angle));
 
 
             Projectiles projScript = proj.GetComponent<Projectiles>();
-           
-           
+
+
             StartCoroutine(GunCooldown());
             bullets -= 1;
-           
 
-        //    gunAnimator.SetTrigger("Shoot");
+
+            //sets a trigger for the shoot animation, which is used to play the shoot animation in the animator controller
+
+
         }
-    }
+    }*/
 
     
+
     IEnumerator slapWait()
     {
         yield return new WaitForSeconds(slapCooldown);
         canSlap = true;
     }
 
+    IEnumerator tungtungtung(InputAction.CallbackContext context)
+    {
+        yield return new WaitForSeconds(0.25f);
+        if (bullets > 0 && recoiled)
+        {
+            recoiled = false;
+            //GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
+            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+            Debug.Log($"Shoot Direction: {shootDirection}");
+            
+            GameObject proj = Instantiate(projectilePrefab, gun.transform.position, Quaternion.Euler(0f, 0f, angle));
 
+
+            Projectiles projScript = proj.GetComponent<Projectiles>();
+
+
+            StartCoroutine(GunCooldown());
+            bullets -= 1;
+        }
+    }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -270,9 +320,8 @@ public class CombatPlayer : MonoBehaviour
 
     IEnumerator GunCooldown()
     {
-        yield return new WaitForSeconds(recoil);
-        
-       
+        yield return new WaitForSeconds(recoilTime);
+        recoiled = true;
     }
     
 

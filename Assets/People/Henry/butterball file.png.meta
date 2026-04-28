@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butterball file_0: 1492651328811647325
+      butterball file_1: 4188753973412301707
+      butterball file_2: 8680448392693937631
+      butterball file_3: -5863509269776555631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
