@@ -1046,7 +1046,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4885298761302449938, guid: 49248cf893c2b39449dcdbd03cd51b05, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1427,7 +1427,10 @@ MonoBehaviour:
       Levels: 
       Income: 
       playerPoints: 
+      ShopUpgrades: 
     Currency: 0
+    allies:
+      Data: []
   _directory: SaveData
   _fileName: SaveData.json
 --- !u!4 &1005169013
