@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
 
-    private int critChance = (int)Random.Range(0.0f, 10.0f);
+    private int critChance;
 
 
     [SerializeField] ParticleSystem Blood;
@@ -123,30 +123,29 @@ public class EnemyAI : MonoBehaviour
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
-            knockbackForce = 800f;
-            damageAmount = 10f;
+            knockbackForce = 1500f;
+            damageAmount = 12f;
         }
         else if (critChance > 1 && critChance <= 16)
         {
-            knockbackForce = 400f;
-            damageAmount = 5f;
+            knockbackForce = 800f;
+            damageAmount = 6f;
         }
         else if (critChance > 16)
         {
-            knockbackForce = 100f;
-            damageAmount = 3f;
+            knockbackForce = 200f;
+            damageAmount = 4f;
         }
 
 
         Debug.Log("Mittens has detected a collision.");
-        if (target.gameObject.CompareTag("Player"))
+        if (target.gameObject.CompareTag("Player") || target.gameObject.CompareTag("Goon"))
         {
             //makes the enemy play a punching animation when in range with the player
-            if (CompareTag("Enemy"))
-            {
+            
                 animator.SetTrigger("Punch");
 
-            }
+            
 
             Debug.Log("Mittens has detected a collision with the player.");
             if (target.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
@@ -191,7 +190,7 @@ public class EnemyAI : MonoBehaviour
             detectTimer = detectCooldown;
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
             List<Transform> paul = new();
-           
+
 
             for (int i = 0; i < colliders.Length; i++)
             {

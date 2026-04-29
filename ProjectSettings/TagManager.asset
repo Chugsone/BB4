@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Business
   - Goons
+  - Goon
+  - Ally
+  - GoonButton
   layers:
   - Default
   - TransparentFX

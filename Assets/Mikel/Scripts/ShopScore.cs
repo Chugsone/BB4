@@ -12,6 +12,7 @@ public class ShopScore : MonoBehaviour
     public int winningPoints = 3;
     public Image playerbar;
     public SaveData saveData;
+    public ButtonTest buttonTest;
     [Range(0, 3)] public int currentScore = 0;
 
     private void Start()
