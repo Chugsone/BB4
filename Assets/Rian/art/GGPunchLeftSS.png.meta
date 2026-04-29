@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: b2d7e993e2d103741a2fd96c1bfde959
+guid: 51b050722801cef42829a0cbd3ce5027
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3650551899644964400
-    second: Goon Fighter Idle_0
+      213: 8586870831510777008
+    second: GGPunchLeftSS_0
+  - first:
+      213: -6072806312705109373
+    second: GGPunchLeftSS_1
+  - first:
+      213: -1306138068271558045
+    second: GGPunchLeftSS_2
+  - first:
+      213: 5653359344324161547
+    second: GGPunchLeftSS_3
+  - first:
+      213: 1144886864056349422
+    second: GGPunchLeftSS_4
+  - first:
+      213: -8844489369958740225
+    second: GGPunchLeftSS_5
+  - first:
+      213: -933686244092120268
+    second: GGPunchLeftSS_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Goon Fighter Idle_0
+      name: GGPunchLeftSS_0
       rect:
         serializedVersion: 2
-        x: 748
-        y: 395
-        width: 432
-        height: 296
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +159,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d1d8838362a65dc0800000000000000
-      internalID: -3650551899644964400
+      spriteID: 0bcec5ca681ba2770800000000000000
+      internalID: 8586870831510777008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGPunchLeftSS_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382567d65de09bba0800000000000000
+      internalID: -6072806312705109373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGPunchLeftSS_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3621f0dd85aafdde0800000000000000
+      internalID: -1306138068271558045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGPunchLeftSS_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00b312fe54c47e40800000000000000
+      internalID: 5653359344324161547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGPunchLeftSS_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2f618798473ef00800000000000000
+      internalID: 1144886864056349422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGPunchLeftSS_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe04e337cf024580800000000000000
+      internalID: -8844489369958740225
       vertices: []
       indices: 
       edges: []
@@ -151,7 +279,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d90459b9828b61a45bab445316b8d877
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +289,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Goon Fighter Idle_0: -3650551899644964400
+      GGPunchLeftSS_0: 8586870831510777008
+      GGPunchLeftSS_1: -6072806312705109373
+      GGPunchLeftSS_2: -1306138068271558045
+      GGPunchLeftSS_3: 5653359344324161547
+      GGPunchLeftSS_4: 1144886864056349422
+      GGPunchLeftSS_5: -8844489369958740225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -26,11 +26,12 @@ public class CombatPlayer : MonoBehaviour
     
 
     public enum WeaponType
-    {
-        Revolver,
-        Fist,
-    }
 
+    {
+       
+        Fist,
+ Revolver,
+    }
     private WeaponType currentWeapon;
     private Vector2 movementInput;
     public Vector2 boxsize;
@@ -90,7 +91,7 @@ public class CombatPlayer : MonoBehaviour
 
     void Start()
     {
-        
+        currentWeapon = WeaponType.Fist; //meow meow meow 
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -174,11 +175,15 @@ public class CombatPlayer : MonoBehaviour
         if (context.canceled)
         {
             currentWeapon = WeaponType.Fist;
+            animator.SetBool("HoldingShotG", false);
         }
         else if (context.performed)
-        {
+        { 
+            animator.SetBool("HoldingShotG", true);
             currentWeapon = WeaponType.Revolver;
         }
+
+        
     }
 
     public void Attack(InputAction.CallbackContext context)
@@ -211,7 +216,8 @@ public class CombatPlayer : MonoBehaviour
     {
         Debug.Log("Slap swing");
         canSlap = false;
-        
+        animator.SetTrigger("Slap");
+
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
         StartCoroutine(slapWait());
