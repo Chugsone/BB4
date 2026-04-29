@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anderdingus File_0: -3854805090064599351
+      Anderdingus File_1: -1626861483221564884
+      Anderdingus File_2: -810896361345518220
+      Anderdingus File_3: -4050006661094804856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

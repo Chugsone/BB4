@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LIL-Tony File_0: -5753253506277580806
+      LIL-Tony File_1: -5573207075576460009
+      LIL-Tony File_2: -4424669598901632447
+      LIL-Tony File_3: 6029359149886045552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
