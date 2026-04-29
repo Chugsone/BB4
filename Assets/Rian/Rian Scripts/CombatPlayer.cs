@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -25,11 +26,12 @@ public class CombatPlayer : MonoBehaviour
     
 
     public enum WeaponType
-    {
-        Revolver,
-        Fist,
-    }
 
+    {
+       
+        Fist,
+ Revolver,
+    }
     private WeaponType currentWeapon;
     private Vector2 movementInput;
     public Vector2 boxsize;
@@ -57,6 +59,7 @@ public class CombatPlayer : MonoBehaviour
     float damageAmount;
     int critChance;
     bool canSlap = true;
+    bool hasRevolver = false;
 
    public float slapCooldown = 0.5f;
 
@@ -88,7 +91,7 @@ public class CombatPlayer : MonoBehaviour
 
     void Start()
     {
-        
+        currentWeapon = WeaponType.Fist; //meow meow meow 
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -167,16 +170,20 @@ public class CombatPlayer : MonoBehaviour
  
    
 
-    public void SwapWeapon(InputAction.CallbackContext context)
+    public void SwapWeapon(InputAction.CallbackContext context) 
     {
-        if (currentWeapon == WeaponType.Fist)
-        {
-            currentWeapon = WeaponType.Revolver;
-        }
-        else
+        if (context.canceled)
         {
             currentWeapon = WeaponType.Fist;
+            animator.SetBool("HoldingShotG", false);
         }
+        else if (context.performed)
+        { 
+            animator.SetBool("HoldingShotG", true);
+            currentWeapon = WeaponType.Revolver;
+        }
+
+        
     }
 
     public void Attack(InputAction.CallbackContext context)
@@ -209,7 +216,8 @@ public class CombatPlayer : MonoBehaviour
     {
         Debug.Log("Slap swing");
         canSlap = false;
-        
+        animator.SetTrigger("Slap");
+
         Vector2 direction = mousepos - (Vector2)transform.position;
         Vector3 offset = direction.normalized * castDistance;
         StartCoroutine(slapWait());
