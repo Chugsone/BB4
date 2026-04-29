@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -57,6 +58,7 @@ public class CombatPlayer : MonoBehaviour
     float damageAmount;
     int critChance;
     bool canSlap = true;
+    bool hasRevolver = false;
 
    public float slapCooldown = 0.5f;
 
@@ -167,15 +169,15 @@ public class CombatPlayer : MonoBehaviour
  
    
 
-    public void SwapWeapon(InputAction.CallbackContext context)
+    public void SwapWeapon(InputAction.CallbackContext context) 
     {
-        if (currentWeapon == WeaponType.Fist)
-        {
-            currentWeapon = WeaponType.Revolver;
-        }
-        else
+        if (context.canceled)
         {
             currentWeapon = WeaponType.Fist;
+        }
+        else if (context.performed)
+        {
+            currentWeapon = WeaponType.Revolver;
         }
     }
 
