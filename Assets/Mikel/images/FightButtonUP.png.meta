@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FightButtonUP_0: 7817891744234586842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
