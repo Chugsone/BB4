@@ -460,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Barber_0: -9041349055172330430
+      Barber_1: 9061655613310302414
+      Barber_10: 3031606864205407885
+      Barber_11: 7489323606360607780
+      Barber_12: -7993568178693461860
+      Barber_2: 8588047966479029468
+      Barber_3: 5466151469923662216
+      Barber_4: -1787545857611204463
+      Barber_5: -7994519257682208845
+      Barber_6: 2769905861580918670
+      Barber_7: 8688163431775683271
+      Barber_8: 5417832036611786300
+      Barber_9: -8067615273518594440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

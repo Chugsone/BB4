@@ -610,7 +610,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Church_0: -6506036955920984320
+      Church_1: 5497185935211936554
+      Church_10: 4199429880116155139
+      Church_11: 1064842820699735854
+      Church_12: -995445829132573549
+      Church_13: -4585429202527289330
+      Church_14: -3299096448791345317
+      Church_15: -3843380462325069889
+      Church_16: 3995002455970598185
+      Church_17: -5252472831694763963
+      Church_18: -2955912056821143560
+      Church_2: 5733177614674352862
+      Church_3: 7732754917891282508
+      Church_4: 8910178263945786304
+      Church_5: -8403499859016629578
+      Church_6: -141515325176361548
+      Church_7: 1342957202834965942
+      Church_8: -4851887259549799598
+      Church_9: -8415963213210783766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
