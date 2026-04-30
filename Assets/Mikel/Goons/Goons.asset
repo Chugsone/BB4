@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec56627b474d7594cbec1d8b5920bfcd, type: 3}
   m_Name: Goons
   m_EditorClassIdentifier: 
-  Wage: 16
-  Strength: 14
-  Sales: 12
-  Health: 74
+  Wage: 1.5
+  Strength: 2
+  Sales: 8.75
+  Health: 100
   Description: 
   icon: {fileID: -8855690875876968426, guid: 8b4cc0561cbe296488b61045b814b0eb, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec56627b474d7594cbec1d8b5920bfcd, type: 3}
-  m_Name: ButterBall
+  m_Name: KSN
   m_EditorClassIdentifier: 
-  Wage: 0.75
-  Strength: 1.25
-  Sales: 1
-  Health: 200
-  Description: "hates miku \nmassive teto fan\n500 pound chud"
-  icon: {fileID: -4885298761302449938, guid: 49248cf893c2b39449dcdbd03cd51b05, type: 3}
+  Wage: 0
+  Strength: 3
+  Sales: 0.5
+  Health: 80
+  Description: 
+  icon: {fileID: -8855690875876968426, guid: 8b4cc0561cbe296488b61045b814b0eb, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
   name: 0
