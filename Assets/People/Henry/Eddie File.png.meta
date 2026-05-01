@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eddie File_0: -4547888111352071032
+      Eddie File_1: 667021361304803248
+      Eddie File_2: 4757968057339494849
+      Eddie File_3: -2918106733209435647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

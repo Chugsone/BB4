@@ -7,5 +7,5 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Butter Ball
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62b167aa48c868548a8b3ec98325bcf6, type: 2}
   m_Clips: []
