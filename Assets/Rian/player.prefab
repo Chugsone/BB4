@@ -136,9 +136,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5944fb59b4a9c9946a87742be0ba765d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recoil: 0.5
+  recoilTime: 0.5
   rb: {fileID: 4054192274716585022}
   gun: {fileID: 1855466895847293658}
+  animator: {fileID: 5514617237502774950}
+  gunAnimator: {fileID: 0}
   boxsize: {x: 4.75, y: 3.73}
   attackRadius: 0.75
   speed: 50
@@ -232,7 +234,7 @@ MonoBehaviour:
       - m_Target: {fileID: 5565888735082250073}
         m_TargetAssemblyTypeName: CombatPlayer, Assembly-CSharp
         m_MethodName: Aim
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -401,6 +403,7 @@ GameObject:
   - component: {fileID: 8002738459616621615}
   - component: {fileID: 5384822439746694820}
   - component: {fileID: 679740862045061834}
+  - component: {fileID: 5514617237502774950}
   m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
@@ -614,3 +617,25 @@ PolygonCollider2D:
       - {x: 0.71, y: -1.39}
       - {x: 1.18, y: -1.24}
   m_UseDelaunayMesh: 0
+--- !u!95 &5514617237502774950
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967048652826663065}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cef60ec65ec1814c8532a8187ea0b3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
