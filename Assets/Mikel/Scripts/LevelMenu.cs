@@ -1,22 +1,27 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Collections.Generic;
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelMenu : MonoBehaviour
 {
-
+    public TMP_Text priceText;
+    public TMP_Text incomeInfoText;
     public Button[] buttons;
+    public GameManager gameManager;   
 
     private void Awake()
     {
+
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
-        for(int i = 0; i < buttons.Length; i++)
+        for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
         }
-        for (int i = 0; i < unlockedLevel; i++ )
+        for (int i = 0; i < unlockedLevel; i++)
         {
             buttons[i].interactable = true;
         }
@@ -27,4 +32,7 @@ public class LevelMenu : MonoBehaviour
         string levelName = "Level" + levelId;
         SceneManager.LoadScene(levelName);
     }
+
+
+    
 }

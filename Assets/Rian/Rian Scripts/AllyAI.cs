@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 using Unity.Cinemachine;
 //asfg
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class AllyAI : MonoBehaviour
 {
     public float moveSpeed = 2f;
@@ -27,9 +27,9 @@ public class AllyAI : MonoBehaviour
     private float castDistance;
 
     float knockbackForce = 100000f;
-    float damageAmount = 1f;
+    float damageMult = 1f;
 
-
+    public Goons goonStat;
     [SerializeField] private float speed = 1f;
     [SerializeField] private float topSpeed = 10f;
 
@@ -41,17 +41,22 @@ public class AllyAI : MonoBehaviour
     [SerializeField] private float detectCooldown = .25f;
     private float detectTimer = 0f;
 
+    private Animator anim;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        anim.runtimeAnimatorController = goonStat.animator;
     }
 
     // Update is called once per frame
     void Start()
     {
         //target = GameObject.Find("Player").transform;
-
+        allyHealth = goonStat.Health;
+        damageMult = goonStat.Strength;
     }
 
     private void Update()
@@ -69,23 +74,23 @@ public class AllyAI : MonoBehaviour
         if (critChance <= 1)
         {
             knockbackForce = 1200f;
-            damageAmount = 10f;
+            damageMult *= 5f;
         }
         else if (critChance > 1 && critChance <= 16)
         {
             knockbackForce = 500f;
-            damageAmount = 5f;
+            damageMult *= 3f;
         }
         else if (critChance > 16)
         {
             knockbackForce = 300f;
-            damageAmount = 3f;
+            damageMult *= 2;
         }
 
         Debug.Log("Mittens has detected a collision.");
         if (target.gameObject.CompareTag("Enemy"))
         {
-            target.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageAmount;
+            target.gameObject.GetComponent<EnemyAI>().enemyHealth -= damageMult;
             Vector3 direction = target.gameObject.transform.position - transform.position;
             Debug.Log("Direction of knockback: " + direction.normalized);
             target.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
