@@ -136,9 +136,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5944fb59b4a9c9946a87742be0ba765d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recoil: 0.5
+  recoilTime: 0.5
   rb: {fileID: 4054192274716585022}
   gun: {fileID: 1855466895847293658}
+  animator: {fileID: 0}
+  gunAnimator: {fileID: 0}
   boxsize: {x: 4.75, y: 3.73}
   attackRadius: 0.75
   speed: 50

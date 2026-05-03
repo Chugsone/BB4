@@ -16,7 +16,7 @@ MonoBehaviour:
   Strength: 1.25
   Sales: 1
   Health: 200
+  animator: {fileID: 22100000, guid: 90a4b4af9fcdd3a44a8df2542cc777c9, type: 2}
   Description: "hates miku \nmassive teto fan\n500 pound chud"
-  icon: {fileID: -4885298761302449938, guid: 49248cf893c2b39449dcdbd03cd51b05, type: 3}
+  icon: {fileID: -8855690875876968426, guid: 8b4cc0561cbe296488b61045b814b0eb, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 17eb9bc02bf705e47a10e28fafd01a5a, type: 3}
-  name: 0
