@@ -64,6 +64,7 @@ public class AllyAI : MonoBehaviour
         if (allyHealth <= 0)
         {
             Destroy(gameObject);
+            FindFirstObjectByType<TeamManager>().TeamA.Remove(gameObject);
         }
         transform.up = moveDirection;
     }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: jim
   m_EditorClassIdentifier: 
   Wage: 1.5
-  Strength: 2
+  Strength: 1.5
   Sales: 7.25
   Health: 80
   animator: {fileID: 0}
