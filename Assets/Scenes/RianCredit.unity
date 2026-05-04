@@ -409,6 +409,8 @@ MonoBehaviour:
     - Programmed AI for Employees
     and Enemies
 
+    -Voice Acting
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
