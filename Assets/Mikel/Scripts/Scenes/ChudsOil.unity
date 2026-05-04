@@ -768,8 +768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57.999935, y: 147.43997}
-  m_SizeDelta: {x: 420.4, y: 81.3}
+  m_AnchoredPosition: {x: 563.9997, y: -66.84003}
+  m_SizeDelta: {x: 510.72, y: 191.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549737316
 MonoBehaviour:
@@ -820,8 +820,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.6
-  m_fontSizeBase: 76.6
+  m_fontSize: 120.77
+  m_fontSizeBase: 120.77
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -28.739532, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -906,8 +906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 58, y: 238}
-  m_SizeDelta: {x: 420.4, y: 81.3}
+  m_AnchoredPosition: {x: 564, y: 147}
+  m_SizeDelta: {x: 510.72, y: 191.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &565337392
 CanvasRenderer:
@@ -964,8 +964,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.6
-  m_fontSizeBase: 76.6
+  m_fontSize: 120.77
+  m_fontSizeBase: 120.77
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2704,8 +2704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.590061, y: 88.76997}
-  m_SizeDelta: {x: 214.5, y: 54.56}
+  m_AnchoredPosition: {x: 470.95975, y: -205.37003}
+  m_SizeDelta: {x: 260.59, y: 128.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2030748762
 CanvasRenderer:
@@ -2762,8 +2762,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.6
-  m_fontSizeBase: 76.6
+  m_fontSize: 120.77
+  m_fontSizeBase: 120.77
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2921,7 +2921,7 @@ MonoBehaviour:
   - {fileID: 6194160}
   - {fileID: 1845688578}
   - {fileID: 1944557675}
-  updatesPerSecond: 99999999
+  updatesPerSecond: 1
   managerID: 1
   count: 0
 --- !u!1660057539 &9223372036854775807
