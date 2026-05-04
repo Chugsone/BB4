@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 4a6dd1068647a2e4cb39d605acffdb88
   - enabled: 1
-    path: Assets/Mikel/Scenes/GoldmanWieners.unity
+    path: Assets/Mikel/Scripts/Scenes/GoldmanWieners.unity
     guid: 1a91ec18a5244614dab2c2a71559003c
   - enabled: 0
-    path: Assets/Mikel/Scenes/Map.unity
+    path: Assets/Mikel/Scripts/Scenes/map.unity
     guid: 5309f91fcc12b8243b12c2ae7e445ee1
   - enabled: 1
     path: Assets/People/Taylor/Scenes/2D Test.unity
@@ -24,37 +24,37 @@ EditorBuildSettings:
     path: Assets/People/Taylor/Scenes/TycoonTest.unity
     guid: 766cf196462b4234890116ba10a312a7
   - enabled: 1
-    path: Assets/Mikel/Scenes/YankeeStadium.unity
+    path: Assets/Mikel/Scripts/Scenes/YankeeStadium.unity
     guid: b34946a2d0e896d44aa4a99c45d94726
   - enabled: 1
-    path: Assets/Mikel/Scenes/StPatricksCatholicChurch.unity
+    path: Assets/Mikel/Scripts/Scenes/StPatricksCatholicChurch.unity
     guid: 204a3f5a25c67c64285153928a28b7cb
   - enabled: 1
-    path: Assets/Mikel/Scenes/StatueOfLiburty.unity
+    path: Assets/Mikel/Scripts/Scenes/StatueOfLiburty.unity
     guid: e294894f7555b2d47add5e1b6447c202
   - enabled: 1
-    path: Assets/Mikel/Scenes/LuigisPizzaria.unity
+    path: Assets/Mikel/Scripts/Scenes/LuigisPizzaria.unity
     guid: 8e3174bce69eaf24cae5f73b53d60e84
   - enabled: 1
-    path: Assets/Mikel/Scenes/LardDonuts.unity
+    path: Assets/Mikel/Scripts/Scenes/LardDonuts.unity
     guid: fcdaf35c7a1bc4c4898e9db737028194
   - enabled: 1
-    path: Assets/Mikel/Scenes/JoesToilets.unity
+    path: Assets/Mikel/Scripts/Scenes/JoesToilets.unity
     guid: 6409f9f692b0d5e44a64620830a641c6
   - enabled: 1
-    path: Assets/Mikel/Scenes/EmpireStateBuilding.unity
+    path: Assets/Mikel/Scripts/Scenes/EmpireStateBuilding.unity
     guid: 6964dd792bc3d5244b9f5747656231c3
   - enabled: 1
-    path: Assets/Mikel/Scenes/CuttinCorral.unity
+    path: Assets/Mikel/Scripts/Scenes/CuttinCorral.unity
     guid: 5bdab366f0db7e342819b5b24e127180
   - enabled: 1
-    path: Assets/Mikel/Scenes/Cinima.unity
+    path: Assets/Mikel/Scripts/Scenes/Cinima.unity
     guid: 17562985d3cdde8479db70199c568fb2
   - enabled: 1
-    path: Assets/Mikel/Scenes/ChudsOil.unity
+    path: Assets/Mikel/Scripts/Scenes/ChudsOil.unity
     guid: d978c30fcf83b724dba981b7d800438e
   - enabled: 1
-    path: Assets/Mikel/Scenes/Bank.unity
+    path: Assets/Mikel/Scripts/Scenes/Bank.unity
     guid: 787817bf7bb425e4d9057a131b9b477d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
