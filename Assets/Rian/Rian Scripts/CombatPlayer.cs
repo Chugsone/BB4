@@ -144,6 +144,7 @@ public class CombatPlayer : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("Player has died.");
+            FindFirstObjectByType<TeamManager>().TeamA.Remove(gameObject);
             Destroy(gameObject);
         }
     }
