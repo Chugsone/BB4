@@ -48,7 +48,6 @@ public class AllyAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        anim.runtimeAnimatorController = goonStat.animator;
     }
 
     // Update is called once per frame
@@ -57,6 +56,7 @@ public class AllyAI : MonoBehaviour
         //target = GameObject.Find("Player").transform;
         allyHealth = goonStat.Health;
         damageMult = goonStat.Strength;
+        anim.runtimeAnimatorController = goonStat.animator;
     }
 
     private void Update()

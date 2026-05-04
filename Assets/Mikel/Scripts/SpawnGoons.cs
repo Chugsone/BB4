@@ -30,7 +30,8 @@ public class SpawnGoons : MonoBehaviour
     public void SpawnGameObject(Goons goon)
     {
         GameObject goonInstance = Instantiate(goon.prefab, Vector3.zero, Quaternion.identity);
-        goonInstance.GetComponent<PlaceAbleObjects>().isGrabbed = true;
+        goonInstance.GetComponent<DragDrop>().isGrabbed = true;
+        goonInstance.GetComponent<AllyAI>().goonStat = goon;
 
         FindFirstObjectByType<TeamManager>().TeamA.Add(goonInstance);
     }
