@@ -172,7 +172,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d0aba21bb9f497a49af968a7033ed3f4
-      internalID: -658589193
+      internalID: -3986546356272959904
       vertices: []
       indices: 
       edges: []
@@ -194,7 +194,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 983d33520962fed4da4e46488156dae9
-      internalID: 407069700
+      internalID: 3382624466248863856
       vertices: []
       indices: 
       edges: []
@@ -216,7 +216,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a21d1c587e1d3784680f1d942103cba6
-      internalID: 600248009
+      internalID: 534710139578020231
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3ed3485a2d603fb4b8e25e90d02af55c
-      internalID: 931523359
+      internalID: 8938590232198193200
       vertices: []
       indices: 
       edges: []
@@ -260,7 +260,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0ee71dad5a8f3c0428fe599c8b0665c6
-      internalID: -824194785
+      internalID: -2633949790769546423
       vertices: []
       indices: 
       edges: []
@@ -282,7 +282,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f78270c8030c8d24ea08629340614d9a
-      internalID: -136974415
+      internalID: -6114973205061564182
       vertices: []
       indices: 
       edges: []
@@ -301,12 +301,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Anderdingus Punch_0: -658589193
-      Anderdingus Punch_1: 407069700
-      Anderdingus Punch_2: 600248009
-      Anderdingus Punch_3: 931523359
-      Anderdingus Punch_4: -824194785
-      Anderdingus Punch_5: -136974415
+      Anderdingus Punch_0: -3986546356272959904
+      Anderdingus Punch_1: 3382624466248863856
+      Anderdingus Punch_2: 534710139578020231
+      Anderdingus Punch_3: 8938590232198193200
+      Anderdingus Punch_4: -2633949790769546423
+      Anderdingus Punch_5: -6114973205061564182
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

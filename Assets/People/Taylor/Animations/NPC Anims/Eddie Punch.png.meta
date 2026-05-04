@@ -169,7 +169,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5a51965e178841540a7ca5ed52e738c2
-      internalID: -495617515
+      internalID: 1902805881924064410
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 34f1b31fb3bc78d4a8171650b2a71e06
-      internalID: 802075205
+      internalID: -6944057253342265012
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3ce8707fbbdf2d84f811c9cae99d152f
-      internalID: 711283289
+      internalID: -3971962777490474230
       vertices: []
       indices: 
       edges: []
@@ -235,7 +235,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 62b02f47e762ffc439e9b7108f6f95dc
-      internalID: 545057951
+      internalID: 5641252834388951944
       vertices: []
       indices: 
       edges: []
@@ -257,7 +257,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 557a00017ff065c49906ef09fa86993c
-      internalID: 252906276
+      internalID: 6533439498735641769
       vertices: []
       indices: 
       edges: []
@@ -279,7 +279,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d7d4574356b905d498f5f4161fb7f929
-      internalID: -439811792
+      internalID: 8052262356006458369
       vertices: []
       indices: 
       edges: []
@@ -298,12 +298,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Eddie Punch_0: -495617515
-      Eddie Punch_1: 802075205
-      Eddie Punch_2: 711283289
-      Eddie Punch_3: 545057951
-      Eddie Punch_4: 252906276
-      Eddie Punch_5: -439811792
+      Eddie Punch_0: 1902805881924064410
+      Eddie Punch_1: -6944057253342265012
+      Eddie Punch_2: -3971962777490474230
+      Eddie Punch_3: 5641252834388951944
+      Eddie Punch_4: 6533439498735641769
+      Eddie Punch_5: 8052262356006458369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
