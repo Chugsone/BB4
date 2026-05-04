@@ -1,40 +1,13 @@
 fileFormatVersion: 2
-guid: 42c302e5ebff0234d9e0e90245642e0f
+guid: 128ded42edf48df4ebb599e818533603
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4597964504178462429
-    second: Herbert Punch_0
+      213: 3115373698773220084
+    second: CarSS_0
   - first:
-      213: -778422068716177510
-    second: Herbert Punch_1
-  - first:
-      213: -1681024298096554276
-    second: Herbert Punch_2
-  - first:
-      213: 339965563067822611
-    second: Herbert Punch_3
-  - first:
-      213: 2493822496768839848
-    second: Herbert Punch_4
-  - first:
-      213: 5450374107671137309
-    second: Herbert Punch_5
-  - first:
-      213: -2856290345878714751
-    second: Herbert Punch_6
-  - first:
-      213: -6524286239210635716
-    second: Herbert Punch_7
-  - first:
-      213: 662992078065237794
-    second: Herbert Punch_8
-  - first:
-      213: -8614919657445879997
-    second: Herbert Punch_9
-  - first:
-      213: 3224150933984168758
-    second: Herbert Punch_10
+      213: -2767566729238398333
+    second: CarSS_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -156,133 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Herbert Punch_0
+      name: CarSS_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 821
+        y: 379
+        width: 351
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3fff0ffbbef827947b75609d31660a2f
-      internalID: -4597964504178462429
+      spriteID: 4faf8f18fd70c3b20800000000000000
+      internalID: 3115373698773220084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Herbert Punch_1
+      name: CarSS_1
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 1920
-        height: 1080
+        x: 2742
+        y: 381
+        width: 351
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ff4f13168bbad62499039424bea8853d
-      internalID: -778422068716177510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_2
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b1f20d63b468e14b9318f1e37738a7f
-      internalID: -1681024298096554276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df3d968cef88617498d7340dfbf18025
-      internalID: 339965563067822611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_4
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbb2f5614c3e8cb45b7cb26b956dfa49
-      internalID: 2493822496768839848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_5
-      rect:
-        serializedVersion: 2
-        x: 9600
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35d7332f674c72b4987aab691b88fd5c
-      internalID: 5450374107671137309
+      spriteID: 38a3e8319b0a799d0800000000000000
+      internalID: -2767566729238398333
       vertices: []
       indices: 
       edges: []
@@ -291,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8adfc7614e3fc94491c1d33d089bae6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -301,12 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Herbert Punch_0: -4597964504178462429
-      Herbert Punch_1: -778422068716177510
-      Herbert Punch_2: -1681024298096554276
-      Herbert Punch_3: 339965563067822611
-      Herbert Punch_4: 2493822496768839848
-      Herbert Punch_5: 5450374107671137309
+      CarSS_0: 3115373698773220084
+      CarSS_1: -2767566729238398333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
