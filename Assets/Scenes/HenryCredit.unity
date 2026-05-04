@@ -404,13 +404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Placed buildings, businesses, and road tiles in the city
-
-    - Added
-    animations for enemies, allies, and player
-
-    - Developed the "Book o'' Business"
-    scene and tooltips'
+  m_text: "- Music\n-Hire system\n- Start Menu \n \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
   m_sharedMaterial: {fileID: -7929468103244204947, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
@@ -625,7 +619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Taylor Wyckoff
+  m_text: Henry Clare
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
   m_sharedMaterial: {fileID: -7929468103244204947, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
