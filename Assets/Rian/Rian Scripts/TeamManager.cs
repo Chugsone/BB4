@@ -1,13 +1,16 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Collections;
+using UnityEngine.SceneManagement;
 public class TeamManager : MonoBehaviour
 {
+    public bool playerWin;
 
+    public GameObject WinScreen;
+    public GameObject LoseScreen;
 
-    public List<GameObject> TeamA { get; set; }
-    public List<GameObject> TeamB { get; set; }
+    public List<GameObject> TeamA;
+    public List<GameObject> TeamB;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,11 +26,21 @@ public class TeamManager : MonoBehaviour
        
         if (TeamA.Count <= 0)
         {
-            Debug.Log("Team B wins!");
+            playerWin = false;
+            LoseScreen.SetActive(true);
+           
         }
         else if (TeamB.Count <= 0)
         {
-            Debug.Log("Team A wins!");
+            playerWin = true;
+            WinScreen.SetActive(true);
+            
         }
     }
+    public void Return()
+    {
+        SceneManager.LoadScene("2D Test");
+    }
+
 }
+

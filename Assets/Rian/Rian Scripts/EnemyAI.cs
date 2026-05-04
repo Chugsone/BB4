@@ -57,7 +57,9 @@ public class EnemyAI : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);
+
             FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
+            FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
         }
 
         transform.up = moveDirection;

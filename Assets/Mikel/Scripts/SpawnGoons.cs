@@ -31,6 +31,8 @@ public class SpawnGoons : MonoBehaviour
     {
         GameObject goonInstance = Instantiate(goon.prefab, Vector3.zero, Quaternion.identity);
         goonInstance.GetComponent<PlaceAbleObjects>().isGrabbed = true;
+
+        FindFirstObjectByType<TeamManager>().TeamA.Add(goonInstance);
     }
 
     public void ShowButtons() 
