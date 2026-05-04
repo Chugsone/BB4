@@ -175,7 +175,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8f4cfc5d8e0f65347b8c3bd582bd3072
-      internalID: 48874739
+      internalID: 871181217527165222
       vertices: []
       indices: 
       edges: []
@@ -197,7 +197,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: af265dbb9a565df4eb53ea9885d3cff9
-      internalID: 981264181
+      internalID: -6623984416796496519
       vertices: []
       indices: 
       edges: []
@@ -219,7 +219,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d721d5f8dedd2bf47a404ea78655ee45
-      internalID: -25259057
+      internalID: -878533006151373465
       vertices: []
       indices: 
       edges: []
@@ -241,7 +241,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2ce9a960b9188744a82b643420dd5905
-      internalID: -1664254439
+      internalID: 6030685983660186783
       vertices: []
       indices: 
       edges: []
@@ -263,7 +263,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 62eba8186b7694b41863ba806e4b249b
-      internalID: -1960941629
+      internalID: -730075526086535866
       vertices: []
       indices: 
       edges: []
@@ -285,7 +285,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bdc325c2ba2177648a145cb3e63095a9
-      internalID: -2026198542
+      internalID: 2975213484181490798
       vertices: []
       indices: 
       edges: []
@@ -304,27 +304,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD
       Jim Punch_0: 871181217527165222
       Jim Punch_1: -6623984416796496519
-      Jim Punch_10: 3615070075033700248
-      Jim Punch_11: -6650600466315271004
       Jim Punch_2: -878533006151373465
       Jim Punch_3: 6030685983660186783
       Jim Punch_4: -730075526086535866
       Jim Punch_5: 2975213484181490798
-      Jim Punch_6: -5158592008888851686
-      Jim Punch_7: 4933032169478321663
-      Jim Punch_8: -9128439540377761642
-      Jim Punch_9: 3318512832139250278
-=======
-      Jim Punch_0: 48874739
-      Jim Punch_1: 981264181
-      Jim Punch_2: -25259057
-      Jim Punch_3: -1664254439
-      Jim Punch_4: -1960941629
-      Jim Punch_5: -2026198542
->>>>>>> e431aa7d900e10330146be028364fb54a554d339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
