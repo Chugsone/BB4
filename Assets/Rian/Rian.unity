@@ -1282,6 +1282,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 885bc9c6a2cacc445af78a7c5af8fb4d, type: 2}
   - {fileID: 11400000, guid: 94e704ec7a99fa64f9cd2315cce46d81, type: 2}
   - {fileID: 11400000, guid: e55a01556ae227c4888d6224070b9c62, type: 2}
+  - {fileID: 11400000, guid: ab4b06dfdf5a0ee48b78bae93996cb6b, type: 2}
   goonButtons: []
 --- !u!114 &729725957
 MonoBehaviour:

@@ -1,32 +1,26 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(Collider2D))]
 public class DragDrop : MonoBehaviour
 {
-    private Collider2D col;
-    private Vector3 startDragPosition;
-
-    private void Start()
-    {
-        col = GetComponent<Collider2D>();
-    }
+    public bool isGrabbed;
 
     private void OnMouseDown()
     {
-        startDragPosition = transform.position;
-        transform.position = GetMousePositionInWorldSpace();
+        isGrabbed = true;
     }
 
-    private void OnMouseDrag()
+    private void Update()
     {
-        transform.position = GetMousePositionInWorldSpace();
+        if (isGrabbed)
+        {
+            transform.position = GetMousePositionInWorldSpace();
+        }
     }
 
     private void OnMouseUp()
     {
-        
+        isGrabbed = false;
     }
 
     public Vector3 GetMousePositionInWorldSpace()
@@ -35,6 +29,4 @@ public class DragDrop : MonoBehaviour
         p.z = 0f;
         return p;
     }
-
-
 }
