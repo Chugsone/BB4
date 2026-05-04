@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 96ce51272daeaaf4789b692fe68f5cf1
+guid: 48f96200f0cb2e2429fbd3172aeebbce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9146464247421242781
-    second: Butterball Punch_0
-  - first:
-      213: 4886902258258439689
-    second: Butterball Punch_1
-  - first:
-      213: 7655745529906201191
-    second: Butterball Punch_2
-  - first:
-      213: 8543080089430712951
-    second: Butterball Punch_3
-  - first:
-      213: -8992294119686682281
-    second: Butterball Punch_4
-  - first:
-      213: 2151366634080177503
-    second: Butterball Punch_5
+      213: -3111363722303510670
+    second: BG for hire system_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,12 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Butterball Punch_0
+      name: BG for hire system_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
+        width: 6720
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,120 +139,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b6b0e5177f565584e80f2b9f562920b4
-      internalID: -9146464247421242781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Butterball Punch_1
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7b6a9c455b9d55459eecf9c84737806
-      internalID: 4886902258258439689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Butterball Punch_2
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 231c26960ea10a140a8d930f192349be
-      internalID: 7655745529906201191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Butterball Punch_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09feb3dbdd0dbae41b64a1d2c158598e
-      internalID: 8543080089430712951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Butterball Punch_4
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48fd0813c19f2164db6c777ea0227210
-      internalID: -8992294119686682281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Butterball Punch_5
-      rect:
-        serializedVersion: 2
-        x: 9600
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f102a89581600124da95622a594c122e
-      internalID: 2151366634080177503
+      spriteID: 277ef05ed2732d4d0800000000000000
+      internalID: -3111363722303510670
       vertices: []
       indices: 
       edges: []
@@ -276,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a8f9507cf9c2b9d49a2d7c932f197e2a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Butterball Punch_0: -9146464247421242781
-      Butterball Punch_1: 4886902258258439689
-      Butterball Punch_2: 7655745529906201191
-      Butterball Punch_3: 8543080089430712951
-      Butterball Punch_4: -8992294119686682281
-      Butterball Punch_5: 2151366634080177503
+      BG for hire system_0: -3111363722303510670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
