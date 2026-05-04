@@ -156,20 +156,20 @@ TextureImporter:
       name: Eddie Punch_0
       rect:
         serializedVersion: 2
-        x: 8379
-        y: 404
-        width: 448
-        height: 495
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a949b9c3edf186a10800000000000000
-      internalID: 1902805881924064410
+      spriteID: 5a51965e178841540a7ca5ed52e738c2
+      internalID: -495617515
       vertices: []
       indices: 
       edges: []
@@ -178,20 +178,20 @@ TextureImporter:
       name: Eddie Punch_1
       rect:
         serializedVersion: 2
-        x: 10375
-        y: 864
-        width: 7
-        height: 7
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c414f8228b0c1af90800000000000000
-      internalID: -6944057253342265012
+      spriteID: 34f1b31fb3bc78d4a8171650b2a71e06
+      internalID: 802075205
       vertices: []
       indices: 
       edges: []
@@ -200,20 +200,20 @@ TextureImporter:
       name: Eddie Punch_2
       rect:
         serializedVersion: 2
-        x: 748
-        y: 392
-        width: 432
-        height: 299
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a0b3b92f5e0c0e8c0800000000000000
-      internalID: -3971962777490474230
+      spriteID: 3ce8707fbbdf2d84f811c9cae99d152f
+      internalID: 711283289
       vertices: []
       indices: 
       edges: []
@@ -222,20 +222,20 @@ TextureImporter:
       name: Eddie Punch_3
       rect:
         serializedVersion: 2
-        x: 2581
-        y: 386
-        width: 519
-        height: 311
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8834be17091c94e40800000000000000
-      internalID: 5641252834388951944
+      spriteID: 62b02f47e762ffc439e9b7108f6f95dc
+      internalID: 545057951
       vertices: []
       indices: 
       edges: []
@@ -244,20 +244,20 @@ TextureImporter:
       name: Eddie Punch_4
       rect:
         serializedVersion: 2
-        x: 4452
-        y: 570
-        width: 21
-        height: 14
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a4e4a3cb907baa50800000000000000
-      internalID: 6533439498735641769
+      spriteID: 557a00017ff065c49906ef09fa86993c
+      internalID: 252906276
       vertices: []
       indices: 
       edges: []
@@ -266,108 +266,20 @@ TextureImporter:
       name: Eddie Punch_5
       rect:
         serializedVersion: 2
-        x: 4525
-        y: 374
-        width: 492
-        height: 332
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 104d30833f16fbf60800000000000000
-      internalID: 8052262356006458369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eddie Punch_6
-      rect:
-        serializedVersion: 2
-        x: 6387
-        y: 570
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac87872c3e7168990800000000000000
-      internalID: -7384188272039659318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eddie Punch_7
-      rect:
-        serializedVersion: 2
-        x: 6448
-        y: 367
-        width: 487
-        height: 350
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 48442da1e1de03d20800000000000000
-      internalID: 3256363244143658116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eddie Punch_8
-      rect:
-        serializedVersion: 2
-        x: 10341
-        y: 403
-        width: 417
-        height: 389
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50e5ce59652902940800000000000000
-      internalID: 5269372464603618821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eddie Punch_9
-      rect:
-        serializedVersion: 2
-        x: 6371
-        y: 562
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d6d7e923bd900540800000000000000
-      internalID: 4972147381444794069
+      spriteID: d7d4574356b905d498f5f4161fb7f929
+      internalID: -439811792
       vertices: []
       indices: 
       edges: []
@@ -376,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 436b736a7a820e44c9c147b550cdbc46
     internalID: 0
     vertices: []
     indices: 
@@ -386,6 +298,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       Eddie Punch_0: 1902805881924064410
       Eddie Punch_1: -6944057253342265012
       Eddie Punch_2: -3971962777490474230
@@ -396,6 +309,14 @@ TextureImporter:
       Eddie Punch_7: 3256363244143658116
       Eddie Punch_8: 5269372464603618821
       Eddie Punch_9: 4972147381444794069
+=======
+      Eddie Punch_0: -495617515
+      Eddie Punch_1: 802075205
+      Eddie Punch_2: 711283289
+      Eddie Punch_3: 545057951
+      Eddie Punch_4: 252906276
+      Eddie Punch_5: -439811792
+>>>>>>> e431aa7d900e10330146be028364fb54a554d339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

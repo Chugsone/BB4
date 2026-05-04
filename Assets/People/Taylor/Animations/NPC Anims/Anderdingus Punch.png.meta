@@ -159,20 +159,20 @@ TextureImporter:
       name: Anderdingus Punch_0
       rect:
         serializedVersion: 2
-        x: 8379
-        y: 375
-        width: 448
-        height: 565
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06ee8b9e531fca8c0800000000000000
-      internalID: -3986546356272959904
+      spriteID: d0aba21bb9f497a49af968a7033ed3f4
+      internalID: -658589193
       vertices: []
       indices: 
       edges: []
@@ -181,20 +181,20 @@ TextureImporter:
       name: Anderdingus Punch_1
       rect:
         serializedVersion: 2
-        x: 10375
-        y: 864
-        width: 7
-        height: 7
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0701f47b70f71fe20800000000000000
-      internalID: 3382624466248863856
+      spriteID: 983d33520962fed4da4e46488156dae9
+      internalID: 407069700
       vertices: []
       indices: 
       edges: []
@@ -203,20 +203,20 @@ TextureImporter:
       name: Anderdingus Punch_2
       rect:
         serializedVersion: 2
-        x: 748
-        y: 377
-        width: 432
-        height: 314
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 781f857f90cab6700800000000000000
-      internalID: 534710139578020231
+      spriteID: a21d1c587e1d3784680f1d942103cba6
+      internalID: 600248009
       vertices: []
       indices: 
       edges: []
@@ -225,20 +225,20 @@ TextureImporter:
       name: Anderdingus Punch_3
       rect:
         serializedVersion: 2
-        x: 2581
-        y: 363
-        width: 519
-        height: 334
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03023fe15704c0c70800000000000000
-      internalID: 8938590232198193200
+      spriteID: 3ed3485a2d603fb4b8e25e90d02af55c
+      internalID: 931523359
       vertices: []
       indices: 
       edges: []
@@ -247,20 +247,20 @@ TextureImporter:
       name: Anderdingus Punch_4
       rect:
         serializedVersion: 2
-        x: 4452
-        y: 570
-        width: 21
-        height: 14
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 94b77fcde94527bd0800000000000000
-      internalID: -2633949790769546423
+      spriteID: 0ee71dad5a8f3c0428fe599c8b0665c6
+      internalID: -824194785
       vertices: []
       indices: 
       edges: []
@@ -269,130 +269,20 @@ TextureImporter:
       name: Anderdingus Punch_5
       rect:
         serializedVersion: 2
-        x: 4525
-        y: 369
-        width: 492
-        height: 337
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ae8064db440432ba0800000000000000
-      internalID: -6114973205061564182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anderdingus Punch_6
-      rect:
-        serializedVersion: 2
-        x: 6387
-        y: 570
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbee5720183536f70800000000000000
-      internalID: 9179272279068372669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anderdingus Punch_7
-      rect:
-        serializedVersion: 2
-        x: 6448
-        y: 365
-        width: 487
-        height: 352
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92220db44c55eff70800000000000000
-      internalID: 9222903388475236905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anderdingus Punch_8
-      rect:
-        serializedVersion: 2
-        x: 10341
-        y: 390
-        width: 417
-        height: 402
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0780dc84a90967a80800000000000000
-      internalID: -8469423056902879120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anderdingus Punch_9
-      rect:
-        serializedVersion: 2
-        x: 6371
-        y: 562
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2dae1b57e14237130800000000000000
-      internalID: 3563231443422407378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anderdingus Punch_10
-      rect:
-        serializedVersion: 2
-        x: 8345
-        y: 350
-        width: 129
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25a2df96c767aff30800000000000000
-      internalID: 4610127445293345362
+      spriteID: f78270c8030c8d24ea08629340614d9a
+      internalID: -136974415
       vertices: []
       indices: 
       edges: []
@@ -401,7 +291,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7cdfd366b2bf53742b4e82b4a1f41f20
     internalID: 0
     vertices: []
     indices: 
@@ -411,6 +301,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       Anderdingus Punch_0: -3986546356272959904
       Anderdingus Punch_1: 3382624466248863856
       Anderdingus Punch_10: 4610127445293345362
@@ -422,6 +313,14 @@ TextureImporter:
       Anderdingus Punch_7: 9222903388475236905
       Anderdingus Punch_8: -8469423056902879120
       Anderdingus Punch_9: 3563231443422407378
+=======
+      Anderdingus Punch_0: -658589193
+      Anderdingus Punch_1: 407069700
+      Anderdingus Punch_2: 600248009
+      Anderdingus Punch_3: 931523359
+      Anderdingus Punch_4: -824194785
+      Anderdingus Punch_5: -136974415
+>>>>>>> e431aa7d900e10330146be028364fb54a554d339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
