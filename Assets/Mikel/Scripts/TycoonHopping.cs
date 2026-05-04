@@ -66,7 +66,7 @@ public class TycoonHopping : MonoBehaviour
 
     public void MapHop()
     {
-        SceneManager.LoadScene("Map");
+        SceneManager.LoadScene("2D Test");
     }
 
 }
