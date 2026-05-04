@@ -159,20 +159,20 @@ TextureImporter:
       name: Herbert Punch_0
       rect:
         serializedVersion: 2
-        x: 8379
-        y: 398
-        width: 448
-        height: 542
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 321769ef4afb030c0800000000000000
-      internalID: -4597964504178462429
+      spriteID: 3fff0ffbbef827947b75609d31660a2f
+      internalID: 1967614444
       vertices: []
       indices: 
       edges: []
@@ -181,20 +181,20 @@ TextureImporter:
       name: Herbert Punch_1
       rect:
         serializedVersion: 2
-        x: 10375
-        y: 864
-        width: 7
-        height: 7
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a97f8d4b04d7235f0800000000000000
-      internalID: -778422068716177510
+      spriteID: ff4f13168bbad62499039424bea8853d
+      internalID: 363266485
       vertices: []
       indices: 
       edges: []
@@ -203,20 +203,20 @@ TextureImporter:
       name: Herbert Punch_2
       rect:
         serializedVersion: 2
-        x: 748
-        y: 389
-        width: 432
-        height: 302
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cde872dae4dcba8e0800000000000000
-      internalID: -1681024298096554276
+      spriteID: 1b1f20d63b468e14b9318f1e37738a7f
+      internalID: -1484947462
       vertices: []
       indices: 
       edges: []
@@ -225,20 +225,20 @@ TextureImporter:
       name: Herbert Punch_3
       rect:
         serializedVersion: 2
-        x: 2581
-        y: 388
-        width: 519
-        height: 309
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 312f58ed0ecc7b400800000000000000
-      internalID: 339965563067822611
+      spriteID: df3d968cef88617498d7340dfbf18025
+      internalID: -1187954827
       vertices: []
       indices: 
       edges: []
@@ -247,20 +247,20 @@ TextureImporter:
       name: Herbert Punch_4
       rect:
         serializedVersion: 2
-        x: 4452
-        y: 570
-        width: 21
-        height: 14
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8a0d8c41956db9220800000000000000
-      internalID: 2493822496768839848
+      spriteID: cbb2f5614c3e8cb45b7cb26b956dfa49
+      internalID: 935431584
       vertices: []
       indices: 
       edges: []
@@ -269,130 +269,20 @@ TextureImporter:
       name: Herbert Punch_5
       rect:
         serializedVersion: 2
-        x: 4525
-        y: 374
-        width: 492
-        height: 332
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d1c89b4af5e93ab40800000000000000
-      internalID: 5450374107671137309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_6
-      rect:
-        serializedVersion: 2
-        x: 6387
-        y: 570
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 186858e401b6c58d0800000000000000
-      internalID: -2856290345878714751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_7
-      rect:
-        serializedVersion: 2
-        x: 6448
-        y: 367
-        width: 487
-        height: 350
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3e71ea8b341575a0800000000000000
-      internalID: -6524286239210635716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_8
-      rect:
-        serializedVersion: 2
-        x: 10341
-        y: 403
-        width: 417
-        height: 389
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22ff9f548cb633900800000000000000
-      internalID: 662992078065237794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_9
-      rect:
-        serializedVersion: 2
-        x: 6371
-        y: 562
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34f88612738a17880800000000000000
-      internalID: -8614919657445879997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Herbert Punch_10
-      rect:
-        serializedVersion: 2
-        x: 8345
-        y: 350
-        width: 129
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63bce52313c7ebc20800000000000000
-      internalID: 3224150933984168758
+      spriteID: 35d7332f674c72b4987aab691b88fd5c
+      internalID: 188374597
       vertices: []
       indices: 
       edges: []
@@ -401,7 +291,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8adfc7614e3fc94491c1d33d089bae6
     internalID: 0
     vertices: []
     indices: 
@@ -411,17 +301,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Herbert Punch_0: -4597964504178462429
-      Herbert Punch_1: -778422068716177510
-      Herbert Punch_10: 3224150933984168758
-      Herbert Punch_2: -1681024298096554276
-      Herbert Punch_3: 339965563067822611
-      Herbert Punch_4: 2493822496768839848
-      Herbert Punch_5: 5450374107671137309
-      Herbert Punch_6: -2856290345878714751
-      Herbert Punch_7: -6524286239210635716
-      Herbert Punch_8: 662992078065237794
-      Herbert Punch_9: -8614919657445879997
+      Herbert Punch_0: 1967614444
+      Herbert Punch_1: 363266485
+      Herbert Punch_2: -1484947462
+      Herbert Punch_3: -1187954827
+      Herbert Punch_4: 935431584
+      Herbert Punch_5: 188374597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
