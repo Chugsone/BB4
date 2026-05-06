@@ -4,7 +4,6 @@ using System.Linq;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -59,7 +58,9 @@ public class EnemyAI : MonoBehaviour
     {
         if (enemyHealth <= 0)
         {
-            
+            FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
+            FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
+            Destroy(gameObject);
            int deathsound = (int)Random.Range(1, 3);
             if (deathsound == 1)
             {
@@ -76,8 +77,7 @@ public class EnemyAI : MonoBehaviour
             AudioSource.PlayClipAtPoint(deathfx, transform.position);
             enabled = false;
 
-            FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
-            FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
+            
         }
 
         transform.up = moveDirection;
