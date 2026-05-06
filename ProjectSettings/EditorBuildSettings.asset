@@ -56,6 +56,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mikel/Scenes/Bank.unity
     guid: 787817bf7bb425e4d9057a131b9b477d
+  - enabled: 1
+    path: Assets/Scenes/ChaseCredits.unity
+    guid: 975837a20fe6e164b81c3f1399f0e5ba
+  - enabled: 1
+    path: Assets/Scenes/GraysonCredit.unity
+    guid: ca823dcd9d8a7a54a83315759a5a359c
+  - enabled: 1
+    path: Assets/Scenes/HenryCredit.unity
+    guid: f24721ac436063f41b0aaa663c234b9d
+  - enabled: 1
+    path: Assets/Scenes/RianCredit.unity
+    guid: 52dcf4400584cdf409ae2d3c796a3f9b
+  - enabled: 1
+    path: Assets/Scenes/TaylorCredit.unity
+    guid: fb54c5032373deb4293dad0f33e00b7c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
