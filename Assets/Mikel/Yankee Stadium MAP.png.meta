@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yankee Stadium MAP_0: 2442456701989836816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

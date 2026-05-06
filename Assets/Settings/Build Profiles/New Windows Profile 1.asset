@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 15003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: New Windows Profile 1
+  m_EditorClassIdentifier: 
+  m_AssetVersion: 1
+  m_BuildTarget: 19
+  m_Subtarget: 2
+  m_PlatformId: 4e3c793746204150860bf175a9a41a05
+  m_PlatformBuildProfile:
+    rid: 1400139138555445248
+  m_OverrideGlobalSceneList: 0
+  m_Scenes:
+  - m_enabled: 1
+    m_path: Assets/People/Henry/MainMenu.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Main.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/GoldmanWieners.unity
+  - m_enabled: 0
+    m_path: Assets/Mikel/Scenes/map.unity
+  - m_enabled: 1
+    m_path: Assets/People/Taylor/Scenes/2D Test.unity
+  - m_enabled: 1
+    m_path: Assets/People/Taylor/Scenes/TycoonTest.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/YankeeStadium.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/StPatricksCatholicChurch.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/StatueOfLiburty.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/LuigisPizzaria.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/LardDonuts.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/JoesToilets.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/EmpireStateBuilding.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/CuttinCorral.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/Cinima.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/ChudsOil.unity
+  - m_enabled: 1
+    m_path: Assets/Mikel/Scenes/Bank.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/ChaseCredits.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/GraysonCredit.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/HenryCredit.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/RianCredit.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/TaylorCredit.unity
+  - m_enabled: 1
+    m_path: Assets/Rian/Rian.unity
+  - m_enabled: 1
+    m_path: Assets/People/Taylor/Scenes/TycoonTest 1.unity
+  - m_enabled: 1
+    m_path: Assets/Rian/Rian 1.unity
+  m_ScriptingDefines: []
+  m_PlayerSettingsYaml:
+    m_Settings: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1400139138555445248
+      type: {class: WindowsPlatformSettings, ns: UnityEditor.WindowsStandalone, asm: UnityEditor.WindowsStandalone.Extensions}
+      data:
+        m_Development: 0
+        m_ConnectProfiler: 0
+        m_BuildWithDeepProfilingSupport: 0
+        m_AllowDebugging: 0
+        m_WaitForManagedDebugger: 0
+        m_ManagedDebuggerFixedPort: 0
+        m_ExplicitNullChecks: 0
+        m_ExplicitDivideByZeroChecks: 0
+        m_ExplicitArrayBoundsChecks: 0
+        m_CompressionType: 0
+        m_InstallInBuildFolder: 0
+        m_WindowsBuildAndRunDeployTarget: 0
+        m_Architecture: 0
+        m_CreateSolution: 0
+        m_CopyPDBFiles: 0
+        m_WindowsDevicePortalAddress: 
+        m_WindowsDevicePortalUsername: 
