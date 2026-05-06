@@ -77,8 +77,9 @@ public class CombatPlayer : MonoBehaviour
     [SerializeField] private Transform spriteTransform;
 
 
-
-
+    public AudioClip shootfx;
+    public AudioSource slapfx;
+    public AudioSource deathfx;
 
 
 
