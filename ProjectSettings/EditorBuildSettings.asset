@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/People/Henry/Henry.unity
+    path: Assets/People/Henry/MainMenu.unity
     guid: 6d91f5e72d267a844b6cf1f80c311890
   - enabled: 1
     path: Assets/Scenes/Main.unity

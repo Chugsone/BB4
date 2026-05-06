@@ -23,5 +23,13 @@ public class Creditws : MonoBehaviour
     {
         SceneManager.LoadScene("RianCredit");
     }
+    public void creditbuttonGrayson()
+    {
+        SceneManager.LoadScene("GraysonCredit");
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
 }
