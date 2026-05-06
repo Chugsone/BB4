@@ -9,6 +9,6 @@ public class LoadTycoonTest : MonoBehaviour
     }
        public void TycoonTest1()
     {
-        SceneManager.LoadScene("TycoonTest1");
+        SceneManager.LoadScene("TycoonTest 1");
     }
 }
