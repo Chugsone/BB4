@@ -14,6 +14,8 @@ public class StoreUpgrade : MonoBehaviour
     public Image upgradeImage;
     public TMP_Text upgradeNameText;
 
+    public AudioClip upgrade;
+
     [Header("Upgrade Info")]
     public string upgradeName;
     public int startPrice;
@@ -79,6 +81,8 @@ public class StoreUpgrade : MonoBehaviour
                 animator.Play("Purchase", -1, 1f);
             }
         }
+
+        AudioSource.PlayClipAtPoint(upgrade, transform.position);
     }
 
     public void UpdateUI()

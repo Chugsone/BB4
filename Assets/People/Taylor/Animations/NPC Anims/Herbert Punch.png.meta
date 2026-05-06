@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4f13168bbad62499039424bea8853d
-      internalID: -778422068716177510
+      spriteID: 562d8f9fe7c71344f8e8b2501a2debe1
+      internalID: -1103241971
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b1f20d63b468e14b9318f1e37738a7f
-      internalID: -1681024298096554276
+      spriteID: 62ff9867c54b1274f8674f8bd5ecd6d3
+      internalID: 1583218460
       vertices: []
       indices: 
       edges: []
@@ -237,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3d968cef88617498d7340dfbf18025
-      internalID: 339965563067822611
+      spriteID: 85d67166bdc1b6d4bb1593883ae772d6
+      internalID: 459365103
       vertices: []
       indices: 
       edges: []
@@ -259,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbb2f5614c3e8cb45b7cb26b956dfa49
-      internalID: 2493822496768839848
+      spriteID: 51b76ad92c7f27042947ac9c02dd5076
+      internalID: 1610143809
       vertices: []
       indices: 
       edges: []
@@ -281,8 +281,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35d7332f674c72b4987aab691b88fd5c
-      internalID: 5450374107671137309
+      spriteID: 8c8fb182e6b878141959aa7d48fffeca
+      internalID: -470599785
       vertices: []
       indices: 
       edges: []
@@ -302,11 +302,11 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Herbert Punch_0: -4597964504178462429
-      Herbert Punch_1: -778422068716177510
-      Herbert Punch_2: -1681024298096554276
-      Herbert Punch_3: 339965563067822611
-      Herbert Punch_4: 2493822496768839848
-      Herbert Punch_5: 5450374107671137309
+      Herbert Punch_1: -1103241971
+      Herbert Punch_2: 1583218460
+      Herbert Punch_3: 459365103
+      Herbert Punch_4: 1610143809
+      Herbert Punch_5: -470599785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

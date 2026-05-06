@@ -7,4 +7,8 @@ public class LoadTycoonTest : MonoBehaviour
     {
         SceneManager.LoadScene("TycoonTest");
     }
+       public void TycoonTest1()
+    {
+        SceneManager.LoadScene("TycoonTest 1");
+    }
 }
