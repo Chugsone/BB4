@@ -1683,6 +1683,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 103409385}
     m_Modifications:
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
+      propertyPath: upgrade
+      value: 
+      objectReference: {fileID: 8300000, guid: f43d3aa9b60d392418178e4c7345d7d5, type: 3}
+    - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: priceText
       value: 
       objectReference: {fileID: 0}
@@ -2090,6 +2094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 103409385}
     m_Modifications:
+    - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
+      propertyPath: upgrade
+      value: 
+      objectReference: {fileID: 8300000, guid: df2d9bc33f56ac149bb1acc30564110b, type: 3}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: priceText
       value: 
@@ -2686,6 +2694,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 103409385}
     m_Modifications:
+    - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
+      propertyPath: upgrade
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d411adb6acda0e45ab72751514f25c1, type: 3}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: priceText
       value: 

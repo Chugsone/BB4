@@ -12,6 +12,8 @@ public class Slopmania : MonoBehaviour
     public string upgradeName;
     public float upgradePriceMultiplier;
     public float moneyPerUpgrade;
+    
+    public AudioClip employmentsfx;
 
     public GameManager gameManager;
     int price = 0;
@@ -85,6 +87,8 @@ public class Slopmania : MonoBehaviour
     public void Update()
     {
         Debug.Log($"{SaveDataController.Instance.current.allies.Data[_allies.Stats[slopmania]].CurrentlyHired}");
+        
+        AudioSource.PlayClipAtPoint(employmentsfx, transform.position);
         
     }
     int CalculatePrice()
