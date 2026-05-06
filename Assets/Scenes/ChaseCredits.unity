@@ -404,13 +404,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Placed buildings, businesses, and road tiles in the city
+  m_text: '-Made Tycoons for all the buisnesses
 
-    - Added
-    animations for enemies, allies, and player
+    -Fixed a lot of bugs
 
-    - Developed the "Book o'' Business"
-    scene and tooltips'
+    -Save
+    Data
+
+
+    - so very cool and handsome'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
   m_sharedMaterial: {fileID: -7929468103244204947, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
@@ -625,7 +627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Taylor Wyckoff
+  m_text: Mikel Bannavong
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
   m_sharedMaterial: {fileID: -7929468103244204947, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
@@ -652,8 +654,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 220
-  m_fontSizeBase: 220
+  m_fontSize: 203.33
+  m_fontSizeBase: 203.33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

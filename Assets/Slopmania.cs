@@ -82,13 +82,14 @@ public class Slopmania : MonoBehaviour
         _allies.Data[_allies.Stats[slopmania]].Exp++;
 
         gameObject.SetActive(false);
+        
+        AudioSource.PlayClipAtPoint(employmentsfx, new Vector2(0,0));
     }
 
     public void Update()
     {
         Debug.Log($"{SaveDataController.Instance.current.allies.Data[_allies.Stats[slopmania]].CurrentlyHired}");
         
-        AudioSource.PlayClipAtPoint(employmentsfx, transform.position);
         
     }
     int CalculatePrice()

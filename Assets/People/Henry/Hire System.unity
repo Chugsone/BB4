@@ -234,6 +234,7 @@ MonoBehaviour:
   upgradeName: 
   upgradePriceMultiplier: 0
   moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: 8379085d97188184dadb2404808b40b4, type: 3}
   gameManager: {fileID: 0}
   upgradeID: 0
 --- !u!114 &66070644
@@ -279,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66070645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 66070643}
+        m_TargetAssemblyTypeName: Slopmania, Assembly-CSharp
+        m_MethodName: BetterSlop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &66070645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +753,7 @@ MonoBehaviour:
   upgradeName: 
   upgradePriceMultiplier: 0
   moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: b85b0eb091598ce4baf67ff862433734, type: 3}
   gameManager: {fileID: 0}
   upgradeID: 0
 --- !u!1 &312052241
@@ -754,6 +768,7 @@ GameObject:
   - component: {fileID: 312052245}
   - component: {fileID: 312052244}
   - component: {fileID: 312052243}
+  - component: {fileID: 312052246}
   m_Layer: 5
   m_Name: Hire#8
   m_TagString: Untagged
@@ -825,7 +840,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 312052244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 312052246}
+        m_TargetAssemblyTypeName: Slopmania, Assembly-CSharp
+        m_MethodName: BetterSlop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &312052244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,6 +891,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312052241}
   m_CullTransparentMesh: 1
+--- !u!114 &312052246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312052241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02293feb92cbe04eb85a64931158370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceMultiplier: 1.5
+  startPrice: 5
+  slopmania: 0
+  upgradeName: 
+  upgradePriceMultiplier: 0
+  moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: d0e64a5570fd66f49a042f93ec41afcd, type: 3}
+  gameManager: {fileID: 0}
+  upgradeID: 0
 --- !u!1 &318446724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,7 +1438,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711160415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 711160417}
+        m_TargetAssemblyTypeName: Slopmania, Assembly-CSharp
+        m_MethodName: BetterSlop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &711160415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,6 +1507,7 @@ MonoBehaviour:
   upgradeName: 
   upgradePriceMultiplier: 0
   moneyPerUpgrade: 0
+  employmentsfx: {fileID: 0}
   gameManager: {fileID: 0}
   upgradeID: 0
 --- !u!1 &720762355
@@ -3169,7 +3230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3344,6 +3405,7 @@ GameObject:
   - component: {fileID: 1633648672}
   - component: {fileID: 1633648671}
   - component: {fileID: 1633648670}
+  - component: {fileID: 1633648673}
   m_Layer: 5
   m_Name: Hire#9
   m_TagString: Untagged
@@ -3415,7 +3477,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1633648671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1633648673}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1633648671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,6 +3528,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633648668}
   m_CullTransparentMesh: 1
+--- !u!114 &1633648673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633648668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02293feb92cbe04eb85a64931158370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceMultiplier: 1.5
+  startPrice: 5
+  slopmania: 0
+  upgradeName: 
+  upgradePriceMultiplier: 0
+  moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: f648e028be9960b4f91904759d6eee01, type: 3}
+  gameManager: {fileID: 0}
+  upgradeID: 0
 --- !u!1 &1683211154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,15 +3763,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2735849, g: 0.2722944, b: 0.2722944, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -3111363722303510670, guid: 48f96200f0cb2e2429fbd3172aeebbce, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3915,7 +4010,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1887141413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1887141415}
+        m_TargetAssemblyTypeName: Slopmania, Assembly-CSharp
+        m_MethodName: BetterSlop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1887141413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3972,6 +4079,7 @@ MonoBehaviour:
   upgradeName: 
   upgradePriceMultiplier: 0
   moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: c31b853c0d10b664bbb2ee20f20b3e6d, type: 3}
   gameManager: {fileID: 0}
   upgradeID: 0
 --- !u!1 &1946904714
@@ -4058,7 +4166,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1946904717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1946904719}
+        m_TargetAssemblyTypeName: Slopmania, Assembly-CSharp
+        m_MethodName: BetterSlop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1946904717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4115,6 +4235,7 @@ MonoBehaviour:
   upgradeName: 
   upgradePriceMultiplier: 0
   moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: ba0364b47ccafe645aab2912ace8f4cb, type: 3}
   gameManager: {fileID: 0}
   upgradeID: 0
 --- !u!1 &1965238577
@@ -4435,7 +4556,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2099743293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2099743295}
+        m_TargetAssemblyTypeName: Slopmania, Assembly-CSharp
+        m_MethodName: BetterSlop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2099743293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4492,6 +4625,7 @@ MonoBehaviour:
   upgradeName: 
   upgradePriceMultiplier: 0
   moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: 04b30f198d5fb5a41812d040c070e504, type: 3}
   gameManager: {fileID: 0}
   upgradeID: 0
 --- !u!1 &2102627621
@@ -4541,6 +4675,7 @@ GameObject:
   - component: {fileID: 2119973757}
   - component: {fileID: 2119973756}
   - component: {fileID: 2119973755}
+  - component: {fileID: 2119973758}
   m_Layer: 5
   m_Name: Hire#7
   m_TagString: Untagged
@@ -4612,7 +4747,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2119973756}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2119973758}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2119973756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4651,6 +4798,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119973753}
   m_CullTransparentMesh: 1
+--- !u!114 &2119973758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119973753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02293feb92cbe04eb85a64931158370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceMultiplier: 1.5
+  startPrice: 5
+  slopmania: 0
+  upgradeName: 
+  upgradePriceMultiplier: 0
+  moneyPerUpgrade: 0
+  employmentsfx: {fileID: 8300000, guid: cada56adaeed04b419a067896d11b203, type: 3}
+  gameManager: {fileID: 0}
+  upgradeID: 0
 --- !u!1 &2120417478
 GameObject:
   m_ObjectHideFlags: 0
