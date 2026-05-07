@@ -147,7 +147,7 @@ MonoBehaviour:
   topSpeed: 50
   castDistance: 2.5
   startTimeBtwAttack: 0
-  projectilePrefab: {fileID: 21813456229864849, guid: acf5f3fbde1b8144c82b3a849db7e231, type: 3}
+  projectilePrefab: {fileID: 21813456229864849, guid: a3c0f34221bb41e47a2052b24a988180, type: 3}
   mainCamera: {fileID: 0}
   health: 100
   direction: 0
@@ -161,6 +161,9 @@ MonoBehaviour:
   mag: 1
   bullets: 999
   spriteTransform: {fileID: 8002738459616621615}
+  shootfx: {fileID: 0}
+  slapfx: {fileID: 0}
+  deathfx: {fileID: 0}
 --- !u!50 &4054192274716585022
 Rigidbody2D:
   serializedVersion: 5

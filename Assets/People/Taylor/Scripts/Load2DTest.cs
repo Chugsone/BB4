@@ -7,4 +7,8 @@ public class Load2DTest : MonoBehaviour
     {
         SceneManager.LoadScene("2D Test");
     }
+    public void HireSystem()
+    {
+        SceneManager.LoadScene("Hire System");
+    }
 }

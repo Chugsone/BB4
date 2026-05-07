@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
-using UnityEditor;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -37,6 +35,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float detectCooldown = .25f;
     private float detectTimer = 0f;
     private Animator animator;
+    public AudioClip deathfx;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -50,16 +49,34 @@ public class EnemyAI : MonoBehaviour
     {
         //target = GameObject.Find("Player").transform;
         int critChance = (int)Random.Range(0.0f, 20.0f);
+        
     }
+
 
     private void Update()
     {
         if (enemyHealth <= 0)
         {
-            Destroy(gameObject);
-
             FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
             FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
+            Destroy(gameObject);
+           int deathsound = (int)Random.Range(1, 3);
+            if (deathsound == 1)
+            {
+                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
+            }
+            else if (deathsound == 2)
+            {
+                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
+            }
+            else if (deathsound == 3) {
+                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
+            }
+
+            AudioSource.PlayClipAtPoint(deathfx, transform.position);
+            enabled = false;
+
+            
         }
 
         transform.up = moveDirection;

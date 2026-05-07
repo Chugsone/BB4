@@ -1,12 +1,25 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class CursorFollow : MonoBehaviour
 {
     [SerializeField] private GameObject tooltipObject;
     [SerializeField] private TMPro.TMP_Text title;
     [SerializeField] private TMPro.TMP_Text info;
 
+    private bool isHovering;
 
+    public void LeftClick(InputAction.CallbackContext ctx)
+    {
+        if (!ctx.performed && !isHovering)
+        {
+            return;
+        }
+
+        SceneManager.LoadScene("Rian");
+
+    }
+    
 
     private void Update()
     {
@@ -23,6 +36,7 @@ public class CursorFollow : MonoBehaviour
             tooltipObject.SetActive(true);
             title.text = data.title;
             info.text = data.description;
+            isHovering = true;
         }
     }
 
@@ -31,6 +45,7 @@ public class CursorFollow : MonoBehaviour
         if (collision.gameObject.CompareTag("Business"))
         {
             tooltipObject.SetActive(false);
+            isHovering = false;
         }
     }
 }
