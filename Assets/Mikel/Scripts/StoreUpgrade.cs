@@ -30,12 +30,12 @@ public class StoreUpgrade : MonoBehaviour
 
     private void Start()
     {
-        List<int> levels = SaveDataController.Instance.current.Upgrades.Levels;
+        var levels = SaveDataController.Instance.current.Upgrades.Upgrades;
         if (levels != null && levels.Count > 0)
         {
             Debug.Log("TEst");
             // SaveDataController.Instance.current.Upgrades.Levels = new List<int>() {0, 0, 0,0 ,0 ,0 ,0 ,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-            level = SaveDataController.Instance.current.Upgrades.Levels[upgradeID];
+            level = SaveDataController.Instance.current.Upgrades.Upgrades[upgradeID].Level;
         }
 
         UpdateUI();
@@ -58,25 +58,23 @@ public class StoreUpgrade : MonoBehaviour
         if (purchaseSuccessful)
         {
             level++;
-            SaveDataController.Instance.current.Upgrades.Levels[upgradeID] = level;
+            SaveDataController.Instance.current.Upgrades.Upgrades[upgradeID].Level = level;
             UpdateUI();
         }
 
         //makes the animator play a apurchase animation if the purchase was successful
-        if (purchaseSuccessful != null)
+        if (purchaseSuccessful == true)
         {
-            Animator animator = GetComponent<Animator>();
-            if (animator != null)
+            if (TryGetComponent(out Animator animator))
             {
                 animator.SetTrigger("Purchase");
             }
             
         }
         //plays last frame when next upgrade is clicked and the purchase is successful
-        if (purchaseSuccessful != null)
+        if (purchaseSuccessful == true)
         {
-            Animator animator = GetComponent<Animator>();
-            if (animator != null)
+            if (TryGetComponent(out Animator animator))
             {
                 animator.Play("Purchase", -1, 1f);
             }
