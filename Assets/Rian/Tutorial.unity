@@ -3858,7 +3858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Blood Money '
+  m_text: Blood Money and Hotdogs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d089d68564ebfea4f9ba61944754e090, type: 2}
   m_sharedMaterial: {fileID: -6971786610635294004, guid: d089d68564ebfea4f9ba61944754e090, type: 2}
