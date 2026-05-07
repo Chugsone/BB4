@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     Transform target;
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
+    [SerializeField] private Sprite[] deathSprites;
 
     private int critChance;
 
@@ -29,6 +30,7 @@ public class EnemyAI : MonoBehaviour
     float knockbackForce = 100f;
     float damageAmount = 1f;
     private float punchCooldown = 0f;
+    private bool isDead = false;
 
     public float detectionRange = 10f;
     [SerializeField] private LayerMask playerLayer;
@@ -55,30 +57,44 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (enemyHealth <= 0)
+        if (enemyHealth <= 0 && !isDead)
         {
+            rb.linearVelocity = Vector2.zero;
+            rb.mass = 100f;
             FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
             FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
-            Destroy(gameObject);
-           int deathsound = (int)Random.Range(1, 3);
-            if (deathsound == 1)
-            {
-                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
-            }
-            else if (deathsound == 2)
-            {
-                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
-            }
-            else if (deathsound == 3) {
-                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
-            }
 
-            AudioSource.PlayClipAtPoint(deathfx, transform.position);
+           isDead = true;
+
+            //int deathsound = Random.Range(1, 4);
+            //if (deathsound == 1)
+            //{
+            //    deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
+            //}
+            //else if (deathsound == 2)
+            //{
+            //    deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
+            //}
+            //else if (deathsound == 3) {
+            //    deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
+            //}
+
+            //AudioSource.PlayClipAtPoint(deathfx, transform.position);
+
+            gameObject.GetComponent<SpriteRenderer>().sprite = deathSprites[Random.Range(0, deathSprites.Length)];
+            animator.enabled = false;
             enabled = false;
 
-            
+            //GetComponent<Collider2D>().includeLayers = LayerMask.GetMask("Wall");
+            //GetComponent<Collider2D>().excludeLayers = LayerMask.GetMask("Player", "Goon", "Ally");
+            GetComponent<Collider2D>().enabled = false;
+
         }
 
+        if (isDead)
+        {
+            return;
+        }
         transform.up = moveDirection;
 
     }
@@ -135,6 +151,11 @@ public class EnemyAI : MonoBehaviour
     //    }
 
     //}
+
+    public void DeleteThis()
+    {
+        Destroy(gameObject);    
+    }
 
     private void HandlePunch()
     {
@@ -193,11 +214,19 @@ public class EnemyAI : MonoBehaviour
 
     public void PlayBlood()
     {
+        if (isDead)
+        {
+            return;
+        }
         Blood.Play();
     }
 
     private void FixedUpdate()
     {
+        if (isDead)
+        {
+            return;
+        }
         rb.AddForce(moveDirection * speed);
         punchCooldown -= Time.fixedDeltaTime;
 
