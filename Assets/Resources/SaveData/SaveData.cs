@@ -9,21 +9,36 @@ public struct SaveData
     public UpgradeList Upgrades; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
     public int Currency; //To access this use SaveDataController.Instance.current.Currency
     public Allies allies;
+    public UserSettings Settings; //SaveDataController.Instance.current.Settings.volume = .5f;
 }
 
 [Serializable]
-public class UpgradeList
+public struct UserSettings
 {
-    public List<int> Levels; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
-    public List<int> Income; //To access this use SaveDataController.Instance.current.UpgradeList.Income 
+    public float volume;
+    public bool isFullscreen;
+    public Vector2Int resolution;
+    public int quality;
+}
+
+[Serializable]
+public struct UpgradeList
+{
+    public List<UpgradeData> Upgrades; //To access this use SaveDataController.Instance.current.UpgradeList.Upgrades
+
     public List<int> playerPoints; //To access this use SaveDataController.Instance.current.UpgradeList.playerPoints 
     public List<int> ShopUpgrades; //To access this use SaveDataController.Instance.current.UpgradeList.ShopUpgrades
 }
 
+[Serializable]
+public class UpgradeData
+{
+    public int Level;
+    public int Income;
+}
 
-
-[Serializable]//{Stats: {}}
-public class Allies
+[Serializable]
+public struct Allies
 {
     public enum AllieNames
     {
@@ -34,13 +49,12 @@ public class Allies
         Slopmania = 4,
     };
 
-    public Dictionary<AllieNames, int> Stats = new();
-    public List<AllieData> Data = new ();
+    public Dictionary<AllieNames, int> Stats;
+    public List<AllieData> Data;
 
 }
 
 [Serializable]
-
 public class AllieData
 {
     private int deaths;
@@ -67,9 +81,7 @@ public class AllieData
     }
 
     private float exp;
-
-    public float Level = 1;
-
+    public float Level;
     public bool CurrentlyHired;
 
 

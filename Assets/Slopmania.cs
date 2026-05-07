@@ -27,12 +27,12 @@ public class Slopmania : MonoBehaviour
         //    SaveDataController.Instance.current.allies = new Allies();
         //    Debug.Log("sjubjdsojogjdo");
         //}
-        List<int> levels = SaveDataController.Instance.current.Upgrades.Levels;
+        var levels = SaveDataController.Instance.current.Upgrades.Upgrades;
         if (levels != null && levels.Count > 0)
         {
             Debug.Log("TEst");
             // SaveDataController.Instance.current.Upgrades.Levels = new List<int>() {0, 0, 0,0 ,0 ,0 ,0 ,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-            level = SaveDataController.Instance.current.Upgrades.Levels[upgradeID];
+            level = SaveDataController.Instance.current.Upgrades.Upgrades[upgradeID].Level;
         }
 
         _allies = SaveDataController.Instance.current.allies;

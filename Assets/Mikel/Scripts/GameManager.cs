@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
             storeUpgrade.UpdateUI();
         }
         lastIncomeValue = sum;
-        SaveDataController.Instance.current.Upgrades.Income[managerID] = (int) sum;
+        SaveDataController.Instance.current.Upgrades.Upgrades[managerID].Income = (int) sum;
         SaveDataController.Instance.current.Currency += (int)(sum / updatesPerSecond);
         UpdateUI();
     }
@@ -81,12 +81,12 @@ public class GameManager : MonoBehaviour
 
     void SetIndexes()
     {
-        List<int> t_income = SaveDataController.Instance.current.Upgrades.Income;
+        var t_income = SaveDataController.Instance.current.Upgrades.Upgrades;
         for (int i = 0; i < t_income.Count; i++)
         {
-            if (t_income[i] != 0) 
+            if (t_income[i].Income != 0) 
             {
-                idleIncome += t_income[i];
+                idleIncome += t_income[i].Income;
             }
         }
     }

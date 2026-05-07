@@ -26,6 +26,11 @@ public class Startmenu : MonoBehaviour
         StartCoroutine(Scroll());
     }
 
+    public void SettingsMenu()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
     IEnumerator Scroll()
     {
         foreach(Sprite spr in backgrounds)

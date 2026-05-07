@@ -1098,13 +1098,17 @@ MonoBehaviour:
   _saveDataAsset: {fileID: 11400000, guid: d67848674bb556c41836a2b7a15c8d74, type: 2}
   current:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   _directory: SaveData
   _fileName: SaveData.json
 --- !u!4 &1022117416
@@ -2352,7 +2356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Goldmanns Cuttin Corral.
+  m_text: Goldmanns Cuttin Corral
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
   m_sharedMaterial: {fileID: -7929468103244204947, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
@@ -2379,13 +2383,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 777.8
-  m_fontSizeBase: 777.8
+  m_fontSize: 665.08
+  m_fontSizeBase: 665.08
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
