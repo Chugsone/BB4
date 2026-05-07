@@ -21,7 +21,6 @@ public class EnemyPatrol : MonoBehaviour
         if (transform.position == patrolPoints[targetPoint].position)
         {
             increaseTargetInt();
-            transform.Rotate(new Vector3(0,0,180));
         }
         // Fix: Use 'transform.position' instead of 'FromBase64TransformMode.position'
         transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime);
