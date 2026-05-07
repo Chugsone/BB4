@@ -245,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.5502, y: -70}
-  m_SizeDelta: {x: 1817.0623, y: 439.1881}
+  m_AnchoredPosition: {x: -61.5993, y: -70}
+  m_SizeDelta: {x: 1632.7632, y: 439.1881}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &835256848
 MonoBehaviour:
@@ -268,9 +268,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Made the player for the combat scenes \n- Programmed AI for Employees
-    and Enemies\n- Voice Acting\n\n-mwuah man i love chocolate but i cant eat it
-    because ill get FAT"
+  m_text: '- Made the player for the Combat scenes
+
+    - Programmed AI for Employees
+    and Enemies
+
+    -Voice Acting
+
+
+    -Man i love chocolate but i cant eat it
+    or ill get FAT
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
   m_sharedMaterial: {fileID: -7929468103244204947, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
@@ -734,7 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7930664, b: 0.5896226, a: 0.56078434}
+  m_Color: {r: 1, g: 0.7921569, b: 0.5882353, a: 0.56078434}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -822,7 +831,7 @@ RectTransform:
   m_GameObject: {fileID: 1598745644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1382491666}
@@ -954,7 +963,7 @@ RectTransform:
   m_GameObject: {fileID: 2038632228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1382491666}
