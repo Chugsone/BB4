@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec56627b474d7594cbec1d8b5920bfcd, type: 3}
-  m_Name: Jorge
+  m_Name: Egghead
   m_EditorClassIdentifier: 
-  Wage: 1
-  Strength: 1
-  Sales: 9.5
-  Health: 90
-  animator: {fileID: 9100000, guid: c67eeda374083f34ea96548e46118e8b, type: 2}
+  Wage: 1.5
+  Strength: 0.8
+  Sales: 9.25
+  Health: 110
+  animator: {fileID: 9100000, guid: f1546f98fb5398c409f0bdbe58798c48, type: 2}
   Description: 
-  icon: {fileID: 3715776302351434930, guid: 34c7d6bb3b54d6943ac896a20be43448, type: 3}
+  icon: {fileID: -7404049963361457591, guid: ea79107885131b5459f86d43865284a9, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 0a8f55e6b5a4272489c74882f0d9506b, type: 3}

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 public class SettingsMenu : MonoBehaviour
 {
 
@@ -77,5 +78,11 @@ public class SettingsMenu : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         SaveDataController.Instance.current.Settings.resolution = new(resolution.width, resolution.height);
         SaveDataController.Instance.Save();
+    }
+
+    public void back()
+    {
+        SaveDataController.Instance.Save();
+        SceneManager.LoadScene("MainMenu");
     }
 }
