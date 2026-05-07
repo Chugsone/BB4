@@ -310,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EvilOil.CO_0: -864502467288426790
+      EvilOil.CO_1: 5592679501643101161
+      EvilOil.CO_2: 3715354784461614749
+      EvilOil.CO_3: -8518236963086391117
+      EvilOil.CO_4: -1224270261155200239
+      EvilOil.CO_5: -2594366946691458183
+      EvilOil.CO_6: 621412137340993213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
