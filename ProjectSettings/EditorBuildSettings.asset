@@ -48,9 +48,6 @@ EditorBuildSettings:
     path: Assets/Mikel/Scenes/CuttinCorral.unity
     guid: 5bdab366f0db7e342819b5b24e127180
   - enabled: 1
-    path: Assets/Rian/Settings.unity
-    guid: 04e31d6a0fdd1d64285507b1eb0ba544
-  - enabled: 1
     path: Assets/Mikel/Scenes/Cinima.unity
     guid: 17562985d3cdde8479db70199c568fb2
   - enabled: 1
