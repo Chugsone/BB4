@@ -24,8 +24,8 @@ MonoBehaviour:
   m_missingGlyphCharacter: 0
   m_ClearDynamicDataOnBuild: 1
   m_warningsDisabled: 0
-  m_defaultFontAsset: {fileID: 11400000, guid: aa9405f46f4f0424fa605818e761a8ef, type: 2}
-  m_defaultFontAssetPath: Fonts & Materials/
+  m_defaultFontAsset: {fileID: 11400000, guid: d089d68564ebfea4f9ba61944754e090, type: 2}
+  m_defaultFontAssetPath: Rian/Rian/Handcaps SDF
   m_defaultFontSize: 36
   m_defaultAutoSizeMinRatio: 0.5
   m_defaultAutoSizeMaxRatio: 2
