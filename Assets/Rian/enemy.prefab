@@ -133,11 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 45
   offset: {x: 0, y: 0, z: 0}
-  deathSprites:
-  - {fileID: 21300000, guid: c63ff9d61feab704d8d596cc6f1a0e2e, type: 3}
-  - {fileID: 21300000, guid: 575d8ca4a679be34f9a52b0043739e85, type: 3}
-  - {fileID: 21300000, guid: 880a28359fad15a4691e36ddbe5dac3d, type: 3}
-  - {fileID: 21300000, guid: d1bba5c85c8ab624ebe4afae6e750558, type: 3}
   Blood: {fileID: 8073117310518415133}
   enemyHealth: 100
   speed: 20
@@ -147,7 +142,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   detectCooldown: 0.25
-  deathfx: {fileID: 0}
 --- !u!60 &1383137950169627066
 PolygonCollider2D:
   m_ObjectHideFlags: 0
