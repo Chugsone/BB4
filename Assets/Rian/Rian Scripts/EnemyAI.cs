@@ -30,6 +30,7 @@ public class EnemyAI : MonoBehaviour
     float knockbackForce = 100f;
     float damageAmount = 1f;
     private float punchCooldown = 0f;
+    private bool isDead = false;
 
     public float detectionRange = 10f;
     [SerializeField] private LayerMask playerLayer;
@@ -38,21 +39,19 @@ public class EnemyAI : MonoBehaviour
     private Animator animator;
     public AudioClip deathfx;
 
-    private bool isDead = false;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Awake()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Start()
+    // Update is called once per frame
+    void Start()
     {
-        //target = GameObject.Find("Player").transform;
-        int critChance = (int)Random.Range(0.0f, 20.0f);
-        
+        //target = GameObject.Find("Player").transform;
+        int critChance = (int)Random.Range(0.0f, 20.0f);
+
     }
 
 
@@ -62,96 +61,105 @@ public class EnemyAI : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
             rb.mass = 100f;
-        }
-        isDead = true;
-        {
             FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
             FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
-           //int deathsound = (int)Random.Range(1, 3);
-           // if (deathsound == 1)
-           // {
-           //     deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
-           // }
-           // else if (deathsound == 2)
-           // {
-           //     deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
-           // }
-           // else if (deathsound == 3) {
-           //     deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
-           // }
 
-           // AudioSource.PlayClipAtPoint(deathfx, transform.position);
-           gameObject.GetComponent<SpriteRenderer>().sprite = deathSprites[Random.Range(0, deathSprites.Length)];
-            enabled = false;
+            isDead = true;
+
+            //int deathsound = Random.Range(1, 4);
+            //if (deathsound == 1)
+            //{
+            //    deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
+            //}
+            //else if (deathsound == 2)
+            //{
+            //    deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
+            //}
+            //else if (deathsound == 3) {
+            //    deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
+            //}
+
+            //AudioSource.PlayClipAtPoint(deathfx, transform.position);
+
+            gameObject.GetComponent<SpriteRenderer>().sprite = deathSprites[Random.Range(0, deathSprites.Length)];
             animator.enabled = false;
-          
+            enabled = false;
+
+            //GetComponent<Collider2D>().includeLayers = LayerMask.GetMask("Wall");
+            //GetComponent<Collider2D>().excludeLayers = LayerMask.GetMask("Player", "Goon", "Ally");
+            GetComponent<Collider2D>().enabled = false;
+
         }
+
         if (isDead)
         {
             return;
         }
-
         transform.up = moveDirection;
 
     }
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
 
-    //    critChance = (int)Random.Range(0.0f, 20.0f);
-    //    if (critChance <= 1)
-    //    {
-    //        knockbackForce = 800f;
-    //        damageAmount = 10f;
-    //    }
-    //    else if (critChance > 1 && critChance <= 16)
-    //    {
-    //        knockbackForce = 400f;
-    //        damageAmount = 5f;
-    //    }
-    //    else if (critChance > 16)
-    //    {
-    //        knockbackForce = 100f;
-    //        damageAmount = 3f;
-    //    }
+    //    critChance = (int)Random.Range(0.0f, 20.0f);
+    //    if (critChance <= 1)
+    //    {
+    //        knockbackForce = 800f;
+    //        damageAmount = 10f;
+    //    }
+    //    else if (critChance > 1 && critChance <= 16)
+    //    {
+    //        knockbackForce = 400f;
+    //        damageAmount = 5f;
+    //    }
+    //    else if (critChance > 16)
+    //    {
+    //        knockbackForce = 100f;
+    //        damageAmount = 3f;
+    //    }
 
 
-    //    Debug.Log("Mittens has detected a collision.");
-    //    if (collision.gameObject.CompareTag("Player"))
-    //    {
-    //        //makes the enemy play a punching animation when in range with the player
-    //        if (CompareTag("Enemy"))
-    //        {
-    //            animator.SetTrigger("Punch");
+    //    Debug.Log("Mittens has detected a collision.");
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        //makes the enemy play a punching animation when in range with the player
+    //        if (CompareTag("Enemy"))
+    //        {
+    //            animator.SetTrigger("Punch");
 
-    //        }
+    //        }
 
-    //        Debug.Log("Mittens has detected a collision with the player.");
-    //        if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
-    //        {
-               
+    //        Debug.Log("Mittens has detected a collision with the player.");
+    //        if (collision.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
+    //        {
 
 
-    //            Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= damageAmount;
-    //            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
-    //        }
-    //        else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
-    //        {
-    //            Vector3 direction = collision.gameObject.transform.position - transform.position;
-    //            combatPlayer.health -= damageAmount;
-    //            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
-    //        }
-    //        else
-    //        {
-    //            Debug.LogWarning("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    //        }
-    //    }
+
+    //            Vector3 direction = collision.gameObject.transform.position - transform.position; ally.allyHealth -= damageAmount;
+    //            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+    //        }
+    //        else if (collision.gameObject.TryGetComponent<CombatPlayer>(out CombatPlayer combatPlayer))
+    //        {
+    //            Vector3 direction = collision.gameObject.transform.position - transform.position;
+    //            combatPlayer.health -= damageAmount;
+    //            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockbackForce);
+    //        }
+    //        else
+    //        {
+    //            Debug.LogWarning("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+    //        }
+    //    }
 
     //}
 
-
+    public void DeleteThis()
+    {
+        Destroy(gameObject);
+    }
 
     private void HandlePunch()
-    { 
+    {
+
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
@@ -174,10 +182,10 @@ public class EnemyAI : MonoBehaviour
         if (target.gameObject.CompareTag("Player") || target.gameObject.CompareTag("Goon"))
         {
             //makes the enemy play a punching animation when in range with the player
-            
-                animator.SetTrigger("Punch");
 
-            
+            animator.SetTrigger("Punch");
+
+
 
             Debug.Log("Mittens has detected a collision with the player.");
             if (target.gameObject.TryGetComponent<AllyAI>(out AllyAI ally))
@@ -202,7 +210,7 @@ public class EnemyAI : MonoBehaviour
         punchCooldown = .5f;
     }
 
-   
+
 
     public void PlayBlood()
     {
@@ -210,7 +218,6 @@ public class EnemyAI : MonoBehaviour
         {
             return;
         }
-
         Blood.Play();
     }
 
@@ -220,7 +227,6 @@ public class EnemyAI : MonoBehaviour
         {
             return;
         }
-
         rb.AddForce(moveDirection * speed);
         punchCooldown -= Time.fixedDeltaTime;
 
@@ -238,14 +244,14 @@ public class EnemyAI : MonoBehaviour
             {
                 if (colliders[i].CompareTag("Player") || colliders[i].CompareTag("Goon"))
                 {
-                    paul.Add(colliders[i].transform); 
+                    paul.Add(colliders[i].transform);
                 }
             }
 
             target = paul.OrderBy(t => Vector2.Distance(t.position, transform.position)).FirstOrDefault(); /// paul.OrderBy(v => v.x).FirstOrDefault();
 
 
-        }
+        }
 
         if (target)
 
@@ -271,7 +277,6 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, 5f);
     }
 
-   
-}
 
+}
 
