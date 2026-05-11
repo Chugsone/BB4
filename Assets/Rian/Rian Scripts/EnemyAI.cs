@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     Transform target;
     Vector2 moveDirection;
     public Vector3 offset = new(1, 0);
+    [SerializeField] private Sprite[] deathSprites;
 
     private int critChance;
 
@@ -37,6 +38,8 @@ public class EnemyAI : MonoBehaviour
     private Animator animator;
     public AudioClip deathfx;
 
+    private bool isDead = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -55,28 +58,37 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (enemyHealth <= 0)
+        if (enemyHealth <= 0 && !isDead)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.mass = 100f;
+        }
+        isDead = true;
         {
             FindFirstObjectByType<CinemachineTargetGroup>().RemoveMember(transform);
             FindFirstObjectByType<TeamManager>().TeamB.Remove(gameObject);
-            Destroy(gameObject);
-           int deathsound = (int)Random.Range(1, 3);
-            if (deathsound == 1)
-            {
-                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
-            }
-            else if (deathsound == 2)
-            {
-                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
-            }
-            else if (deathsound == 3) {
-                deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
-            }
+           //int deathsound = (int)Random.Range(1, 3);
+           // if (deathsound == 1)
+           // {
+           //     deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(7)");
+           // }
+           // else if (deathsound == 2)
+           // {
+           //     deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(8)");
+           // }
+           // else if (deathsound == 3) {
+           //     deathfx = Resources.Load<AudioClip>("Mikel/DeathSound/Recording(9)");
+           // }
 
-            AudioSource.PlayClipAtPoint(deathfx, transform.position);
+           // AudioSource.PlayClipAtPoint(deathfx, transform.position);
+           gameObject.GetComponent<SpriteRenderer>().sprite = deathSprites[Random.Range(0, deathSprites.Length)];
             enabled = false;
-
-            
+            animator.enabled = false;
+          
+        }
+        if (isDead)
+        {
+            return;
         }
 
         transform.up = moveDirection;
@@ -136,9 +148,10 @@ public class EnemyAI : MonoBehaviour
 
     //}
 
+
+
     private void HandlePunch()
-    {
-        
+    { 
         critChance = (int)Random.Range(0.0f, 20.0f);
         if (critChance <= 1)
         {
@@ -193,11 +206,21 @@ public class EnemyAI : MonoBehaviour
 
     public void PlayBlood()
     {
+        if (isDead)
+        {
+            return;
+        }
+
         Blood.Play();
     }
 
     private void FixedUpdate()
     {
+        if (isDead)
+        {
+            return;
+        }
+
         rb.AddForce(moveDirection * speed);
         punchCooldown -= Time.fixedDeltaTime;
 
