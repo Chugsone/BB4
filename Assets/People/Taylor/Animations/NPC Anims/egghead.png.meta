@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: d1abd96b8e4619447ac5a72c01a69dbe
+guid: ead997e9dd9fa184b951227e838b8a67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3869398212773683996
-    second: StudioLOGO_0
+      213: -2162107322019252176
+    second: egghead_0
+  - first:
+      213: 1243740778249237320
+    second: egghead_1
+  - first:
+      213: 7175661316553382130
+    second: egghead_2
+  - first:
+      213: 8587163754766180112
+    second: egghead_3
+  - first:
+      213: 1820943314700425190
+    second: egghead_4
+  - first:
+      213: -2141913845535774389
+    second: egghead_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StudioLOGO_0
+      name: egghead_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 750
+        y: 397
+        width: 428
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1328ee6c2dd2b530800000000000000
-      internalID: 3869398212773683996
+      spriteID: 03875c098d6aef1e0800000000000000
+      internalID: -2162107322019252176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egghead_1
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 393
+        width: 476
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843b630f5a7a24110800000000000000
+      internalID: 1243740778249237320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egghead_2
+      rect:
+        serializedVersion: 2
+        x: 4528
+        y: 378
+        width: 487
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f81da9f2f1159360800000000000000
+      internalID: 7175661316553382130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egghead_3
+      rect:
+        serializedVersion: 2
+        x: 6451
+        y: 369
+        width: 481
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f92fe20fbbb2770800000000000000
+      internalID: 8587163754766180112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egghead_4
+      rect:
+        serializedVersion: 2
+        x: 8386
+        y: 406
+        width: 438
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e757d40c4a454910800000000000000
+      internalID: 1820943314700425190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egghead_5
+      rect:
+        serializedVersion: 2
+        x: 10343
+        y: 405
+        width: 410
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b496951b4b46642e0800000000000000
+      internalID: -2141913845535774389
       vertices: []
       indices: 
       edges: []
@@ -160,8 +285,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      StudioLOGO_0: 3869398212773683996
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

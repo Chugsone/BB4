@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: d1abd96b8e4619447ac5a72c01a69dbe
+guid: dfd366c33e109414986cb3daadd880d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3869398212773683996
-    second: StudioLOGO_0
+      213: 9130101621820855101
+    second: lil tobny_0
+  - first:
+      213: -2340117400366911789
+    second: lil tobny_1
+  - first:
+      213: 638988178779003291
+    second: lil tobny_2
+  - first:
+      213: 3914738027652053243
+    second: lil tobny_3
+  - first:
+      213: 2092050099180847335
+    second: lil tobny_4
+  - first:
+      213: -2860487053763447786
+    second: lil tobny_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StudioLOGO_0
+      name: lil tobny_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1328ee6c2dd2b530800000000000000
-      internalID: 3869398212773683996
+      spriteID: d3399db3d03a4be70800000000000000
+      internalID: 9130101621820855101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil tobny_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de6b627f9b368fd0800000000000000
+      internalID: -2340117400366911789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil tobny_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99dbc3fc542ed800800000000000000
+      internalID: 638988178779003291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil tobny_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8f9e6be71f35630800000000000000
+      internalID: 3914738027652053243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil tobny_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0cef52b74780d10800000000000000
+      internalID: 2092050099180847335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil tobny_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61473db1e228d48d0800000000000000
+      internalID: -2860487053763447786
       vertices: []
       indices: 
       edges: []
@@ -151,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd6be42bc5a75d94bb67e2029dff8dfa
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StudioLOGO_0: 3869398212773683996
+      lil tobny_0: 9130101621820855101
+      lil tobny_1: -2340117400366911789
+      lil tobny_2: 638988178779003291
+      lil tobny_3: 3914738027652053243
+      lil tobny_4: 2092050099180847335
+      lil tobny_5: -2860487053763447786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
