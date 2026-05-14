@@ -13,4 +13,8 @@ public class Fight : MonoBehaviour
         SceneManager.LoadScene("Rian 1");
     
     }
+    public void FightScene2()
+    {
+        SceneManager.LoadScene("Rian 2");
+    }
 }

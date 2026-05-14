@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      egghead_0: -2162107322019252176
+      egghead_1: 1243740778249237320
+      egghead_2: 7175661316553382130
+      egghead_3: 8587163754766180112
+      egghead_4: 1820943314700425190
+      egghead_5: -2141913845535774389
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
