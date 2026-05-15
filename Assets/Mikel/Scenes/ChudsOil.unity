@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 0
+      value: 550000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 0
+      value: 12500
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
@@ -614,13 +614,17 @@ MonoBehaviour:
   _saveDataAsset: {fileID: 11400000, guid: d67848674bb556c41836a2b7a15c8d74, type: 2}
   current:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   _directory: SaveData
   _fileName: SaveData.json
 --- !u!4 &231604516
@@ -2088,7 +2092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 250
+      value: 600000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -2108,7 +2112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 10
+      value: 15000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
@@ -2470,7 +2474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 400
+      value: 65000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -2490,7 +2494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 50
+      value: 17500
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText

@@ -418,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 400
+      value: 150000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -438,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 50
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
@@ -1691,7 +1691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 0
+      value: 110000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -1711,7 +1711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 0
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
@@ -2497,7 +2497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 250
+      value: 125000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -2517,7 +2517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 10
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText

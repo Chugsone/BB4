@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 0
+      value: 8250
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 0
+      value: 425
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradePriceMultiplier
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3094313489817877808, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -725,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 400
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -745,7 +745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 50
+      value: 475
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
@@ -1416,13 +1416,17 @@ MonoBehaviour:
   _saveDataAsset: {fileID: 11400000, guid: d67848674bb556c41836a2b7a15c8d74, type: 2}
   current:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   _directory: SaveData
   _fileName: SaveData.json
 --- !u!4 &1078682058
@@ -2708,7 +2712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: startPrice
-      value: 250
+      value: 9000
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: gameManager
@@ -2728,7 +2732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: moneyPerUpgrade
-      value: 10
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 232152877827251546, guid: 3983812be96fa1e408e438cb5e32999f, type: 3}
       propertyPath: upgradeNameText
