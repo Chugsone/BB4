@@ -142,6 +142,10 @@ PrefabInstance:
       value: enemy (20)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -244,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -569,6 +577,10 @@ PrefabInstance:
       value: enemy (33)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -662,6 +674,10 @@ PrefabInstance:
       value: enemy (46)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -754,6 +770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -964,6 +984,10 @@ PrefabInstance:
       value: enemy (24)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1081,6 +1105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -1310,6 +1338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -1619,6 +1651,10 @@ PrefabInstance:
       value: enemy (4)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1711,6 +1747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -1809,6 +1849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -2092,6 +2136,10 @@ PrefabInstance:
       value: enemy (17)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -2310,6 +2358,10 @@ PrefabInstance:
       value: enemy (30)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -2402,6 +2454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -2780,11 +2836,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2246139171792011890, guid: 82fa4124247305742b554655f5588e4d, type: 3}
   m_PrefabInstance: {fileID: 209845013}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &938893319 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4104979920575101556, guid: 82fa4124247305742b554655f5588e4d, type: 3}
-  m_PrefabInstance: {fileID: 209845013}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &955750200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,6 +3142,10 @@ PrefabInstance:
       value: enemy (42)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -3183,6 +3238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -3277,6 +3336,10 @@ PrefabInstance:
       value: enemy (37)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -3369,6 +3432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -3774,6 +3841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -4206,6 +4277,10 @@ PrefabInstance:
       value: enemy (22)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4444,6 +4519,10 @@ PrefabInstance:
       value: enemy (50)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4537,6 +4616,10 @@ PrefabInstance:
       value: enemy (41)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4629,6 +4712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -4851,6 +4938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -5144,9 +5235,6 @@ MonoBehaviour:
   - Object: {fileID: 2022549036}
     Weight: 0
     Radius: 0
-  - Object: {fileID: 938893319}
-    Weight: 0
-    Radius: 0
   - Object: {fileID: 680199926}
     Weight: 0
     Radius: 0
@@ -5232,6 +5320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -5361,7 +5453,9 @@ GameObject:
   - component: {fileID: 1330609803}
   - component: {fileID: 1330609806}
   - component: {fileID: 1330609805}
+  - component: {fileID: 1330609807}
   - component: {fileID: 1330609804}
+  - component: {fileID: 1330609808}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5433,9 +5527,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1422844097}
-        m_TargetAssemblyTypeName: TeamManager, Assembly-CSharp
-        m_MethodName: Return
+      - m_Target: {fileID: 1330609808}
+        m_TargetAssemblyTypeName: Load2DTest, Assembly-CSharp
+        m_MethodName: TwoDTest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1330609807}
+        m_TargetAssemblyTypeName: UnlockTycoon, Assembly-CSharp
+        m_MethodName: OnButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5483,6 +5589,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330609802}
   m_CullTransparentMesh: 1
+--- !u!114 &1330609807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330609802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
+--- !u!114 &1330609808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330609802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9212891a67d861441b64430448fedd8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1339199292 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2280849257477619706, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
@@ -5500,6 +5631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -5598,6 +5733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -5749,7 +5888,6 @@ MonoBehaviour:
   - {fileID: 732818556}
   - {fileID: 1817854835}
   - {fileID: 531366497}
-  - {fileID: 1566250484}
   - {fileID: 1109292497}
   - {fileID: 1723115770}
   - {fileID: 1409655740}
@@ -5797,6 +5935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -5891,6 +6033,10 @@ PrefabInstance:
       value: enemy (25)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -5983,6 +6129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -6077,6 +6227,10 @@ PrefabInstance:
       value: enemy (48)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -6170,6 +6324,10 @@ PrefabInstance:
       value: enemy (21)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -6250,11 +6408,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
---- !u!1 &1566250484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4300691026543362836, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
-  m_PrefabInstance: {fileID: 1381710230}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1575973451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6267,6 +6420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -6370,6 +6527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -6600,6 +6761,10 @@ PrefabInstance:
       value: enemy (43)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -6702,6 +6867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -6901,6 +7070,10 @@ PrefabInstance:
       value: enemy (53)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -6998,6 +7171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -7192,6 +7369,10 @@ PrefabInstance:
       value: enemy (32)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -7285,6 +7466,10 @@ PrefabInstance:
       value: enemy (31)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -7377,6 +7562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -7610,6 +7799,10 @@ PrefabInstance:
       value: enemy (39)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -7821,6 +8014,10 @@ PrefabInstance:
       value: enemy (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -7913,6 +8110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -8021,6 +8222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4

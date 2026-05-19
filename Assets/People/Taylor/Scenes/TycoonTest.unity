@@ -274,13 +274,17 @@ MonoBehaviour:
   playerbar: {fileID: 512163678}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1001 &91848257
@@ -891,13 +895,17 @@ MonoBehaviour:
   playerbar: {fileID: 1563365301}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &211159686
@@ -1814,13 +1822,17 @@ MonoBehaviour:
   playerbar: {fileID: 158588728}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &433442311
@@ -2327,13 +2339,17 @@ MonoBehaviour:
   playerbar: {fileID: 1572428692}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!114 &490220408
@@ -3422,6 +3438,7 @@ GameObject:
   - component: {fileID: 938407568}
   - component: {fileID: 938407567}
   - component: {fileID: 938407566}
+  - component: {fileID: 938407570}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3540,6 +3557,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &938407570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938407565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac05895446351f8419ad0eb8b0bf6ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 444002228}
+  - {fileID: 769964543}
+  - {fileID: 1213761881}
+  - {fileID: 365702783}
+  - {fileID: 433442314}
+  - {fileID: 983296068}
+  - {fileID: 695112962}
+  - {fileID: 778329642}
+  - {fileID: 1540297804}
+  - {fileID: 1083867023}
+  - {fileID: 2090820169}
 --- !u!1001 &961405575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4700,13 +4741,17 @@ MonoBehaviour:
   playerbar: {fileID: 1304623587}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1001 &1194623928
@@ -5848,13 +5893,17 @@ MonoBehaviour:
   playerbar: {fileID: 172660381}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!114 &1495871073
@@ -7019,13 +7068,17 @@ MonoBehaviour:
   playerbar: {fileID: 1514224347}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &1758765770
@@ -7363,13 +7416,17 @@ MonoBehaviour:
   playerbar: {fileID: 1048462098}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &1928731479
@@ -7692,13 +7749,17 @@ MonoBehaviour:
   playerbar: {fileID: 0}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &2015308368
@@ -7760,13 +7821,17 @@ MonoBehaviour:
   playerbar: {fileID: 1758765774}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!114 &2015308371
@@ -8038,13 +8103,17 @@ MonoBehaviour:
   playerbar: {fileID: 161155878}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &2097378931

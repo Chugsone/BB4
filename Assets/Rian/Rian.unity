@@ -276,6 +276,10 @@ PrefabInstance:
       value: enemy (7)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -486,6 +490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -807,6 +815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -1497,6 +1509,10 @@ PrefabInstance:
       value: enemy (11)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1589,6 +1605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -1757,6 +1777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -2549,11 +2573,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2246139171792011890, guid: 82fa4124247305742b554655f5588e4d, type: 3}
   m_PrefabInstance: {fileID: 823205809}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1093795508 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4104979920575101556, guid: 82fa4124247305742b554655f5588e4d, type: 3}
-  m_PrefabInstance: {fileID: 823205809}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1105143342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2636,7 @@ Camera:
   far clip plane: 1000
   field of view: 135
   orthographic: 1
-  orthographic size: 20.65719
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2642,7 +2661,7 @@ Transform:
   m_GameObject: {fileID: 1105143342}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.24488, y: -0.8742466, z: -10}
+  m_LocalPosition: {x: -18.65, y: 12.949999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3371,7 +3390,7 @@ Camera:
   far clip plane: 1000
   field of view: 135
   orthographic: 1
-  orthographic size: 20.65719
+  orthographic size: 20
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3440,7 +3459,7 @@ Transform:
   m_GameObject: {fileID: 1286992096}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.24488, y: -0.8742466, z: -10}
+  m_LocalPosition: {x: -18.65, y: 12.949999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3526,9 +3545,6 @@ MonoBehaviour:
   RotationMode: 0
   UpdateMethod: 2
   Targets:
-  - Object: {fileID: 1093795508}
-    Weight: 1.5
-    Radius: 0
   - Object: {fileID: 1586228839}
     Weight: 1
     Radius: 0
@@ -3563,7 +3579,7 @@ Transform:
   m_GameObject: {fileID: 1291394243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.338835, y: 1.1414192, z: 0}
+  m_LocalPosition: {x: -18.129215, y: 14.184312, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3581,6 +3597,7 @@ GameObject:
   - component: {fileID: 1330609806}
   - component: {fileID: 1330609805}
   - component: {fileID: 1330609804}
+  - component: {fileID: 1330609807}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3664,6 +3681,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1330609807}
+        m_TargetAssemblyTypeName: Load2DTest, Assembly-CSharp
+        m_MethodName: TwoDTest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1330609805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3702,6 +3731,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330609802}
   m_CullTransparentMesh: 1
+--- !u!114 &1330609807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330609802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9212891a67d861441b64430448fedd8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1419464298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2967048652826663065, guid: 82fa4124247305742b554655f5588e4d, type: 3}
@@ -4398,6 +4439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4

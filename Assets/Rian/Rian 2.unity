@@ -266,6 +266,10 @@ PrefabInstance:
       value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -358,6 +362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -526,6 +534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
@@ -888,6 +900,10 @@ PrefabInstance:
       value: enemy (8)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1156,6 +1172,10 @@ PrefabInstance:
       value: enemy (6)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1385,11 +1405,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2246139171792011890, guid: 82fa4124247305742b554655f5588e4d, type: 3}
   m_PrefabInstance: {fileID: 175751576}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &407317481 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4104979920575101556, guid: 82fa4124247305742b554655f5588e4d, type: 3}
-  m_PrefabInstance: {fileID: 175751576}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &423192869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2280849257477619706, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
@@ -1590,7 +1605,7 @@ Camera:
   far clip plane: 1000
   field of view: 135
   orthographic: 1
-  orthographic size: 38.578125
+  orthographic size: 57.867188
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1691,7 +1706,7 @@ Transform:
   m_GameObject: {fileID: 439602354}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3074267, y: 1.380694, z: -10}
+  m_LocalPosition: {x: 0.8000047, y: 0.70000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2673,6 +2688,10 @@ PrefabInstance:
       value: enemy (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e2d6f8bf60ca994f9c481066789fe20, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -3320,6 +3339,10 @@ PrefabInstance:
       value: enemy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -3785,6 +3808,10 @@ PrefabInstance:
       value: enemy (4)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4139,7 +4166,7 @@ Camera:
   far clip plane: 1000
   field of view: 135
   orthographic: 1
-  orthographic size: 38.578125
+  orthographic size: 57.867188
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4164,7 +4191,7 @@ Transform:
   m_GameObject: {fileID: 1135006119}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3074267, y: 1.380694, z: -10}
+  m_LocalPosition: {x: 0.8000047, y: 0.70000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4596,9 +4623,6 @@ MonoBehaviour:
   RotationMode: 0
   UpdateMethod: 2
   Targets:
-  - Object: {fileID: 407317481}
-    Weight: 1.5
-    Radius: 0
   - Object: {fileID: 261792079}
     Weight: 1
     Radius: 0
@@ -4642,7 +4666,7 @@ Transform:
   m_GameObject: {fileID: 1291394243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3222787, y: 2.7420795, z: 0}
+  m_LocalPosition: {x: 3.6700838, y: 3.597091, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4794,6 +4818,7 @@ GameObject:
   - component: {fileID: 1330609806}
   - component: {fileID: 1330609805}
   - component: {fileID: 1330609804}
+  - component: {fileID: 1330609807}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4877,6 +4902,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1330609807}
+        m_TargetAssemblyTypeName: UnlockTycoon, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1330609805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4915,6 +4952,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330609802}
   m_CullTransparentMesh: 1
+--- !u!114 &1330609807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330609802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
 --- !u!1 &1337696649
 GameObject:
   m_ObjectHideFlags: 0
@@ -5196,6 +5246,10 @@ PrefabInstance:
       value: enemy (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: da17fcd40654a204392d6c2a9e700eb6, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -5450,7 +5504,7 @@ Transform:
   m_GameObject: {fileID: 1484171285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3222787, y: 2.7420795, z: -10}
+  m_LocalPosition: {x: 3.6700838, y: 3.597091, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7335,6 +7389,10 @@ PrefabInstance:
       value: enemy (10)
       objectReference: {fileID: 0}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -7437,6 +7495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
+      propertyPath: deathfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 596b04f03d1f8264c94eb31922685667, type: 3}
     - target: {fileID: 3648978923273228290, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
       propertyPath: deathSprites.Array.size
       value: 4
