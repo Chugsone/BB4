@@ -64,6 +64,11 @@ public class TycoonHopping : MonoBehaviour
         SceneManager.LoadScene("EmpireStateBuilding");
     }
 
+    public void TycoonHop13()
+    {
+        SceneManager.LoadScene("EvilOilCo");
+    }
+
     public void MapHop()
     {
         SceneManager.LoadScene("2D Test");

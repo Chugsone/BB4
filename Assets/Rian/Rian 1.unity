@@ -5528,8 +5528,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1330609808}
-        m_TargetAssemblyTypeName: Load2DTest, Assembly-CSharp
-        m_MethodName: TwoDTest
+        m_TargetAssemblyTypeName: TycoonHopping, Assembly-CSharp
+        m_MethodName: TycoonHop10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5601,7 +5601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
+  level: 8
 --- !u!114 &1330609808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5611,7 +5611,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1330609802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9212891a67d861441b64430448fedd8b, type: 3}
+  m_Script: {fileID: 11500000, guid: cc44862d637212f47a87d8e289f05c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1339199292 stripped
