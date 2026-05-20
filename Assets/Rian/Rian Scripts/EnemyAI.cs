@@ -242,7 +242,7 @@ public class EnemyAI : MonoBehaviour
 
             for (int i = 0; i < colliders.Length; i++)
             {
-                if (colliders[i].CompareTag("Player") || colliders[i].CompareTag("Goon"))
+                if (colliders[i].CompareTag("Player") || colliders[i].CompareTag("Ally"))
                 {
                     paul.Add(colliders[i].transform);
                 }

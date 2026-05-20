@@ -18,5 +18,5 @@ MonoBehaviour:
   Health: 200
   animator: {fileID: 9100000, guid: 464057b864b24b94a9aff9dcf60bd066, type: 2}
   Description: "hates miku \nmassive teto fan\n500 pound chud"
-  icon: {fileID: 1492651328811647325, guid: bc3a466ea7aef584f88464764765c10d, type: 3}
+  icon: {fileID: -7669728371509192026, guid: 7574ae392c5c0ff4480a45ff8475175f, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 0a8f55e6b5a4272489c74882f0d9506b, type: 3}

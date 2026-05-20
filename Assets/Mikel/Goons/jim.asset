@@ -18,5 +18,5 @@ MonoBehaviour:
   Health: 80
   animator: {fileID: 9100000, guid: bd17b113a4a267343b4865bd1f0c7409, type: 2}
   Description: 
-  icon: {fileID: 1786598220163899443, guid: 54421f48499ec4e479e5c9567ba343b0, type: 3}
+  icon: {fileID: 2525783633174959168, guid: 930f420a1617d594d8c4fa7b07febe81, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 0a8f55e6b5a4272489c74882f0d9506b, type: 3}
