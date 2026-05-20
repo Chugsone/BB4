@@ -51,8 +51,6 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Mikel/Scenes/Cinima.unity
   - m_enabled: 1
-    m_path: Assets/Mikel/Scenes/ChudsOil.unity
-  - m_enabled: 1
     m_path: Assets/Mikel/Scenes/Bank.unity
   - m_enabled: 1
     m_path: Assets/Scenes/ChaseCredits.unity
