@@ -179,7 +179,7 @@ public class EnemyAI : MonoBehaviour
 
 
         Debug.Log("Mittens has detected a collision.");
-        if (target.gameObject.CompareTag("Player") || target.gameObject.CompareTag("Goon"))
+        if (target.gameObject.CompareTag("Player") || target.gameObject.CompareTag("Ally"))
         {
             //makes the enemy play a punching animation when in range with the player
 
