@@ -16,7 +16,7 @@ MonoBehaviour:
   Strength: 3
   Sales: 0.5
   Health: 80
-  animator: {fileID: 9100000, guid: db41387ab35c3594ba7a0d0aa6cdcad4, type: 2}
+  animator: {fileID: 9100000, guid: 28185239569ee094ba30fde872231305, type: 2}
   Description: 
   icon: {fileID: 4148586588144472658, guid: 8649133fdc8baf64b83e96b7a850657a, type: 3}
   prefab: {fileID: 1415994438096455254, guid: 0a8f55e6b5a4272489c74882f0d9506b, type: 3}
