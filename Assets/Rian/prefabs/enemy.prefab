@@ -139,8 +139,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 16de316ee53a2c041be96458a345473a, type: 3}
   - {fileID: 21300000, guid: 4fdcc00658b2ee049b939fd8e85366e3, type: 3}
   Blood: {fileID: 8073117310518415133}
-  enemyHealth: 100
-  speed: 20
+  enemyHealth: 250
+  speed: 25
   topSpeed: 50
   detectionRange: 100
   playerLayer:
