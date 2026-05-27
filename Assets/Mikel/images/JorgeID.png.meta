@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ba971be2962caad4d80e6bc5712bac22
+guid: 453410fb37775ac429a6269ba60a3568
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7619589786053385812
-    second: GAME ICON_0
+      213: -3655339849306788787
+    second: JorgeID_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GAME ICON_0
+      name: JorgeID_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1
-        width: 501
-        height: 508
+        x: 390
+        y: 214
+        width: 1115
+        height: 817
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45e18e34a883eb960800000000000000
-      internalID: 7619589786053385812
+      spriteID: d4c2dbc16cf954dc0800000000000000
+      internalID: -3655339849306788787
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      GAME ICON_0: 7619589786053385812
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
