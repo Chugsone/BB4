@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12abf7e8ccf36ed49815ab1eff4da810
+guid: 7574ae392c5c0ff4480a45ff8475175f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ButterBallID_0: -7669728371509192026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

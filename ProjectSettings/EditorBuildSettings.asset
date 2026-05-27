@@ -54,9 +54,6 @@ EditorBuildSettings:
     path: Assets/Mikel/Scenes/Cinima.unity
     guid: 17562985d3cdde8479db70199c568fb2
   - enabled: 1
-    path: Assets/Mikel/Scenes/ChudsOil.unity
-    guid: d978c30fcf83b724dba981b7d800438e
-  - enabled: 1
     path: Assets/Mikel/Scenes/Bank.unity
     guid: 787817bf7bb425e4d9057a131b9b477d
   - enabled: 1
@@ -86,6 +83,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/People/Henry/Hire System.unity
     guid: 4afbf7cc789ff9b4f9decfa908e8c436
+  - enabled: 1
+    path: Assets/Rian/Tutorial.unity
+    guid: 2749750c2f381154cbc25b2b4279b070
+  - enabled: 1
+    path: Assets/Mikel/Scenes/EvilOilCo.unity
+    guid: 32cd04354d64b324e87662169f426de7
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

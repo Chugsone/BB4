@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8311338fcd893b46a9bf857fd1655c1
+guid: 0b2ccfec83a5a064e94713b4725a40ac
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Knuckle-Sandwhich Norman_0: -2744625632987638585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -274,15 +274,178 @@ MonoBehaviour:
   playerbar: {fileID: 512163678}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
+--- !u!1 &91147032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91147033}
+  - component: {fileID: 91147038}
+  - component: {fileID: 91147037}
+  - component: {fileID: 91147036}
+  - component: {fileID: 91147035}
+  - component: {fileID: 91147034}
+  m_Layer: 5
+  m_Name: Buy (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &91147033
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91147032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 938407569}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -335, y: -409}
+  m_SizeDelta: {x: 112.3818, y: 83.9035}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &91147034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91147032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 10
+--- !u!114 &91147035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91147032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc44862d637212f47a87d8e289f05c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &91147036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91147032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 91147037}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 91147035}
+        m_TargetAssemblyTypeName: TycoonHopping, Assembly-CSharp
+        m_MethodName: TycoonHop13
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &91147037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91147032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -665929922944151501, guid: bf591eeba7abf084b93dad622743d858, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &91147038
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91147032}
+  m_CullTransparentMesh: 1
 --- !u!1001 &91848257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -891,13 +1054,17 @@ MonoBehaviour:
   playerbar: {fileID: 1563365301}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &211159686
@@ -1527,6 +1694,7 @@ GameObject:
   - component: {fileID: 365702784}
   - component: {fileID: 365702783}
   - component: {fileID: 365702782}
+  - component: {fileID: 365702786}
   m_Layer: 5
   m_Name: Buy (6)
   m_TagString: Untagged
@@ -1659,6 +1827,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365702780}
   m_CullTransparentMesh: 1
+--- !u!114 &365702786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365702780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 6
 --- !u!1 &382791861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,13 +1995,17 @@ MonoBehaviour:
   playerbar: {fileID: 158588728}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &433442311
@@ -1836,6 +2021,7 @@ GameObject:
   - component: {fileID: 433442315}
   - component: {fileID: 433442314}
   - component: {fileID: 433442313}
+  - component: {fileID: 433442317}
   m_Layer: 5
   m_Name: Buy (7)
   m_TagString: Untagged
@@ -1968,6 +2154,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433442311}
   m_CullTransparentMesh: 1
+--- !u!114 &433442317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433442311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 7
 --- !u!1 &435107647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2181,7 @@ GameObject:
   - component: {fileID: 435107650}
   - component: {fileID: 435107649}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: EvilOil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1999,7 +2198,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2071872889}
   m_Father: {fileID: 1678067587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2078,14 +2278,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7374130632707137337, guid: fcb8554e8e7df204eba98210f2de45d1, type: 3}
+  m_Sprite: {fileID: -864502467288426790, guid: fd77079833b48fd409e34c75149e9200, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2116,6 +2316,7 @@ GameObject:
   - component: {fileID: 444002229}
   - component: {fileID: 444002228}
   - component: {fileID: 444002227}
+  - component: {fileID: 444002231}
   m_Layer: 5
   m_Name: Buy
   m_TagString: Untagged
@@ -2248,6 +2449,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444002225}
   m_CullTransparentMesh: 1
+--- !u!114 &444002231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444002225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
 --- !u!1 &461935958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 372943486628948829, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
@@ -2327,13 +2541,17 @@ MonoBehaviour:
   playerbar: {fileID: 1572428692}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!114 &490220408
@@ -2821,6 +3039,7 @@ GameObject:
   - component: {fileID: 695112963}
   - component: {fileID: 695112962}
   - component: {fileID: 695112961}
+  - component: {fileID: 695112965}
   m_Layer: 5
   m_Name: Buy (9)
   m_TagString: Untagged
@@ -2844,7 +3063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -332, y: -411}
+  m_AnchoredPosition: {x: 307, y: -399.68}
   m_SizeDelta: {x: 112.3818, y: 83.9035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &695112961
@@ -2953,6 +3172,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695112959}
   m_CullTransparentMesh: 1
+--- !u!114 &695112965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695112959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 9
 --- !u!1 &743233290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 372943486628948829, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
@@ -2976,6 +3208,7 @@ GameObject:
   - component: {fileID: 769964544}
   - component: {fileID: 769964543}
   - component: {fileID: 769964542}
+  - component: {fileID: 769964546}
   m_Layer: 5
   m_Name: Buy (4)
   m_TagString: Untagged
@@ -3108,6 +3341,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769964540}
   m_CullTransparentMesh: 1
+--- !u!114 &769964546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769964540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 4
 --- !u!1 &778329639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,6 +3367,7 @@ GameObject:
   - component: {fileID: 778329643}
   - component: {fileID: 778329642}
   - component: {fileID: 778329641}
+  - component: {fileID: 778329645}
   m_Layer: 5
   m_Name: Buy (10)
   m_TagString: Untagged
@@ -3253,6 +3500,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778329639}
   m_CullTransparentMesh: 1
+--- !u!114 &778329645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778329639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 10
 --- !u!1001 &876481469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3422,6 +3682,7 @@ GameObject:
   - component: {fileID: 938407568}
   - component: {fileID: 938407567}
   - component: {fileID: 938407566}
+  - component: {fileID: 938407570}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3521,6 +3782,9 @@ RectTransform:
   - {fileID: 1099663764}
   - {fileID: 1928731480}
   - {fileID: 444002226}
+  - {fileID: 1540297802}
+  - {fileID: 1083867021}
+  - {fileID: 2090820167}
   - {fileID: 769964541}
   - {fileID: 1213761879}
   - {fileID: 365702781}
@@ -3528,9 +3792,7 @@ RectTransform:
   - {fileID: 983296066}
   - {fileID: 695112960}
   - {fileID: 778329640}
-  - {fileID: 1540297802}
-  - {fileID: 1083867021}
-  - {fileID: 2090820167}
+  - {fileID: 91147033}
   - {fileID: 1207335654}
   - {fileID: 658276836}
   m_Father: {fileID: 0}
@@ -3540,6 +3802,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &938407570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938407565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac05895446351f8419ad0eb8b0bf6ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 444002228}
+  - {fileID: 769964543}
+  - {fileID: 1213761881}
+  - {fileID: 365702783}
+  - {fileID: 433442314}
+  - {fileID: 983296068}
+  - {fileID: 695112962}
+  - {fileID: 778329642}
+  - {fileID: 1540297804}
+  - {fileID: 1083867023}
+  - {fileID: 2090820169}
 --- !u!1001 &961405575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3719,6 +4005,7 @@ GameObject:
   - component: {fileID: 983296069}
   - component: {fileID: 983296068}
   - component: {fileID: 983296067}
+  - component: {fileID: 983296071}
   m_Layer: 5
   m_Name: Buy (8)
   m_TagString: Untagged
@@ -3851,6 +4138,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983296065}
   m_CullTransparentMesh: 1
+--- !u!114 &983296071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983296065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 8
 --- !u!1 &1048462093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4344,7 @@ GameObject:
   - component: {fileID: 1083867024}
   - component: {fileID: 1083867023}
   - component: {fileID: 1083867022}
+  - component: {fileID: 1083867026}
   m_Layer: 5
   m_Name: Buy (2)
   m_TagString: Untagged
@@ -4176,6 +4477,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083867020}
   m_CullTransparentMesh: 1
+--- !u!114 &1083867026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083867020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 2
 --- !u!1001 &1091949494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4700,13 +5014,17 @@ MonoBehaviour:
   playerbar: {fileID: 1304623587}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1001 &1194623928
@@ -5032,6 +5350,7 @@ GameObject:
   - component: {fileID: 1213761882}
   - component: {fileID: 1213761881}
   - component: {fileID: 1213761880}
+  - component: {fileID: 1213761884}
   m_Layer: 5
   m_Name: Buy (5)
   m_TagString: Untagged
@@ -5164,6 +5483,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213761878}
   m_CullTransparentMesh: 1
+--- !u!114 &1213761884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213761878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 5
 --- !u!1001 &1219937831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5848,13 +6180,17 @@ MonoBehaviour:
   playerbar: {fileID: 172660381}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!114 &1495871073
@@ -6101,6 +6437,7 @@ GameObject:
   - component: {fileID: 1540297805}
   - component: {fileID: 1540297804}
   - component: {fileID: 1540297803}
+  - component: {fileID: 1540297807}
   m_Layer: 5
   m_Name: Buy (1)
   m_TagString: Untagged
@@ -6233,6 +6570,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540297801}
   m_CullTransparentMesh: 1
+--- !u!114 &1540297807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540297801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
 --- !u!1001 &1542711891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6792,9 +7142,9 @@ RectTransform:
   - {fileID: 382791862}
   - {fileID: 2015308369}
   - {fileID: 1495871071}
+  - {fileID: 435107648}
   - {fileID: 490220406}
   - {fileID: 1995802285}
-  - {fileID: 435107648}
   m_Father: {fileID: 1099663764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7019,13 +7369,17 @@ MonoBehaviour:
   playerbar: {fileID: 1514224347}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &1758765770
@@ -7363,13 +7717,17 @@ MonoBehaviour:
   playerbar: {fileID: 1048462098}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &1928731479
@@ -7692,13 +8050,17 @@ MonoBehaviour:
   playerbar: {fileID: 0}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &2015308368
@@ -7760,13 +8122,17 @@ MonoBehaviour:
   playerbar: {fileID: 1758765774}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!114 &2015308371
@@ -7870,6 +8236,141 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 359552117267336677, guid: ba206dde8ad8f944fa714fbc9a7e3a47, type: 3}
   m_PrefabInstance: {fileID: 1091949494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2071872888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071872889}
+  - component: {fileID: 2071872893}
+  - component: {fileID: 2071872892}
+  - component: {fileID: 2071872891}
+  - component: {fileID: 2071872890}
+  m_Layer: 5
+  m_Name: EvilOil (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2071872889
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071872888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 435107648}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -100}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2071872890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071872888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2071872891}
+          m_TargetAssemblyTypeName: Tooltips, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2071872891}
+          m_TargetAssemblyTypeName: Tooltips, Assembly-CSharp
+          m_MethodName: PointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2071872891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071872888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a2dfd03cd180b4baa9a1108a2a0497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 357933959}
+--- !u!114 &2071872892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071872888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -864502467288426790, guid: fd77079833b48fd409e34c75149e9200, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2071872893
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071872888}
+  m_CullTransparentMesh: 1
 --- !u!1 &2090820166
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,6 +8384,7 @@ GameObject:
   - component: {fileID: 2090820170}
   - component: {fileID: 2090820169}
   - component: {fileID: 2090820168}
+  - component: {fileID: 2090820172}
   m_Layer: 5
   m_Name: Buy (3)
   m_TagString: Untagged
@@ -8015,6 +8517,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090820166}
   m_CullTransparentMesh: 1
+--- !u!114 &2090820172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090820166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8b6334ea9a99d418e02342c9c5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
 --- !u!1 &2096229997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2298327893208747072, guid: 86ec062ab4536d34192aa972fa2d9929, type: 3}
@@ -8038,13 +8553,17 @@ MonoBehaviour:
   playerbar: {fileID: 161155878}
   saveData:
     Upgrades:
-      Levels: 
-      Income: 
+      Upgrades: []
       playerPoints: 
       ShopUpgrades: 
     Currency: 0
     allies:
       Data: []
+    Settings:
+      volume: 0
+      isFullscreen: 0
+      resolution: {x: 0, y: 0}
+      quality: 0
   buttonTest: {fileID: 0}
   currentScore: 0
 --- !u!1 &2097378931

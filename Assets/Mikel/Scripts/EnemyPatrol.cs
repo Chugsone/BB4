@@ -18,6 +18,11 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
+        if (patrolPoints == null || patrolPoints.Length == 0)
+        {
+            return;
+        }
+
         if (transform.position == patrolPoints[targetPoint].position)
         {
             increaseTargetInt();
@@ -31,6 +36,7 @@ public class EnemyPatrol : MonoBehaviour
         targetPoint++;
         if (targetPoint >= patrolPoints.Length)
         {
+            Debug.Log("tesafafafat");
             targetPoint = 0;
         }
 

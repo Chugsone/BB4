@@ -12,7 +12,7 @@ public class Startmenu : MonoBehaviour
     [SerializeField] private Image currentImage;
     public void StartButton()
     {
-        SceneManager.LoadScene("2D Test");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void QuitButton()
