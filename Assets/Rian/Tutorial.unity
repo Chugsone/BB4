@@ -6547,8 +6547,8 @@ Camera:
   m_GameObject: {fileID: 1105143342}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -6573,7 +6573,7 @@ Camera:
   far clip plane: 1000
   field of view: 135
   orthographic: 1
-  orthographic size: 15.125
+  orthographic size: 22.687502
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6598,7 +6598,7 @@ Transform:
   m_GameObject: {fileID: 1105143342}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.595259, y: 3.8614893, z: -10}
+  m_LocalPosition: {x: -18.650002, y: 0.7500019, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8456,7 +8456,7 @@ Camera:
   far clip plane: 1000
   field of view: 135
   orthographic: 1
-  orthographic size: 15.125
+  orthographic size: 22.687502
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -8525,7 +8525,7 @@ Transform:
   m_GameObject: {fileID: 1286992096}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.595259, y: 3.8614893, z: -10}
+  m_LocalPosition: {x: -18.650002, y: 0.7500019, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8687,7 +8687,7 @@ MonoBehaviour:
   UpdateMethod: 2
   Targets:
   - Object: {fileID: 678600638}
-    Weight: 1.5
+    Weight: 1
     Radius: 0
   - Object: {fileID: 1690265941}
     Weight: 1
@@ -8720,7 +8720,7 @@ Transform:
   m_GameObject: {fileID: 1291394243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.784094, y: 8.67264, z: 0}
+  m_LocalPosition: {x: -18.91965, y: 8.004747, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8964,6 +8964,7 @@ GameObject:
   - component: {fileID: 1330609805}
   - component: {fileID: 1330609804}
   - component: {fileID: 1330609807}
+  - component: {fileID: 1330609808}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -9047,13 +9048,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1738410306}
-        m_TargetAssemblyTypeName: UnlockTycoon, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1330609808}
+        m_TargetAssemblyTypeName: TycoonHopping, Assembly-CSharp
+        m_MethodName: MapHop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9110,6 +9111,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
+--- !u!114 &1330609808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330609802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc44862d637212f47a87d8e289f05c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1356258201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5443611435686480441, guid: 407f20fca333f254aae0d676e029fbe2, type: 3}
