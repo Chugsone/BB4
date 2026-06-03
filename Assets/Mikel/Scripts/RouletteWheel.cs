@@ -8,6 +8,7 @@ public class RouletteWheel : MonoBehaviour
     public float Speed = 100f;
     public bool IsSpinning = true;
 
+    public GameObject pointer;
     void Update()
     {
         Rotate();
@@ -25,6 +26,7 @@ public class RouletteWheel : MonoBehaviour
         Speed--;
         if(Speed <= 0f)
         {
+            pointer.GetComponent<BoxCollider2D>().enabled = true;
             Speed = 0f;
         }
     }
