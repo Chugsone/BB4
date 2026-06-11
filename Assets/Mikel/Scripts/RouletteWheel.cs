@@ -1,14 +1,19 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEngine.UIElements;
 
 public class RouletteWheel : MonoBehaviour
 {
     public float Speed = 100f;
     public bool IsSpinning = true;
+    public float maxSpeed = 600f;
 
     public GameObject pointer;
+
+    private void Start()
+    {
+        Speed = maxSpeed;
+    }
     void Update()
     {
         Rotate();
@@ -23,6 +28,7 @@ public class RouletteWheel : MonoBehaviour
     }
     public void Stop()
     {
+        IsSpinning = false;
         Speed--;
         if(Speed <= 0f)
         {
@@ -30,5 +36,14 @@ public class RouletteWheel : MonoBehaviour
             Speed = 0f;
         }
     }
+
+    public void Reset()
+    {
+        IsSpinning = true;
+        pointer.GetComponent<BoxCollider2D>().enabled = false;
+        Speed = maxSpeed;
+    }
+
+
 
 }
